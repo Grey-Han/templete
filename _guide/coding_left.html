@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>퍼블리싱 가이드</title>
+	<link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+	<script type="text/javascript" src="./resources/js/dtree.js"></script>
+	<style>
+		body{padding:20px 10px;}
+		ol {list-style-position: inside; padding-left:2px}
+		li {padding:2px}
+		.t_ing {color:#999999}
+		.t_js {color:brown}
+		.t_app {color:#0042ff}
+		.t_app_js {color:#7395d9}
+		.t_confirm {color:#9600ff}
+		.t_confirm_js {color:#40724b}
+		.t_melon {color:#000}
+		.t_modify {color:#ff0000}
+		img{vertical-align:middle}
+	</style>
+</head>
+<body>
+
+<h1 class="c_left">퍼블리싱 가이드</h1>
+<h2 class="c_left">페이지 가이드</h2>
+
+<div class="dtree">
+	<p><a href="javascript: p.openAll();"><img src="img/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: p.closeAll();"><img src="img/btn_collapse.gif" alt="Collapse All" /></a></p>
+	<script type="text/javascript">
+		var tree1 = {
+			"UI COMPONENTS" : {
+				"BUTTONS" : ["./guide_btn.html", "완료", "mainFrame"],
+				"FORM" : ["./guide_form.html", "완료", "mainFrame"],
+				"ETC" : ["./guide_etc.html", "완료", "mainFrame"]
+			},
+			"LAYOUT" : {
+				"SEARCH AREA" : ["./guide_feild.html", "완료", "mainFrame"],
+				"FORM TABLE" : ["./guide_table_form.html", "완료", "mainFrame"],
+				"TABLE" : ["./guide_table.html", "완료", "mainFrame"],
+			},
+			"STYLE GUIDE" : ["./guide_style.html", "완료", "mainFrame"],
+		};
+		var p = new dTree('p', tree1);
+		document.write(p);
+	</script>
+
+</div>
+
+</body>
+</html>
+

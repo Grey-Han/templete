@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>FORM Guide</title>
+    <!-- plugin -->
+    <link href="../resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/dashboard.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/content.css" rel="stylesheet" type="text/css">
+	
+	<!-- plugin -->
+	<script src="../resources/js/jquery/jquery.min.js"></script>
+	<script src="../resources/js/jquery/jquery-ui-1.12.1.js"></script>
+	<script src="../resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="../resources/js/jquery/jquery.easing.min.js"></script>
+	<script src="../resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+	<!-- custom -->
+	<script src="../resources/js/ui.js"></script>
+	
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/pretty.css">
+	<script src="./resources/js/jquery-3.2.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.min.js"></script>
+	<!--//  가이드용 -->
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">FORM UI</h1>
+
+	<h2 class="h2_guide">01. INPUT</h2>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">01-1. Type Text</h3>
+		<p class="guide_txt">
+			너비 미지정. 브라우저마다 상이(ie:약 305px / chrome : 187px)
+		</p>
+		<!-- View -->
+		<div class="guide_wrap">
+			<input type="text" placeholder="텍스트 입력">
+			<input type="text" placeholder="텍스트 입력" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<input type="text" placeholder="텍스트 입력">
+<input type="text" placeholder="텍스트 입력" disabled></xmp>
+		</div>
+		<!-- // code -->
+	
+		<h3 class="h3_guide">01-2. Type password</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<input class="middle" type="password" placeholder="비밀번호">
+			<input class="middle" type="password" placeholder="비밀번호" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<input type="text" placeholder="비밀번호">
+<input type="password" placeholder="비밀번호" disabled></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-3. Size Small (width: 100px)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<input class="small" type="text">
+			<input class="small" type="text" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<input class="small" type="text">
+<input class="small" type="text" disabled></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-4.Size middle (width: 220px)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<input class="middle" type="text" placeholder="텍스트">
+			<input class="middle" type="text" placeholder="텍스트" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<input type="text" class="middle" placeholder="텍스트">
+<input type="text" class="middle" placeholder="텍스트" disabled></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-4. Full Size (width: 상위 태그의 100%)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<input class="subject" type="text" placeholder="텍스트">
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<input class="subject" type="text" placeholder="텍스트"></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-5. Textarea</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<textarea rows="2" placeholder="텍스트를 입력해주세요"></textarea>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<textarea rows="2" placeholder="텍스트를 입력해주세요"></textarea></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-5. Textarea disabled</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<textarea rows="2" placeholder="텍스트를 입력해주세요" disabled></textarea>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<textarea rows="2" placeholder="텍스트를 입력해주세요" disabled></textarea></xmp>
+		</div>
+		<!-- // code -->
+		
+		<h3 class="h3_guide">01-6. datepicker</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="date_picker">
+				<input type="text" id="start_day" class="hasDatepicker">
+				<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+				<span class="date_line">-</span>
+				<input type="text" id="end_day" class="hasDatepicker">
+				<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="date_picker">
+	<input type="text" id="start_day" class="hasDatepicker">
+	<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+	<span class="date_line">-</span>
+	<input type="text" id="end_day" class="hasDatepicker">
+	<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+</div></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-7. one day datepicker</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="date_picker one_day"><!-- .one_day 추가 -->
+				<a class="btn_calendar" href="javascript:;"><label for="one_day">날짜 선택</label></a>
+				<input id="one_day" type="text">
+			</div>
+		</div>
+		<!-- // View -->
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="date_picker one_day"><!-- .one_day 추가 -->
+	<a class="btn_calendar" href="javascript:;"><label for="one_day">날짜 선택</label></a>
+	<input id="one_day" type="text">
+</div></xmp>
+		</div>
+	</div>
+
+	<h2 class="h2_guide">02. Select Box</h2>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">02-1. Default</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="select_box">
+				<select>
+					<option>옵션</option>
+					<option>옵션</option>
+					<option>옵션</option>
+					<option>옵션</option>
+					<option>옵션</option>
+				</select>
+			</div>
+			<div class="select_box">
+				<select>
+					<option>텍스트</option>
+					<option>텍스트</option>
+					<option>텍스트</option>
+					<option>텍스트</option>
+					<option>텍스트</option>
+				</select>
+			</div>
+			<div class="select_box">
+				<select>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+				</select>
+			</div>
+			<!-- test -->
+			<div class="select_box">
+				<select>
+					<option>과제명</option>
+					<option>담당부서</option>
+					<option>과제담당자</option>
+				</select>
+			</div>
+	
+			<!-- custom design select box -->
+			<!-- <details class="select">
+				<summary class="opts">
+					과제담당자
+					<input type="radio" name="opt" id="item" title="과제명" checked>
+					<input type="radio" name="opt" id="item1" title="담당부서">
+					<input type="radio" name="opt" id="item2" title="과제담당자">
+				</summary>
+				<ul class="opt_list">
+					<li><label for="item">과제명</label></li>
+					<li><label for="item1">담당부서</label></li>
+					<li><label for="item2">과제담당자</label></li>
+				</ul>
+			</details> -->
+	
+			<style>
+			/* reset */
+			summary {list-style: none;}
+			/* style */
+			details.select {display: inline-block; font-size: 1rem; position: relative;}
+			details.select[open] .opts {border-color: #a1bede;}
+			details.select[open] .opts:before {margin-top: -3px; transform: rotate(-225deg);}
+			details.select .opts {color: #444; padding: 3px 26px 4px 10px; border-radius: 4px; border: 1px solid #ccc; counter-reset: radios; cursor: pointer; outline: 0;}
+			details.select .opts:before {position: absolute; top: 50%; right: 10px; margin-top: -6px; content: ''; width: 8px; height: 8px; border-style: solid; border-width: 0 0 1px 1px; border-color: #3d83df; transform: rotate(-45deg); transition: .2s all;}
+			details.select .opts input[type=radio] {counter-increment: radios; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: none;}
+			details.select .opt_list {position: absolute; top: calc(100% + 4px); left: 0; width: 100%; background: #fff; border-radius: 4px; border: 1px solid #ccc; -webkit-box-shadow: 0px 3px 7px 0px rgba(153, 153, 153, 0.3); box-shadow: 0px 3px 7px 0px rgba(153, 153, 153, 0.3);}
+			details.select .opt_list li {}
+			details.select .opt_list li label {display: block; cursor: pointer; padding: 5px 10px;}
+			details.select .opt_list li label:hover {background-color: #f5f5f5;}
+			</style>
+			<!-- // custom design select box -->
+	
+			<!-- ie fix -->
+			<div class="ui_select"><!-- 비활성화 .disabled 추가 -->
+				<button class="opt">선택</button>
+				<ul class="opt_list">
+					<li class="opt_item" data-value="과제명">과제명</li>
+					<li class="opt_item" data-value="담당부서">담당부서</li>
+					<li class="opt_item" data-value="과제담당자">과제담당자</li>
+				</ul>
+			</div>
+	
+			<style>
+			.ui_select {position: relative; display: inline-block; vertical-align: middle; margin-right: 2px; min-width: 95px;}
+			.ui_select .opt {position: relative; color: #858796; text-align: left; width: 100%; min-height: 28px; padding: 0px 28px 1px 10px; border-radius: 4px; border: 1px solid #ccc;}
+			.ui_select .opt::before {position: absolute; top: 50%; right: 10px; margin-top: -6px; content: ''; width: 8px; height: 8px; border-style: solid; border-width: 0 0 1px 1px; border-color: #3d83df; transform: rotate(-45deg); transition: .2s all;}
+			.ui_select .opt_list {display: none; position: absolute; top: calc(100% + 4px); left: 0; width: 100%; max-height: 200px; overflow-y: auto; background: #fff; border-radius: 4px; border: 1px solid #ccc; -webkit-box-shadow: 0px 3px 7px 0px rgba(153, 153, 153, 0.3); box-shadow: 0px 3px 7px 0px rgba(153, 153, 153, 0.3);}
+			.ui_select .opt_list li {display: block; cursor: pointer; padding: 5px 10px;}
+			.ui_select .opt_list li:hover {background-color: #f5f5f5;}
+			/* active */
+			.ui_select.active .opt {color: #444;}
+			.ui_select.active .opt::before {margin-top: -3px; transform: rotate(-225deg);}
+			.ui_select.active .opt_list {display: block;}
+			/* disabled */
+			.ui_select.disabled .opt {color: #bbb; background: #fafafa; cursor: default;}
+			.ui_select.disabled .opt::before {margin-top: -6px; transform: rotate(-45deg); border-color: rgba(93,181,232,.5);}
+			.ui_select.disabled .opt_list,
+			.ui_select.active.disabled .opt_list {display: none;}
+			@media (max-width: 1280px) {
+				.ui_select .opt {padding: 3px 28px 4px 10px;}
+			}
+			</style>
+	
+			<script>
+				var $body = $('body'),
+					$select = $('.ui_select'),
+					$selectOpt = $('.ui_select .opt'),
+					$option = $('.opt_item')
+
+				var optWidth = $select.outerWidth()
+
+				$body.on('click',function(e){
+					// 해당 select 캡쳐링 막기
+					var $target = $(e.target);
+					if($target.hasClass('ui_select') || $target.closest('.ui_select').length) {
+						return;
+					}
+					// 다른 영역 클릭시 select 닫기
+					var target = e.target;
+					$select.each(function () {
+						if (!$select.is(target) && $select.has(target).length === 0) {
+							$select.removeClass('active')
+						}
+					})
+				})
+	
+				// select 활성화
+				$select.on('click', function(e){
+					$(this).toggleClass('active')
+				})
+				
+				// 옵션 선택시
+				$option.on('click', function(){
+					var option = $(this).attr('data-value')
+					$selectOpt.html(option);
+				})
+	
+			</script>
+			<!-- // ie fix -->
+	
+			<!-- // test -->
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="select_box">
+	<select>
+		<option>옵션</option>
+		<option>옵션</option>
+		<option>옵션</option>
+		<option>옵션</option>
+		<option>옵션</option>
+	</select>
+</div></xmp>
+		</div>
+		<!-- // code -->
+		<h3 class="h3_guide">02-2. disabled</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="select_box disabled">
+				<select>
+					<option>옵션</option>
+					<option>옵션</option>
+					<option>옵션</option>
+					<option>옵션</option>
+					<option>옵션</option>
+				</select>
+			</div>
+			<div class="select_box disabled">
+				<select>
+					<option>텍스트</option>
+					<option>텍스트</option>
+					<option>텍스트</option>
+					<option>텍스트</option>
+					<option>텍스트</option>
+				</select>
+			</div>
+			<div class="select_box disabled">
+				<select>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+					<option>최대글자수어디</option>
+				</select>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="select_box disabled"><!-- 비활성화 .disabled 추가 -->
+	<select>
+		<option>옵션</option>
+		<option>옵션</option>
+		<option>옵션</option>
+		<option>옵션</option>
+		<option>옵션</option>
+	</select>
+</div></xmp>
+		</div>
+		<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">03. Check Box</h2>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">03-0. Default</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="check">
+				<label class="custom-control-label" for="check">체크</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-checkbox">
+	<input type="checkbox" class="custom-control-input" id="check">
+	<label class="custom-control-label" for="check">체크</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">03-1. 라벨 텍스트 없을때</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-checkbox only">
+				<input type="checkbox" class="custom-control-input" id="check00">
+				<label class="custom-control-label" for="check00"></label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-checkbox only">
+	<input type="checkbox" class="custom-control-input" id="check00">
+	<label class="custom-control-label" for="check00"></label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">03-2. checked</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="check01" checked="checked">
+				<label class="custom-control-label" for="check01">선택</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-checkbox">
+	<input type="checkbox" class="custom-control-input" id="check" checked="checked">
+	<label class="custom-control-label" for="check">선택</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+		
+		<h3 class="h3_guide">03-3. disabled</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="check02" disabled>
+				<label class="custom-control-label" for="check02">사용불가</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-checkbox">
+	<input type="checkbox" class="custom-control-input" id="check" disabled>
+	<label class="custom-control-label" for="check">사용불가</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+		
+		<h3 class="h3_guide">03-3. Checked and disabled</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="check02" checked="checked" disabled>
+				<label class="custom-control-label" for="check02">사용불가</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-checkbox">
+	<input type="checkbox" class="custom-control-input" id="check" disabled>
+	<label class="custom-control-label" for="check">사용불가</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. Radio Check</h2>
+	<div class="guide_wrap">
+		<h3 class="h3_guide">04-0. Default</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" name="radio" id="radio_y" value="Y" checked="checked">
+				<label class="custom-control-label" for="radio_y">네</label>
+			</div>
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" name="radio" id="radio_n" value="N">
+				<label class="custom-control-label" for="radio_n">아니오</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-radio">
+	<input type="radio" class="custom-control-input" name="radio" id="radio_y" value="Y" checked="checked">
+	<label class="custom-control-label" for="radio_y">네</label>
+</div>
+<div class="custom-control custom-radio">
+	<input type="radio" class="custom-control-input" name="radio" id="radio_n" value="N">
+	<label class="custom-control-label" for="radio_n">아니오</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">04-1. Disabled</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" name="radio01" id="radio_y01" value="Y" checked="checked" disabled>
+				<label class="custom-control-label" for="radio_y01">네</label>
+			</div>
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" name="radio01" id="radio_n01" value="N" disabled>
+				<label class="custom-control-label" for="radio_n01">아니오</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-radio">
+	<input type="radio" class="custom-control-input" name="radio01" id="radio_y01" value="Y" checked="checked" disabled>
+	<label class="custom-control-label" for="radio_y01">네</label>
+</div>
+<div class="custom-control custom-radio">
+	<input type="radio" class="custom-control-input" name="radio01" id="radio_n01" value="N">
+	<label class="custom-control-label" for="radio_n01">아니오</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">04-2. 모양은 체크 기능은 라디오(하나만 선택 가능)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="custom-control custom-checkbox">
+				<input type="radio" class="custom-control-input" name="radio_chck" id="radio_chck01" value="1" checked="checked">
+				<label class="custom-control-label" for="radio_chck01">하나</label>
+			</div>
+			<div class="custom-control custom-checkbox">
+				<input type="radio" class="custom-control-input" name="radio_chck" id="radio_chck02" value="2">
+				<label class="custom-control-label" for="radio_chck02">둘</label>
+			</div>
+			<div class="custom-control custom-checkbox">
+				<input type="radio" class="custom-control-input" name="radio_chck" id="radio_chck03" value="2">
+				<label class="custom-control-label" for="radio_chck03">셋</label>
+			</div>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<div class="custom-control custom-checkbox">
+	<input type="radio" class="custom-control-input" name="radio_chck" id="radio_chck01" value="1" checked="checked">
+	<label class="custom-control-label" for="radio_chck01">하나</label>
+</div>
+<div class="custom-control custom-checkbox">
+	<input type="radio" class="custom-control-input" name="radio_chck" id="radio_chck02" value="2">
+	<label class="custom-control-label" for="radio_chck02">둘</label>
+</div>
+<div class="custom-control custom-checkbox">
+	<input type="radio" class="custom-control-input" name="radio_chck" id="radio_chck03" value="2">
+	<label class="custom-control-label" for="radio_chck03">셋</label>
+</div></xmp>
+		</div>
+		<!-- // code -->
+		
+		<h3 class="h3_guide">04-3. 이미지 선택(하나만 선택 가능)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<div class="ui_check_wrap img">
+				<div class="custom-control custom-checkbox ui_chck_img">
+					<input type="radio" class="custom-control-input" name="radio_chck_img" id="image1" value="1" checked="checked">
+					<label class="custom-control-label" for="image1">
+						<img class="label_img" src="../resources/img/slide_best/img_slide.png" alt="RPA 우수사례 이미지1">
+					</label>
+				</div>
+				<div class="custom-control custom-checkbox ui_chck_img">
+					<input type="radio" class="custom-control-input" name="radio_chck_img" id="image2" value="2">
+					<label class="custom-control-label" for="image2">
+						<img class="label_img" src="../resources/img/slide_best/img_slide02.png" alt="RPA 우수사례 이미지2">
+					</label>
+				</div>
+				<div class="custom-control custom-checkbox ui_chck_img">
+					<input type="radio" class="custom-control-input" name="radio_chck_img" id="image3" value="3">
+					<label class="custom-control-label" for="image3">
+						<img class="label_img" src="../resources/img/slide_best/img_slide03.png" alt="RPA 우수사례 이미지3">
+					</label>
+				</div>
+				<div class="custom-control custom-checkbox ui_chck_img">
+					<input type="radio" class="custom-control-input" name="radio_chck_img" id="image4" value="4">
+					<label class="custom-control-label" for="image4">
+						<img class="label_img" src="../resources/img/slide_best/img_slide04.png" alt="RPA 우수사례 이미지4">
+					</label>
+				</div>
+				<div class="custom-control custom-checkbox ui_chck_img">
+					<input type="radio" class="custom-control-input" name="radio_chck_img" id="image5" value="5">
+					<label class="custom-control-label" for="image5">
+						<img class="label_img" src="../resources/img/slide_best/img_slide05.png" alt="RPA 우수사례 이미지5">
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- // View -->
+		<h2 class="h2_guide">05. file</h2>
+		<div class="guide_wrap">
+			<h3 class="h3_guide">05-3. minimum scale</h3>
+			<!-- View -->
+			<div class="guide_wrap">
+				<div style="display: inline-block; width: 320px;">
+					<div class="table_ty2-wrap">
+						<div class="table_ty2-label" style="padding-right:76px;">첨부파일 총용량 : 0KB</div>
+						<table class="table_ty2">
+							<colgroup>
+								<col style="width:30px;">
+								<col>
+								<col style="width:15%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="ta-c">
+										<div class="custom-control custom-checkbox only">
+											<input type="checkbox" class="custom-control-input" id="check" disabled="">
+											<label class="custom-control-label" for="check"></label>
+										</div>
+									</th>
+									<th scope="col">파일명</th>
+									<th scope="col">용량</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+								</tr>
+							</tbody> 
+						</table>
+						<div class="btn-wrap">
+							<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i></a>
+							<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i></a>
+						</div>
+					</div>
+				</div>
+				<div style="display: inline-block; width: 320px;">
+					<div class="table_ty2-wrap">
+						<div class="table_ty2-label" style="padding-right:76px;">첨부파일 총용량 : 0KB</div>
+						<table class="table_ty2">
+							<colgroup>
+								<col style="width:30px;">
+								<col>
+								<col style="width:15%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="ta-c">
+										<div class="custom-control custom-checkbox only">
+											<input type="checkbox" class="custom-control-input" id="check" disabled="">
+											<label class="custom-control-label" for="check"></label>
+										</div>
+									</th>
+									<th scope="col">파일명</th>
+									<th scope="col">용량</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+								</tr>
+							</tbody> 
+						</table>
+						<div class="btn-wrap">
+							<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i></a>
+							<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i></a>
+						</div>
+					</div>
+				</div>
+				<div style="display: inline-block; width: 320px;">
+					<div class="table_ty2-wrap">
+						<div class="table_ty2-label" style="padding-right:76px;">첨부파일 총용량 : 0KB</div>
+						<table class="table_ty2">
+							<colgroup>
+								<col style="width:30px;">
+								<col>
+								<col style="width:15%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="ta-c">
+										<div class="custom-control custom-checkbox only">
+											<input type="checkbox" class="custom-control-input" id="check_01">
+											<label class="custom-control-label" for="check_01"></label>
+										</div>
+									</th>
+									<th scope="col">파일명</th>
+									<th scope="col">용량</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ta-c">
+										<div class="custom-control custom-checkbox only">
+											<input type="checkbox" class="custom-control-input" id="check_file">
+											<label class="custom-control-label" for="check_file"></label>
+										</div>
+									</td>
+									<td>과제개발파일명텍스트과제개발파일명텍스트.txt</td>
+									<td>text</td>
+								</tr>
+							</tbody> 
+						</table>
+						<div class="btn-wrap">
+							<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i></a>
+							<a href="javascript:;" class="btn btn-n" data-title="삭제"><i class="icon-minus">-</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // View -->
+			
+			<!-- code -->
+			<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+	<div class="table_ty2-wrap">
+		<div class="table_ty2-label" style="padding-right:76px;">첨부파일 총용량 : 0KB</div>
+		<table class="table_ty2">
+			<colgroup>
+				<col style="width:30px;">
+				<col>
+				<col style="width:15%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" class="ta-c">
+						<div class="custom-control custom-checkbox only">
+							<input type="checkbox" class="custom-control-input" id="check" disabled="">
+							<label class="custom-control-label" for="check"></label>
+						</div>
+					</th>
+					<th scope="col">파일명</th>
+					<th scope="col">용량</th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+				</tr>
+			</tbody> 
+		</table>
+		<div class="btn-wrap">
+			<a href="javascript:;" class="btn btn-n" data-title="추가" role="button"><i class="icon-plus">+</i></a>
+			<a href="javascript:;" class="btn btn-n" data-title="삭제" role="button"><i class="icon-minus">-</i></a>
+		</div>
+	</div></xmp>
+			</div>
+			<!-- // code -->
+			<h3 class="h3_guide">05-1. default</h3>
+			<!-- View -->
+			<div class="guide_wrap">
+				<div class="table_ty2-wrap">
+					<div class="table_ty2-label">첨부파일 총용량 : 0KB</div>
+					<table class="table_ty2">
+						<colgroup>
+							<col style="width:30px;">
+							<col>
+							<col style="width:15%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" class="ta-c">
+									<div class="custom-control custom-checkbox only">
+										<input type="checkbox" class="custom-control-input" id="check" disabled="">
+										<label class="custom-control-label" for="check"></label>
+									</div>
+								</th>
+								<th scope="col">파일명</th>
+								<th scope="col">용량</th>
+							</tr> 
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+							</tr>
+						</tbody> 
+					</table>
+					<div class="btn-wrap">
+						<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>파일추가</a>
+						<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i>파일삭제</a>
+					</div>
+				</div>
+			</div>
+			<!-- // View -->
+			
+			<!-- code -->
+			<div class="d_desc code">
+				<xmp class="prettyprint linenums javascript">
+	<div class="table_ty2-wrap">
+		<div class="table_ty2-label">첨부파일 총용량 : 0KB</div>
+		<table class="table_ty2">
+			<colgroup>
+				<col style="width:30px;">
+				<col>
+				<col style="width:15%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" class="ta-c">
+						<div class="custom-control custom-checkbox only">
+							<input type="checkbox" class="custom-control-input" id="check" disabled="">
+							<label class="custom-control-label" for="check"></label>
+						</div>
+					</th>
+					<th scope="col">파일명</th>
+					<th scope="col">용량</th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+				</tr>
+			</tbody> 
+		</table>
+		<div class="btn-wrap">
+			<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>파일추가</a>
+			<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i>파일삭제</a>
+		</div>
+	</div></xmp>
+			</div>
+			<!-- // code -->
+		</div>
+
+	</div>
+
+</div>
+<script type="text/javascript" src="./resources/js/pretty.js"></script>
+
+</body>
+</html>

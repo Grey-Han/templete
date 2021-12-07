@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* Mobile Common Set */
+/* GNB & Footer Sub Page Haeder */
+@import url("./font.css");
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, iframe, figure, span { margin: 0; padding: 0; font-size: inherit; word-break: break-word; box-sizing: border-box; }
+
+:before, :after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { color: #111; font-weight: 700; line-height: normal; }
+
+header, hgroup, footer, section, article, aside, nav, canvas, figure, figcaption, main { display: block; box-sizing: border-box; }
+
+table { width: 100%; font-size: inherit; border-collapse: collapse; border-spacing: 0; table-layout: fixed; }
+
+th, td { word-wrap: break-word; }
+
+fieldset, iframe { border: 0; vertical-align: top; }
+
+img { border: 0; font-size: 0; vertical-align: top; }
+
+li, dd { list-style: none; word-break: break-word; }
+
+hr { display: none; }
+
+strong { font-weight: 700; }
+
+caption, figcaption { overflow: hidden; width: 100%; height: 1px; font-size: 0; line-height: 0; margin-top: -1px; }
+
+legend { display: block; width: 0; height: 0; overflow: hidden; font-size: 0; line-height: 0; white-space: nowrap; }
+
+button { padding: 0; border: 0; cursor: pointer; background: none; vertical-align: top; appearance: none; font-family: "Noto Sans JP", sans-serif; color: #777; font-size: 14px; font-weight: 400; outline: none; }
+
+button:disabled { background-color: #f8f8f8; cursor: auto; }
+
+a { color: #777; text-decoration: none; box-sizing: border-box; }
+
+em, i, address { font-style: normal; }
+
+select { width: 100%; height: 50px; line-height: 46px; color: #111; font-family: "Noto Sans JP", sans-serif; font-size: inherit; text-align: left; vertical-align: middle; padding: 0 49px 0 17px; border-radius: 2px; border: 2px solid #fafafa; background-color: #fafafa; background-image: url(/resources/images/icon_arrow2.png); background-repeat: no-repeat; background-position: right 20px center; appearance: none; -webkit-appearance: none; -moz-appearance: none; outline: none; }
+
+select:disabled { color: #777; background-color: #ebecee; border-color: #ebecee; }
+
+select:focus { border-color: #0269ce; font-weight: 700; color: #111; }
+
+select::-ms-expand { display: none; }
+
+input { margin: 0; padding: 0; font-family: "Noto Sans JP", sans-serif; font-size: inherit; color: #777; vertical-align: top; -webkit-border-radius: 0; }
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="file"], input[type="date"], input[type="number"] { width: 100%; height: 50px; padding: 0 20px; font-weight: 400; line-height: 46px; border: 2px solid #fafafa; background-color: #fafafa; -webkit-appearance: none; -moz-appearance: none; box-sizing: border-box; border-radius: 2px; outline: none; color: #111; }
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="number"]:focus { border-color: #0269ce; font-weight: 700; color: #111; }
+
+input[type="text"]:disabled, input[type="text"][readonly], input[type="password"]:disabled, input[type="password"][readonly], input[type="tel"]:disabled, input[type="tel"][readonly], input[type="file"]:disabled, input[type="file"][readonly], input[type="date"]:disabled, input[type="date"][readonly], input[type="number"]:disabled, input[type="number"][readonly] { color: #777; background-color: #ebecee; border-color: #ebecee; }
+
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder, input[type="file"]::placeholder, input[type="date"]::placeholder, input[type="number"]::placeholder { color: #aaa; }
+
+input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="file"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder { color: #aaa; }
+
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="file"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder { color: #aaa; }
+
+input[type="text"].error, input[type="password"].error, input[type="tel"].error, input[type="file"].error, input[type="date"].error, input[type="number"].error { color: #e00751; border-color: #e00751; }
+
+input[type="radio"] { width: 17px; height: 17px; vertical-align: -1px; }
+
+input[type="checkbox"] { width: 13px; height: 13px; vertical-align: -1px; }
+
+input[type="range"] { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; }
+
+input[type="button"] { padding: 0; border: 0; cursor: pointer; background-color: none; vertical-align: top; appearance: none; font-family: "Noto Sans JP", sans-serif; color: #777; font-weight: 400; outline: none; }
+
+input[type="button"]:disabled { background-color: #f8f8f8; cursor: auto; }
+
+label { cursor: pointer; }
+
+textarea { font-family: "Noto Sans JP", sans-serif; font-size: inherit; width: 100%; resize: none; padding: 10px 20px 12px; line-height: 24px; border: 2px solid #fafafa; background-color: #fafafa; -webkit-appearance: none; -moz-appearance: none; box-sizing: border-box; border-radius: 2px; outline: none; color: #111; font-weight: 400; display: block; }
+
+textarea:disabled, textarea[readonly] { color: #777; background-color: #f4f4f4; border-color: #ebecee; }
+
+textarea:focus { border-color: #0269ce; font-weight: 700; color: #111; }
+
+textarea.error { color: #e00751; border-color: #e00751; }
+
+textarea::placeholder { color: #aaa; }
+
+textarea:-ms-input-placeholder { color: #aaa; }
+
+textarea::-webkit-input-placeholder { color: #aaa; }
+
+body { font-style: normal; font-size: 14px; font-family: "Noto Sans JP", sans-serif; font-weight: 400; color: #777; letter-spacing: -0.25px; line-height: 20px; background-color: #fff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+@media all and (max-width: 1024px) { select { height: 45px; font-size: 14px; line-height: 45px; padding-right: 30px; background-position: right 17px center; }
+  input[type="text"], input[type="password"], input[type="tel"], input[type="file"], input[type="date"], input[type="number"] { height: 45px; padding: 0 13px; line-height: 45px; border-radius: 4px; }
+  textarea { padding: 13px 13px; line-height: inherit; } }

@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>TABLE Guide</title>
+    <!-- plugin -->
+    <link href="../resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/dashboard.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/content.css" rel="stylesheet" type="text/css">
+	
+	<!-- plugin -->
+	<script src="../resources/js/jquery/jquery.min.js"></script>
+	<script src="../resources/js/jquery/jquery-ui-1.12.1.js"></script>
+	<script src="../resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="../resources/js/jquery/jquery.easing.min.js"></script>
+	<script src="../resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+	
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/pretty.css">
+	<!-- <script src="./resources/js/jquery-3.2.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.min.js"></script> -->
+	<!--//  가이드용 -->
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">TABLE Layout</h1>
+
+	<h2 class="h2_guide">01. Form 형식 테이블</h2>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">01-1. 1열 1행</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>팝업 테이블 1열 1행</caption>
+				<colgroup>
+					<col style="width:15%;">
+					<col>
+					<col style="width:15%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">제목</th>
+						<td colspan="3">텍스트</td>
+					</tr>
+					<tr>
+						<th scope="row">제목 필수값 표시<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">비활성화<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input type="text" value="비활성화" disabled>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">제목<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input class="small" type="text">명
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">비활성화<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input class="small" type="text" value="0" disabled>명
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">텍스트</th>
+						<td colspan="3">
+							<textarea cols="45" rows="2"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">텍스트 비활성화</th>
+						<td colspan="3">
+							<textarea cols="45" rows="2" disabled>텍스트 비활성화</textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">체크박스</th>
+						<td colspan="3">
+							<div class="ui_check_wrap">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_1">
+									<label class="custom-control-label" for="checkBox_1">예외 발생 비율 낮음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2">
+									<label class="custom-control-label" for="checkBox_2">오류/재작업 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_3">
+									<label class="custom-control-label" for="checkBox_3">담당자 변경 잦음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_4">
+									<label class="custom-control-label" for="checkBox_4">정형/디지털화 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_7">
+									<label class="custom-control-label" for="checkBox_7">부정 발생 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_5">
+									<label class="custom-control-label" for="checkBox_5">활용도가 낮은 레거시 시스템</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_6">
+									<label class="custom-control-label" for="checkBox_6">처리 건수 많음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_8">
+									<label class="custom-control-label" for="checkBox_8">다수의 시스템 사용</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_9">
+									<label class="custom-control-label" for="checkBox_9">시스템화 되지 못한 업무</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td colspan="3">
+							<div class="table_ty2-wrap">
+								<div class="table_ty2-label">첨부파일 총용량 : 1KB</div>
+								<table class="table_ty2">
+									<caption>개발요청 첨부파일</caption>
+									<colgroup>
+										<col style="width: 30px;">
+										<col>
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col"  class="ta-c">
+												<div class="custom-control custom-checkbox only">
+													<input type="checkbox" class="custom-control-input" id="check" disabled>
+													<label class="custom-control-label" for="check"></label>
+												</div>
+											</th>
+											<th scope="col">파일명</th>
+											<th scope="col">용량</th>
+										</tr> 
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+										</tr>
+									</tbody> 
+								</table>
+								<div class="btn-wrap">
+									<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>추가</a>
+									<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i>삭제</a>
+								</div>
+							</div> 
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일 추가 했을 때</th>
+						<td colspan="3">
+							<div class="table_ty2-wrap">
+								<div class="table_ty2-label">첨부파일 총용량 : 1KB</div>
+								<table class="table_ty2">
+									<caption>개발요청 첨부파일</caption>
+									<colgroup>
+										<col style="width: 30px;">
+										<col>
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="ta-c">
+												<div class="custom-control custom-checkbox only">
+													<input type="checkbox" class="custom-control-input" id="check_file_all">
+													<label class="custom-control-label" for="check_file_all"></label>
+												</div>
+											</th>
+											<th scope="col">파일명</th>
+											<th scope="col">용량</th>
+										</tr> 
+									</thead>
+									<tbody>
+										<tr>
+											<td class="ta-c">
+												<div class="custom-control custom-checkbox only">
+													<input type="checkbox" class="custom-control-input" id="check_file">
+													<label class="custom-control-label" for="check_file"></label>
+												</div>
+											</td>
+											<td>과제개발파일명텍스트과제개발파일명텍스트.txt</td>
+											<td>text</td>
+										</tr>
+									</tbody> 
+								</table>
+								<div class="btn-wrap">
+									<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>추가</a>
+									<a href="javascript:;" class="btn btn-n" data-title="삭제"><i class="icon-minus">-</i>삭제</a>
+								</div>
+							</div> 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">01-2. 1열 2행</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제개요</caption>
+				<colgroup>
+					<col style="width:15%;">
+					<col>
+					<col style="width:15%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">신청부서</th>
+						<td>ICT운영팀</td>
+						<th scope="row">신청자</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th scope="row">과제빈도<span class="table-point">*</span></th>
+						<td>
+							<div class="select_box small">
+								<select>
+									<option>선택</option>
+									<option>수시</option>
+									<option>매일</option>
+									<option>매주</option>
+									<option>매월</option>
+									<option>매년</option>
+								</select>
+							</div>
+							<input class="small" type="text">회
+						</td>
+						<th scope="row">건별 처리시간<span class="table-point">*</span></th>
+						<td>
+							<input class="small" type="text">
+							<div class="select_box small">
+								<select>
+									<option>선택</option>
+									<option>초</option>
+									<option>시간</option>
+									<option>일</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">처리인원<span class="table-point">*</span></th>
+						<td>
+							<div class="input_box1">
+								<input class="small" type="text">명
+							</div>
+						</td>
+						<th scope="row">총 과제 시간</th>
+						<td>매일 1회 100분</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">01-3. 과제개요</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제개요</caption>
+				<colgroup>
+					<col style="width:15%;">
+					<col>
+					<col style="width:15%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">과제명<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">신청부서</th>
+						<td>ICT운영팀</td>
+						<th scope="row">신청자</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th scope="row">과제빈도<span class="table-point">*</span></th>
+						<td>
+							<div class="select_box small">
+								<select>
+									<option>선택</option>
+									<option>수시</option>
+									<option>매일</option>
+									<option>매주</option>
+									<option>매월</option>
+									<option>매년</option>
+								</select>
+							</div>
+							<input class="small" type="text">회
+						</td>
+						<th scope="row">건별 처리시간<span class="table-point">*</span></th>
+						<td>
+							<input class="small" type="text">
+							<div class="select_box small">
+								<select>
+									<option>선택</option>
+									<option>초</option>
+									<option>시간</option>
+									<option>일</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">처리인원<span class="table-point">*</span></th>
+						<td>
+							<div class="input_box1">
+								<input class="small" type="text">명
+							</div>
+						</td>
+						<th scope="row">총 과제 시간</th>
+						<td>매일 1회 100분</td>
+					</tr>
+					<tr>
+						<th scope="row">과제설명</th>
+						<td colspan="3">
+							<textarea cols="45" rows="2"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">기대효과</th>
+						<td colspan="3">
+							<div class="ui_check_wrap">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox-1_1">
+									<label class="custom-control-label" for="checkBox-1_1">예외 발생 비율 낮음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox-1_2">
+									<label class="custom-control-label" for="checkBox-1_2">오류/재작업 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox-1_3">
+									<label class="custom-control-label" for="checkBox-1_3">담당자 변경 잦음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox-1_4">
+									<label class="custom-control-label" for="checkBox-1_4">정형/디지털화 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox-1_5">
+									<label class="custom-control-label" for="checkBox-1_5">부정 발생 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox-1_6">
+									<label class="custom-control-label" for="checkBox-1_6">활용도가 낮은 레거시 시스템</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제이슈</th>
+						<td colspan="3">
+							<textarea cols="45" rows="2"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">RPA 적합도</th>
+						<td colspan="3">
+							<div class="ui_check_wrap">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_1">
+									<label class="custom-control-label" for="checkBox_1">예외 발생 비율 낮음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2">
+									<label class="custom-control-label" for="checkBox_2">오류/재작업 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_3">
+									<label class="custom-control-label" for="checkBox_3">담당자 변경 잦음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_4">
+									<label class="custom-control-label" for="checkBox_4">정형/디지털화 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_7">
+									<label class="custom-control-label" for="checkBox_7">부정 발생 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_5">
+									<label class="custom-control-label" for="checkBox_5">활용도가 낮은 레거시 시스템</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_6">
+									<label class="custom-control-label" for="checkBox_6">처리 건수 많음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_8">
+									<label class="custom-control-label" for="checkBox_8">다수의 시스템 사용</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_9">
+									<label class="custom-control-label" for="checkBox_9">시스템화 되지 못한 업무</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">01-3. 과제개요 (disabled)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제개요</caption>
+				<colgroup>
+					<col style="width:15%;">
+					<col>
+					<col style="width:15%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">과제명<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input type="text" value="과제명 테스트" disabled>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">신청부서</th>
+						<td>ICT운영팀</td>
+						<th scope="row">신청자</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th scope="row">과제빈도<span class="table-point">*</span></th>
+						<td>
+							<div class="select_box small disabled">
+								<select>
+									<option>매월</option>
+								</select>
+							</div>
+							<input class="small" type="text" value="10" disabled>
+							회
+						</td>
+						<th scope="row">건별 처리시간<span class="table-point">*</span></th>
+						<td>
+							<input class="small" type="text" value="5" disabled>
+							<div class="select_box small disabled">
+								<select>
+									<option>분</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">처리인원<span class="table-point">*</span></th>
+						<td>
+							<div class="input_box1">
+								<input class="small" value="1" type="text" disabled>명
+							</div>
+						</td>
+						<th scope="row">총 과제 시간</th>
+						<td>매일 10회 10분</td>
+					</tr>
+					<tr>
+						<th scope="row">과제설명</th>
+						<td colspan="3">
+							<textarea cols="45" rows="2" disabled>직원의 외부위탁교육 신청 및 수료 결과 등을 화면에 자동으로 업데이트하는 업무</textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">기대효과</th>
+						<td colspan="3">
+							<div class="ui_check_wrap">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2_1" disabled>
+									<label class="custom-control-label" for="checkBox_2_1">예외 발생 비율 낮음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2_2" checked disabled>
+									<label class="custom-control-label" for="checkBox_2_2">오류/재작업 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2_3" disabled>
+									<label class="custom-control-label" for="checkBox_2_3">담당자 변경 잦음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2_4" checked disabled>
+									<label class="custom-control-label" for="checkBox_2_4">정형/디지털화 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2_5" disabled>
+									<label class="custom-control-label" for="checkBox_2_5">부정 발생 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2_6" disabled>
+									<label class="custom-control-label" for="checkBox_2_6">활용도가 낮은 레거시 시스템</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제이슈</th>
+						<td colspan="3">
+							<textarea cols="45" rows="2" disabled></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">RPA 적합도</th>
+						<td colspan="3">
+							<div class="ui_check_wrap">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_1" disabled>
+									<label class="custom-control-label" for="checkBox_1">예외 발생 비율 낮음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_2" disabled>
+									<label class="custom-control-label" for="checkBox_2">오류/재작업 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_3" disabled>
+									<label class="custom-control-label" for="checkBox_3">담당자 변경 잦음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_4" disabled>
+									<label class="custom-control-label" for="checkBox_4">정형/디지털화 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_7" disabled>
+									<label class="custom-control-label" for="checkBox_7">부정 발생 가능성 높음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_5" disabled>
+									<label class="custom-control-label" for="checkBox_5">활용도가 낮은 레거시 시스템</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_6" disabled>
+									<label class="custom-control-label" for="checkBox_6">처리 건수 많음</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_8" disabled>
+									<label class="custom-control-label" for="checkBox_8">다수의 시스템 사용</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="checkBox_9" checked disabled>
+									<label class="custom-control-label" for="checkBox_9">시스템화 되지 못한 업무</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+	
+		<h3 class="h3_guide">01-4. 과제상세</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제상세</caption>
+				<colgroup>
+					<col style="width:5%;">
+					<col style="width:10%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th rowspan="4" style="text-align: center;">01</th>
+						<th scope="row">업무명<span class="table-point">*</span></th>
+						<td>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">활용시스템<span class="table-point">*</span></th>
+						<td>
+							<div class="select_box">
+								<select>
+									<option>선택</option>
+									<option>K-OFFICE</option>
+									<option>Microsoft Excel</option>
+									<option>SAP</option>
+									<option>e-ACCOUNTING</option>
+									<option>KF-X PLM</option>
+									<option>KAPS(생산관리시스템)</option>
+									<option>MES(현장실행시스템)</option>
+									<option>SAP</option>
+									<option>FOXPRO</option>
+									<option>HR-HUB</option>
+									<option>직접입력</option>
+								</select>
+							</div>
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">업무설명</th>
+						<td>
+							<textarea name="" cols="30" rows="2"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td>
+							<div class="table_ty2-wrap">
+								<div class="table_ty2-label">첨부파일 총용량 : 1KB</div>
+								<table class="table_ty2">
+									<caption>개발요청 첨부파일</caption>
+									<colgroup>
+										<col style="width: 30px;">
+										<col>
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col"  class="ta-c">
+												<div class="custom-control custom-checkbox only">
+													<input type="checkbox" class="custom-control-input" id="check" disabled>
+													<label class="custom-control-label" for="check"></label>
+												</div>
+											</th>
+											<th scope="col">파일명</th>
+											<th scope="col">용량</th>
+										</tr> 
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+										</tr>
+									</tbody> 
+								</table>
+								<div class="btn-wrap">
+									<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>추가</a>
+									<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i>삭제</a>
+								</div>
+							</div> 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+			
+		<h3 class="h3_guide">01-5. 과제관리 상세</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제 관리 상세</caption>
+				<colgroup>
+					<col style="width: 12%;">
+					<col>
+					<col style="width: 12%;">
+					<col style="width: 20%;">
+					<col style="width: 12%;">
+					<col style="width: 20%;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">과제명<span class="table-point">*</span></th>
+						<td><input class="middle" type="text" value="Invoice Draft 업체 송부"></td>
+						<th scope="row">프로세스명<span class="table-point">*</span></th>
+						<td><input class="middle" type="text" value="업체자료 선택"></td>
+						<th scope="row">프로세스 ID</th>
+						<td>R0217</td>
+					</tr>
+					<tr>
+						<th scope="row">담당부서<span class="table-point">*</span></th>
+						<td>
+							<button type="button" class="btn btn-y">찾기</button>
+							<span class="text">정보화지원팀</span>
+							<a href="javascript:;" class="btn_del">삭제</a><!-- 20210121 삭제 아이콘 버튼 추가 -->
+						</td>
+						<th scope="row">담당자<span class="table-point">*</span></th>
+						<td>
+							<button type="button" class="btn btn-y">찾기</button>
+							<span class="text">김설계</span>
+							<a href="javascript:;" class="btn_del">삭제</a>
+						</td>
+						<th scope="row">요청자<span class="table-point">*</span></th>
+						<td>
+							<button type="button" class="btn btn-y">찾기</button>
+							<span class="text">김설계</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제 소유자<span class="table-point">*</span></th>
+						<td>
+							<!-- 라디오 박스 -->
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" name="radio" id="radio_1" checked="checked">
+								<label class="custom-control-label" for="radio_1">부서</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" name="radio" id="radio_2">
+								<label class="custom-control-label" for="radio_2">담당자</label>
+							</div>
+							<!-- //라디오 박스 -->
+						</td>
+						<th scope="row">예상수행시간<span class="table-point">*</span></th>
+						<td>
+							<input class="small" type="text" value="4000">
+							분
+						</td>
+						<th scope="row">자동 스크립트 파일<span class="table-point">*</span></th>
+						<td>
+							<button type="button" class="btn btn-y">찾기</button>
+							<span class="text">19P101</span>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제 빈도<span class="table-point">*</span></th>
+						<td>
+							<div class="select_box">
+								<select>
+									<option>선택</option>
+									<option>수시</option>
+									<option>매일</option>
+									<option>매주</option>
+									<option>매월</option>
+									<option>매년</option>
+								</select>
+							</div>
+							<input class="small" type="text" value="1">
+							회
+						</td>
+						<th scope="row">건별 처리시간<span class="table-point">*</span></th>
+						<td>
+							<input class="small" type="text" value="50">
+							<div class="select_box">
+								<select>
+									<option>선택</option>
+									<option>초</option>
+									<option>시간</option>
+									<option>일</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row">처리인원<span class="table-point">*</span></th>
+						<td>
+							<input class="small" type="text" value="2">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">실행 횟수<br>(성공/전체)</th>
+						<td>1/1</td>
+						<th scope="row">최근 시작시간</th>
+						<td>0000-00-00 00:00</td>
+						<th scope="row">최근 종료시간</th>
+						<td>0000-00-00 00:00</td>
+					</tr>
+					<tr>
+						<th scope="row">평균 소요시간</th>
+						<td>50</td>
+						<th scope="row">최대 소요시간</th>
+						<td>50분</td>
+						<th scope="row">최소 소요시간</th>
+						<td>50분</td>
+					</tr>
+					<tr>
+						<th scope="row">예약가능 BOT</th>
+						<td colspan="5">
+							<div class="ui_check_wrap"><!-- 20210121 체크박스 정렬 추가 -->
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1">
+									<label class="custom-control-label" for="check_1">BOT1</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-1">
+									<label class="custom-control-label" for="check_1-1">BOT2</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-2">
+									<label class="custom-control-label" for="check_1-2">BOT3</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-3">
+									<label class="custom-control-label" for="check_1-3">BOT4</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-4">
+									<label class="custom-control-label" for="check_1-4">BOT5</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-5">
+									<label class="custom-control-label" for="check_1-5">BOT6</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-6">
+									<label class="custom-control-label" for="check_1-6">BOT7</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-7">
+									<label class="custom-control-label" for="check_1-7">BOT8</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-8">
+									<label class="custom-control-label" for="check_1-8">BOT9</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-9">
+									<label class="custom-control-label" for="check_1-9">BOT10</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-9">
+									<label class="custom-control-label" for="check_1-9">BOT10</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-9">
+									<label class="custom-control-label" for="check_1-9">BOT10</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-9">
+									<label class="custom-control-label" for="check_1-9">BOT10</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-9">
+									<label class="custom-control-label" for="check_1-9">BOT10</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check_1-9">
+									<label class="custom-control-label" for="check_1-9">BOT10</label>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제개발 이력</th>
+						<td colspan="5"><button class="btn btn-y" type="button">수정이력</button></td><!-- 20210121 수정이력 버튼 변경 -->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">01-6. 과제검토</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제검토</caption>
+				<colgroup>
+					<col style="width: 15%">
+					<col style="width: 35%">
+					<col style="width: 15%">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">과제소유자<span class="table-point">*</span></th>	
+						<td colspan="3">
+							<div class="custom-control custom-radio small custom-control-fst">
+								<input type="radio" class="custom-control-input exe-update" name="use_03" id="useY_03" value="Y">
+								<label class="custom-control-label" for="useY_03">부서</label>
+							</div>
+							<div class="custom-control custom-radio small custom-control-scd ">
+								<input type="radio" class="custom-control-input exe-update" name="use_03" id="useN_03" value="N" checked="checked">
+								<label class="custom-control-label" for="useN_03">담당자</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제명<span class="table-point">*</span></th>	
+						<td>
+							<input type="text">
+						</td>
+						<th scope="row">오픈 희망일</th>	
+						<td>
+							<div class="date_picker">
+								<input type="text" id="start_day">
+								<a href="javascript:;" class="btn_calendar"><label for="start_day">날짜 선택</label></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">담당부서<span class="table-point">*</span></th>	
+						<td>
+							<a href="javascript:;" class="btn btn-y">찾기</a>
+							<span class="text">ICT운영팀</span>
+						</td>
+						<th scope="row">담당자<span class="table-point">*</span></th>	
+						<td>
+							<a href="javascript:;" class="btn btn-y">찾기</a>
+							<span class="text">홍길동</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+		
+		<h3 class="h3_guide">01-6. 과제검토(disabled)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>과제검토</caption>
+				<colgroup>
+					<col style="width: 15%">
+					<col style="width: 35%">
+					<col style="width: 15%">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">과제소유자<span class="table-point">*</span></th>	
+						<td colspan="3">
+							<div class="custom-control custom-radio small custom-control-fst">
+								<input type="radio" class="custom-control-input exe-update" name="use_01" id="useY_01" value="Y" disabled>
+								<label class="custom-control-label" for="useY_01">부서</label>
+							</div>
+							<div class="custom-control custom-radio small custom-control-scd ">
+								<input type="radio" class="custom-control-input exe-update" name="use_01" id="useN_01" value="N" checked="checked" disabled>
+								<label class="custom-control-label" for="useN_01">담당자</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">과제명<span class="table-point">*</span></th>	
+						<td>
+							<input type="text" value="변경안내" disabled>
+						</td>
+						<th scope="row">오픈 희망일</th>
+						<td>
+							<div class="date_picker">
+								<input type="text" id="start_day" disabled>
+								<a href="javascript:;" class="btn_calendar" disabled><label for="start_day">날짜 선택</label></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">담당부서<span class="table-point">*</span></th>	
+						<td>
+							<a href="javascript:;" class="btn btn-y disabled">찾기</a>
+							<span class="text">ICT운영팀</span>
+						</td>
+						<th scope="row">담당자<span class="table-point">*</span></th>	
+						<td>
+							<a href="javascript:;" class="btn btn-y disabled">찾기</a>
+							<span class="text">홍길동</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+	</div>
+
+</div>
+
+<!-- custom -->
+<script src="../resources/js/ui.js"></script>
+
+<script type="text/javascript" src="./resources/js/pretty.js"></script>
+<script>
+AOS.init({
+		easing: 'ease-in-out-sine',
+		duration: 1000
+	});
+</script>
+
+</body>
+</html>

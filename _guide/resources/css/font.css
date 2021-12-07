@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Noto Sans KR Regular';
+    src: url('../fonts/NotoSansKR-Regular-Hestia.eot');
+    src: url('../fonts/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Regular-Hestia.woff2') format('woff2'),
+      url('../fonts/NotoSansKR-Regular-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Regular-Hestia.ttf') format('truetype'),
+      url('../fonts/NotoSansKR-Regular-Hestia.svg#Noto Sans KR Regular') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans KR Bold';
+    src: url('../fonts/NotoSansKR-Bold-Hestia.eot');
+    src: url('../fonts/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Bold-Hestia.woff2') format('woff2'),
+      url('../fonts/NotoSansKR-Bold-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Bold-Hestia.ttf') format('truetype'),
+      url('../fonts/NotoSansKR-Bold-Hestia.svg#Noto Sans KR Bold') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: local('HelveticaNeueLTStd-Bd');
+  }

@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>FORM Guide</title>
+    <!-- plugin -->
+    <link href="../resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/dashboard.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/content.css" rel="stylesheet" type="text/css">
+	
+	<!-- plugin -->
+	<script src="../resources/js/jquery/jquery.min.js"></script>
+	<script src="../resources/js/jquery/jquery-ui-1.12.1.js"></script>
+	<script src="../resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="../resources/js/jquery/jquery.easing.min.js"></script>
+	<script src="../resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+	<!-- custom -->
+	<script src="../resources/js/ui.js"></script>
+	
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/pretty.css">
+	<script src="./resources/js/jquery-3.2.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.min.js"></script>
+	<!--//  가이드용 -->
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">fieldset Layout</h1>
+
+	<h2 class="h2_guide">01. Form Box</h2>
+	<div class="guide_wrap">
+		<h3 class="h3_guide">01-1. ONE Column</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_run">
+								<label class="custom-control-label" for="chk_run">실행중</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_hold">
+								<label class="custom-control-label" for="chk_hold">실행대기</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_reg">
+								<label class="custom-control-label" for="chk_reg">정기실행</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_reserv">
+								<label class="custom-control-label" for="chk_reserv">예약실행</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_none">
+								<label class="custom-control-label" for="chk_none">미실행</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<div class="input-label">검색</div>
+						<div class="search_box">
+							<div class="select_box">
+								<select>
+									<option>과제명</option>
+									<option>프로세스명</option>
+									<option>프로세스ID</option>
+									<option>자동화 스크립트</option>
+									<option>과제담당자</option>
+								</select>
+							</div>
+							<input type="text" placeholder="검색어입력">
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y">찾기</a>
+								<a href="javascript:;" class="btn btn-n">RESET</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<!-- Label -->
+						<div class="input-label">영업일</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="date_picker one_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<input type="text" id="start_day">
+						</div>
+						<div class="btn-wrap">
+							<a href="javascript:;" class="btn btn-y" data-title="찾기">검색</a>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<!-- Label -->
+						<div class="input-label">기간</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+						<div class="btn-wrap">
+							<a href="javascript:;" class="btn btn-y">검색</a>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">05-2. TWO Column</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_run2">
+								<label class="custom-control-label" for="chk_run2">실행중</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_hold2">
+								<label class="custom-control-label" for="chk_hold2">실행대기</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_comp">
+								<label class="custom-control-label" for="chk_comp">완료</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_false">
+								<label class="custom-control-label" for="chk_false">실패</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">구분</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check06_05">
+								<label class="custom-control-label" for="check06_05">정기실행</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check06_06">
+								<label class="custom-control-label" for="check06_06">예약실행</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check06_07">
+								<label class="custom-control-label" for="check06_07">미실행</label>
+							</div>
+						</div>
+						<!-- Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check04_01">
+								<label class="custom-control-label" for="check04_01">실행중</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check04_02">
+								<label class="custom-control-label" for="check04_02">대기중</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check04_03">
+								<label class="custom-control-label" for="check04_03">미실행</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">검색</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="search_box">
+							<input type="text" class="middle" placeholder="검색어 입력">
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y" data-title="검색">검색</a>
+							</div>
+						</div>
+						<!-- Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">05-3. Date Picker</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-5">
+						<!-- Label -->
+						<div class="input-label">기간</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-7">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_tem">
+								<label class="custom-control-label" for="task_tem">임시저장</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_request">
+								<label class="custom-control-label" for="task_request">요청</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_receipt">
+								<label class="custom-control-label" for="task_receipt">접수</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_return">
+								<label class="custom-control-label" for="task_return">반려</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-5">
+						<!-- Label -->
+						<div class="input-label">기간</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-7">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_review">
+								<label class="custom-control-label" for="check_review">검토</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_plan">
+								<label class="custom-control-label" for="check_plan">설계</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_verify">
+								<label class="custom-control-label" for="check_verify">검증</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_devel">
+								<label class="custom-control-label" for="check_devel">개발</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_post">
+								<label class="custom-control-label" for="check_post">운영</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_discard">
+								<label class="custom-control-label" for="check_discard">폐기</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_disable">
+								<label class="custom-control-label" for="check_disable">개발불가</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->
+
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-5">
+						<!-- Label -->
+						<div class="input-label">기간</div>
+						<!-- //Label -->
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+					</div>
+					<div class="form_box-feild col-lg-7">
+						<!-- Label -->
+						<div class="input-label">검색</div>
+						<!-- // Label -->
+						<div class="search_box">
+							<input type="text" class="middle" placeholder="검색어 입력">
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y" data-title="찾기">찾기</a>
+								<a href="javascript:;" class="btn btn-n" data-title="RESET">RESET</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-6">
+						<div class="input-label">기간</div>
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+					</div>
+					<div class="form_box-feild col-lg-6">
+						<div class="input-label">검색</div>
+						<div class="search_box">
+							<div class="select_box">
+								<select>
+									<option>과제명</option>
+									<option>프로세스명</option>
+									<option>프로세스ID</option>
+									<option>자동화 스크립트</option>
+									<option>과제담당자</option>
+								</select>
+							</div>
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y" data-title="검색">검색</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->
+
+		<h3 class="h3_guide">05-4. type1</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_run2">
+								<label class="custom-control-label" for="chk_run2">실행중</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_hold2">
+								<label class="custom-control-label" for="chk_hold2">실행대기</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_comp">
+								<label class="custom-control-label" for="chk_comp">완료</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="chk_false">
+								<label class="custom-control-label" for="chk_false">실패</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">구분</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check06_05">
+								<label class="custom-control-label" for="check06_05">정기실행</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check06_06">
+								<label class="custom-control-label" for="check06_06">예약실행</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check06_07">
+								<label class="custom-control-label" for="check06_07">미실행</label>
+							</div>
+						</div>
+						<!-- Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<div class="input-label">검색</div>
+						<div class="search_box">
+							<div class="select_box">
+								<select>
+									<option>과제명</option>
+									<option>프로세스명</option>
+									<option>프로세스ID</option>
+									<option>자동화 스크립트</option>
+									<option>과제담당자</option>
+								</select>
+							</div>
+							<input type="text" placeholder="검색어입력">
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y">찾기</a>
+								<a href="javascript:;" class="btn btn-n">RESET</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->
+			
+		<h3 class="h3_guide">05-5. type2</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">기간</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-6">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_tem">
+								<label class="custom-control-label" for="task_tem">임시저장</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_request">
+								<label class="custom-control-label" for="task_request">요청</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_receipt">
+								<label class="custom-control-label" for="task_receipt">접수</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="task_return">
+								<label class="custom-control-label" for="task_return">반려</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<div class="input-label">검색</div>
+						<div class="search_box">
+							<div class="select_box">
+								<select>
+									<option>과제명</option>
+									<option>프로세스명</option>
+									<option>프로세스ID</option>
+									<option>자동화 스크립트</option>
+									<option>과제담당자</option>
+								</select>
+							</div>
+							<input type="text" placeholder="검색어입력">
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y">찾기</a>
+								<a href="javascript:;" class="btn btn-n">RESET</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->	
+		<h3 class="h3_guide">05-6. type3</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<!-- Form Box -->
+			<div class="form_box">
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-5">
+						<!-- Label -->
+						<div class="input-label">기간</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="date_picker">
+							<input type="text" id="start_day">
+							<a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+							<span class="date_line">-</span>
+							<input type="text" id="end_day">
+							<a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+					<div class="form_box-feild col-lg-7">
+						<!-- Label -->
+						<div class="input-label">상태</div>
+						<!-- // Label -->
+						<!-- Form Box input -->
+						<div class="ui_check_wrap">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_review">
+								<label class="custom-control-label" for="check_review">검토</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_plan">
+								<label class="custom-control-label" for="check_plan">설계</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_verify">
+								<label class="custom-control-label" for="check_verify">검증</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_devel">
+								<label class="custom-control-label" for="check_devel">개발</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_post">
+								<label class="custom-control-label" for="check_post">운영</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_discard">
+								<label class="custom-control-label" for="check_discard">폐기</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="check_disable">
+								<label class="custom-control-label" for="check_disable">개발불가</label>
+							</div>
+						</div>
+						<!-- // Form Box input -->
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+				<!-- Form Box Partition -->
+				<div class="form_box-row row">
+					<div class="form_box-feild col-lg-12">
+						<div class="input-label">검색</div>
+						<div class="search_box">
+							<div class="select_box">
+								<select>
+									<option>과제명</option>
+									<option>프로세스명</option>
+									<option>프로세스ID</option>
+									<option>자동화 스크립트</option>
+									<option>과제담당자</option>
+								</select>
+							</div>
+							<input type="text" placeholder="검색어입력">
+							<div class="btn-wrap">
+								<a href="javascript:;" class="btn btn-y">찾기</a>
+								<a href="javascript:;" class="btn btn-n">RESET</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // Form Box Partition -->
+			</div>
+			<!-- // Form Box -->
+		</div>
+		<!-- // View -->
+	</div>
+
+</div>
+<script type="text/javascript" src="./resources/js/pretty.js"></script>
+
+</body>
+</html>

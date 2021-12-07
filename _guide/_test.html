@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>BUTTON Guide</title>
+    <!-- plugin -->
+    <link href="../resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/content.css" rel="stylesheet" type="text/css">
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/pretty.css">
+	<script src="./resources/js/jquery-3.2.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.min.js"></script>
+	<!--//  가이드용 -->
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h2 class="h2_guide">04. Small Button</h2>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">04-2. Addtional</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-xs" type="button">버튼</button>
+			<button class="btn btn-xs" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-xs">버튼</a>
+			<a href="javascript:;" class="btn btn-xs disabled">버튼</a>
+			<input type="button" class="btn btn-xs" value="버튼">
+			<input type="button" class="btn btn-xs" value="버튼" disabled>
+		</div>
+		<!-- // View -->
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-xs" type="button">버튼</button>
+<button class="btn btn-xs" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-xs">버튼</a>
+<a href="javascript:;" class="btn btn-xs disabled">버튼</a>
+<input type="button" class="btn btn-xs" value="버튼">
+<input type="button" class="btn btn-xs" value="버튼" disabled></xmp>
+		</div>
+		<p class="guide_txt">
+			* 삭제
+		</p>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-xs" type="button">삭제</button>
+			<a href="javascript:;" class="btn btn-xs">삭제</a>
+			<input type="button" class="btn btn-xs" value="삭제">
+		</div>
+		<!-- // View -->
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-xs" type="button">삭제</button>
+<a href="javascript:;" class="btn btn-xs">삭제</a>
+<input type="button" class="btn btn-xs" value="삭제"></xmp>
+		</div>
+		<!-- //code -->
+
+		<h3 class="h3_guide">04-3. X-Small</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-a" type="button">버튼</button>
+			<button class="btn btn-a" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-a">버튼</a>
+			<a href="javascript:;" class="btn btn-a disabled">버튼</a>
+			<input type="button" class="btn btn-a" value="버튼">
+			<input type="button" class="btn btn-a" value="버튼" disabled>
+		</div>
+		<!-- // View -->
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-a" type="button">버튼</button>
+<button class="btn btn-a" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-a">버튼</a>
+<a href="javascript:;" class="btn btn-a disabled">버튼</a>
+<input type="button" class="btn btn-a" value="버튼">
+<input type="button" class="btn btn-a" value="버튼" disabled></xmp>
+		</div>
+		<!-- //code -->
+		<p class="guide_txt">
+			* 일괄 다운로드
+		</p>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-a" type="button">일괄 다운로드</button>
+			<a href="javascript:;" class="btn btn-a">일괄 다운로드</a>
+			<input type="button" class="btn btn-a" value="일괄 다운로드">
+		</div>
+		<!-- // View -->
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-a" type="button">일괄 다운로드</button>
+<a href="javascript:;" class="btn btn-a">일괄 다운로드</a>
+<input type="button" class="btn btn-a" value="일괄 다운로드"></xmp>
+		</div>
+		<!-- //code -->
+
+	</div>
+	
+		<h3 class="h3_guide">01-7. 게시글 작성</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>게시글</caption>
+				<colgroup>
+					<col style="width:13%;">
+					<col style="width:40%;">
+					<col style="width:13%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">날짜</th>
+						<td>0000.00.00</td>
+						<th scope="row">작성자</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">제목<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">내용</th>
+						<td colspan="3">
+							<textarea rows="15"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td colspan="3">
+							<div class="table_ty2-wrap">
+								<div class="table_ty2-label">첨부파일 총용량 : 0KB</div>
+								<table class="table_ty2">
+									<caption>게시글 첨부파일</caption>
+									<colgroup>
+										<col style="width:30px;">
+										<col>
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="ta-c">
+												<div class="custom-control custom-checkbox only">
+													<input type="checkbox" class="custom-control-input" id="check" disabled="">
+													<label class="custom-control-label" for="check"></label>
+												</div>
+											</th>
+											<th scope="col">파일명</th>
+											<th scope="col">용량</th>
+										</tr> 
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+										</tr>
+									</tbody> 
+								</table>
+								<div class="btn-wrap">
+									<a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>추가</a>
+									<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i>삭제</a>
+								</div>
+							</div> 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+		
+		<h3 class="h3_guide">01-7. 게시글 상세(disabled)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<table class="table_ty1">
+				<caption>게시글</caption>
+				<colgroup>
+					<col style="width:13%;">
+					<col style="width:40%;">
+					<col style="width:13%;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">날짜</th>
+						<td>0000.00.00</td>
+						<th scope="row">작성자</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">제목<span class="table-point">*</span></th>
+						<td colspan="3">
+							<input type="text">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">내용</th>
+						<td colspan="3">
+							<textarea rows="15" disabled>게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+게시판에 글을 남겨주세요!
+마지막!
+</textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td colspan="3">
+							<div class="table_ty2-wrap">
+								<div class="table_ty2-label">첨부파일 총용량 : 0KB</div>
+								<table class="table_ty2">
+									<caption>게시글 첨부파일</caption>
+									<colgroup>
+										<col style="width:30px;">
+										<col>
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" class="ta-c">
+												<div class="custom-control custom-checkbox only">
+													<input type="checkbox" class="custom-control-input" id="check" disabled="">
+													<label class="custom-control-label" for="check"></label>
+												</div>
+											</th>
+											<th scope="col">파일명</th>
+											<th scope="col">용량</th>
+										</tr> 
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="3" style="padding: 10px 0;">첨부파일이 없습니다</td>
+										</tr>
+									</tbody> 
+								</table>
+								<div class="btn-wrap">
+									<a href="javascript:;" class="btn btn-n disabled" data-title="추가"><i class="icon-plus">+</i>추가</a>
+									<a href="javascript:;" class="btn btn-n disabled" data-title="삭제"><i class="icon-minus">-</i>삭제</a>
+								</div>
+							</div> 
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- // View -->
+	</div>
+
+</div>
+</div>
+<script type="text/javascript" src="./resources/js/pretty.js"></script>
+
+</body>
+</html>

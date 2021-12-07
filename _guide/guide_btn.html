@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>BUTTON Guide</title>
+    <!-- plugin -->
+    <link href="../resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/content.css" rel="stylesheet" type="text/css">
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/pretty.css">
+	<script src="./resources/js/jquery-3.2.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.min.js"></script>
+	<!--//  가이드용 -->
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">BUTTON UI</h1>
+
+	<h2 class="h2_guide">01. Big Button (height: 34px/ 1281px ~: 40px)</h2>
+	<p class="guide_txt">
+		상세 팝업창 하단에 위치합니다.
+	</p>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">01-1. Primary (color: blue)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-ty1" type="button">버튼</button>
+			<button class="btn btn-ty1" type="button" disabled>버튼</button>
+			<a class="btn btn-ty1" href="javascript:;" role="button">버튼</a>
+			<a class="btn btn-ty1 disabled" href="javascript:;" role="button">버튼</a><!-- .disabled 추가 -->
+			<input type="button" class="btn btn-ty1" value="버튼">
+			<input type="button" class="btn btn-ty1" value="버튼" disabled>
+			<input type="submit" class="btn btn-ty1" value="버튼">
+			<input type="submit" class="btn btn-ty1" value="버튼" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-ty1" type="button">버튼</button>
+<button class="btn btn-ty1" type="button" disabled>버튼</button>
+<a class="btn btn-ty1" href="javascript:;" role="button">버튼</a>
+<a class="btn btn-ty1 disabled" href="javascript:;" role="button">버튼</a><!-- .disabled 추가 -->
+<input type="button" class="btn btn-ty1" value="버튼">
+<input type="button" class="btn btn-ty1" value="버튼" disabled>
+<input type="submit" class="btn btn-ty1" value="버튼">
+<input type="submit" class="btn btn-ty1" value="버튼" disabled></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-2. Secondary (color: gray)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-ty2" type="button">버튼</button>
+			<button class="btn btn-ty2" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-ty2" role="button">버튼</a>
+			<a href="javascript:;" class="btn btn-ty2 disabled" role="button">버튼</a><!-- .disabled 추가 -->
+			<input type="button" class="btn btn-ty2" value="버튼">
+			<input type="button" class="btn btn-ty2" value="버튼" disabled>
+			<input type="submit" class="btn btn-ty2" value="버튼">
+			<input type="submit" class="btn btn-ty2" value="버튼" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-ty2" type="button">버튼</button>
+<button class="btn btn-ty2" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-ty2" role="button">버튼</a>
+<a href="javascript:;" class="btn btn-ty2 disabled" role="button">버튼</a><!-- .disabled 추가 -->
+<input type="button" class="btn btn-ty2" value="버튼">
+<input type="button" class="btn btn-ty2" value="버튼" disabled>
+<input type="submit" class="btn btn-ty2" value="버튼">
+<input type="submit" class="btn btn-ty2" value="버튼" disabled></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">01-3. Addtional (color: red)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-ty3" type="button">버튼</button>
+			<button class="btn btn-ty3" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-ty3" role="button">버튼</a>
+			<a href="javascript:;" class="btn btn-ty3 disabled" role="button">버튼</a><!-- .disabled 추가 -->
+			<input type="button" class="btn btn-ty3" value="버튼">
+			<input type="button" class="btn btn-ty3" value="버튼" disabled>
+			<input type="submit" class="btn btn-ty3" value="버튼">
+			<input type="submit" class="btn btn-ty3" value="버튼" disabled>
+		</div>
+		<!-- // View -->
+	
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-ty3" type="button">버튼</button>
+<button class="btn btn-ty3" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-ty3" role="button">버튼</a>
+<a href="javascript:;" class="btn btn-ty3 disabled" role="button">버튼</a><!-- .disabled 추가 -->
+<input type="button" class="btn btn-ty3" value="버튼">
+<input type="button" class="btn btn-ty3" value="버튼" disabled>
+<input type="submit" class="btn btn-ty3" value="버튼">
+<input type="submit" class="btn btn-ty3" value="버튼" disabled></xmp>
+		</div>
+		<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">02. Icon Big Button (height: 34px/ 1281px ~: 40px)</h2>
+	<p class="guide_txt">
+		서브 페이지의 리스트 우측 상단에 위치합니다.
+	</p>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">02-1. Primary (color: blue)</h3>
+		<p class="guide_txt">* 저장 / 엑셀 다운로드 / 등록 / 추가</p>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">저장</span></button>
+			<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">엑셀</span></button>
+			<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_up">등록</span></button>
+			<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_ad">추가</span></button>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">저장</span></button>
+<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">엑셀</span></button>
+<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_up">등록</span></button>
+<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_ad">추가</span></button></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">02-2. Addtionald (color: red)</h3>
+		<p class="guide_txt">* 삭제</p>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-ty3" type="button"><span class="btn-icon btn-icon_de">삭제</span></button>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-ty3" type="button"><span class="btn-icon btn-icon_de">삭제</span></button></xmp>
+		</div>
+		<!-- // code -->
+
+	</div>
+
+	<h2 class="h2_guide">03. Regular Button (height: 28px)</h2>
+	<p class="guide_txt">
+		서브페이지 상단 검색영역과 상세 팝업창 내 테이블 안에 주로 사용합니다.
+	</p>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">03-1. Primary (color: blue) </h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-b" type="button">버튼</button>
+			<button class="btn btn-b" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-b">버튼</a>
+			<a href="javascript:;" class="btn btn-b disabled">버튼</a>
+			<input type="button" class="btn btn-b" value="버튼">
+			<input type="button" class="btn btn-b" value="버튼" disabled>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-b" type="button">버튼</button>
+<button class="btn btn-b" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-b">버튼</a>
+<a href="javascript:;" class="btn btn-b disabled">버튼</a>
+<input type="button" class="btn btn-b" value="버튼">
+<input type="button" class="btn btn-b" value="버튼" disabled></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">03-2. Secondary (color: gray)</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-y" type="button">버튼</button>
+			<button class="btn btn-y" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-y">버튼</a>
+			<a href="javascript:;" class="btn btn-y disabled">버튼</a>
+			<input type="button" class="btn btn-y" value="버튼">
+			<input type="button" class="btn btn-y" value="버튼" disabled>
+		</div>
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-y" type="button">버튼</button>
+<button class="btn btn-y" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-y">버튼</a>
+<a href="javascript:;" class="btn btn-y disabled">버튼</a>
+<input type="button" class="btn btn-y" value="버튼">
+<input type="button" class="btn btn-y" value="버튼" disabled></xmp>
+		</div>
+		<!-- // code -->
+		<p class="guide_txt">
+			* 찾기 / 수정이력
+		</p>
+		<div class="guide_wrap">
+			<button class="btn btn-y" type="button">수정이력</button>
+			<button class="btn btn-y" type="button" disabled>수정이력</button>
+			<a href="javascript:;" class="btn btn-y">수정이력</a>
+			<a href="javascript:;" class="btn btn-y disabled">수정이력</a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-y" type="button">수정이력</button>
+<button class="btn btn-y" type="button" disabled>수정이력</button>
+<a href="javascript:;" class="btn btn-y">수정이력</a>
+<a href="javascript:;" class="btn btn-y disabled">수정이력</a></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">03-3. Addtional</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn btn-n" type="button">버튼</button>
+			<button class="btn btn-n" type="button" disabled>버튼</button>
+			<a href="javascript:;" class="btn btn-n">버튼</a>
+			<a href="javascript:;" class="btn btn-n disabled">버튼</a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn btn-n" type="button">버튼</button>
+<button class="btn btn-n" type="button" disabled>버튼</button>
+<a href="javascript:;" class="btn btn-n">버튼</a>
+<a href="javascript:;" class="btn btn-n disabled">버튼</a></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">03. 추가 / 삭제 </h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<a href="javascript:;" class="btn btn-n"><i class="icon-plus">+</i>추가</a>
+			<a href="javascript:;" class="btn btn-n"><i class="icon-minus">-</i>삭제</a>
+			<a href="javascript:;" class="btn btn-n disabled"><i class="icon-plus">+</i>추가</a>
+			<a href="javascript:;" class="btn btn-n disabled"><i class="icon-minus">-</i>삭제</a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<a href="javascript:;" class="btn btn-n"><i class="icon-plus">+</i>추가</a>
+<a href="javascript:;" class="btn btn-n"><i class="icon-minus">-</i>삭제</a>
+<a href="javascript:;" class="btn btn-n disabled"><i class="icon-plus">+</i>추가</a>
+<a href="javascript:;" class="btn btn-n disabled"><i class="icon-minus">-</i>삭제</a></xmp>
+		</div>
+		<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. Function Button</h2>
+	<p class="guide_txt">2021-03-30 기능 버튼 추가</p>
+	<div class="guide_wrap">
+		<h3 class="h3_guide">04-1. 상세정보 보기</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn_func" type="button">
+				<i>설명</i>
+				<span>설명</span>
+			</button>
+			<a class="btn_func" href="javascript:;" role="button">
+				<i>설명</i>
+				<span>설명</span>
+			</a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn_func" type="button"><i>설명</i><span>설명</span></button>
+<a class="btn_func" href="javascript:;" role="button"><i>설명</i><span>설명</span></a></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">04-2. 실행 버튼</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn_func ty_run" type="button"><i>실행</i><span>실행</span></button>
+			<a class="btn_func ty_run" href="javascript:;" role="button"><i>실행</i><span>실행</span></a>
+			<button class="btn_func ty_res" type="button"><i>예약</i><span>예약</span></button>
+			<a class="btn_func ty_res" href="javascript:;" role="button"><i>예약</i><span>예약</span></a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn_func ty_run" type="button"><i>실행</i><span>실행</span></button>
+<a class="btn_func ty_run" href="javascript:;" role="button"><i>실행</i><span>실행</span></a>
+<button class="btn_func ty_run3" type="button"><i>실행</i><span>실행</span></button>
+<a class="btn_func ty_run3" href="javascript:;" role="button"><i>실행</i><span>실행</span></a>
+<button class="btn_func ty_res" type="button"><i>예약</i><span>예약</span></button>
+<a class="btn_func ty_res" href="javascript:;" role="button"><i>예약</i><span>예약</span></a></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">04-3. 수정/삭제</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn_func ty_mod" type="button"><i>수정</i><span>수정</span></button>
+			<a class="btn_func ty_mod" href="javascript:;" role="button"><i>수정</i><span>수정</span></a>
+			<button class="btn_func ty_del" type="button"><i>삭제</i><span>삭제</span></button>
+			<a class="btn_func ty_del" href="javascript:;" role="button"><i>삭제</i><span>삭제</span></a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn_func ty_mod" type="button"><i>수정</i><span>수정</span></button>
+<a class="btn_func ty_mod" href="javascript:;" role="button"><i>수정</i><span>수정</span></a>
+<button class="btn_func ty_del" type="button"><i>삭제</i><span>삭제</span></button>
+<a class="btn_func ty_del" href="javascript:;" role="button"><i>삭제</i><span>삭제</span></a></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">04-3. 수정/삭제</h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<a class="btn_func ty_reg" href="javascript:;" role="button"><i>수정</i><span>수정</span></a>
+		</div>
+		<!-- // View -->
+	</div>
+
+	<h2 class="h2_guide">05. Others</h2>
+
+	<div class="guide_wrap">
+		<h3 class="h3_guide">05-1. 툴팁 </h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn_help" type="button">설명 툴팁 열기</button>
+			<a href="javascript:;" class="btn_help">설명 툴팁 열기</a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn_help" type="button">설명 툴팁 열기</button>
+<a href="javascript:;" class="btn_help">설명 툴팁 열기</a></xmp>
+		</div>
+		<!-- // code -->
+
+		<h3 class="h3_guide">03-5. 삭제 </h3>
+		<!-- View -->
+		<div class="guide_wrap">
+			<button class="btn_del" type="button">삭제</button>
+			<a href="javascript:;" class="btn_del">삭제</a>
+		</div>
+		<!-- // View -->
+
+		<!-- code -->
+		<div class="d_desc code">
+			<xmp class="prettyprint linenums javascript">
+<button class="btn_del" type="button">삭제</button>
+<a href="javascript:;" class="btn_del">삭제</a></xmp>
+		</div>
+		<!-- // code -->
+	</div>
+
+</div>
+<script type="text/javascript" src="./resources/js/pretty.js"></script>
+
+</body>
+</html>
