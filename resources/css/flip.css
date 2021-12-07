@@ -1,0 +1,88 @@
+/* .flip_count {width: 800px;} */
+.flip_count {position: relative; padding-right: 62px;}
+.panel {position: relative; overflow: hidden;}
+.panel:before {position: absolute; content: ''; top: 50%; left: 0; width: 100%; height: 50%; border-style: solid; border-width: 0 1px 1px; border-color: #c5c5c5; border-radius: 0 0 8px 8px; background: #eaeaea;}
+.panel-btn {position: absolute; top: 0; right: 5px; width: 36px; height: 36px; font-size: 0; border-radius: 100%; background: #e1e0e0 url(../img/btn_ref.png) no-repeat 50% 50%;}
+.panel-body {background: rgb(213,211,211); background: linear-gradient(0deg, rgba(213,211,211,1) 0%, rgba(238,238,238,1) 100%); border: 1px solid #c5c5c5; border-radius: 8px; overflow:hidden;}
+.slotwrapper {display:flex; height:130px; flex-wrap:nowrap; flex-direction:row; justify-content:space-between; /*padding-top:2%;*/ overflow:hidden; }
+.slotwrapper ul {position: relative; width:100%; font-size: 3.8vw; line-height: 130px; text-align: center;}
+.slotwrapper ul li {position: relative; font-family: 'Jalnan'; font-weight:700; color:#2f3030;}
+.slotwrapper ul li::before {position: absolute; content: ''; top: -20%; right: -2px; bottom: 0; width: 1px; min-height: 100%; background: #fff;}
+.slotwrapper ul li::after {position: absolute; content: ''; top: -20%; right: 0; bottom: 0; width: 1px; min-height: 100%; background: #aaa;}
+.slotwrapper ul:last-of-type li::before, .slotwrapper ul:last-of-type li::after {display: none;}
+
+
+@media screen and (max-width: 1550px) {
+	/* .panel-body {margin-bottom:20px;} */
+    /* .slotwrapper {height:135px; padding-top:0;} */
+    .slotwrapper {height:100px; padding-top:3%;}
+    .slotwrapper ul {line-height: 100px;}
+    /* .slotwrapper ul {font-size:5.5vw;} */
+}
+
+@media screen and (max-width: 1350px) {
+	/* .panel-body {margin-bottom:30px;}
+    .slotwrapper {height:175px; padding-top:1.5%;} */
+    /* .slotwrapper ul {font-size:7vw;} */
+}
+
+@media screen and (max-width: 1200px) {
+    /* .slotwrapper {height:155px; padding-top:1%;} */
+    /* .slotwrapper ul {font-size:6.5vw;} */
+}
+@media screen and (max-width: 1050px) {
+    /* .slotwrapper {height:145px; padding-top:0;} */
+    .slotwrapper ul {}
+}
+@media screen and (max-width: 900px) {
+    /* .slotwrapper {height:125px; margin-top:-1%;} */
+    .slotwrapper ul {}
+}
+@media screen and (max-width: 768px) {
+    /* .slotwrapper {height:120px; margin-top:-2%;} */
+    .slotwrapper ul {}
+}
+@media screen and (max-width: 640px) {
+    /* .slotwrapper {height:115px; margin-top:-4%;} */
+    .slotwrapper ul {}
+}
+@media screen and (max-width: 560px) {
+    /* .slotwrapper {height:115px; margin-top:-6%;} */
+    .slotwrapper ul {}
+}
+@media screen and (max-width: 480px) {
+    /* .slotwrapper {height:100px; margin-top:-8%;} */
+    .slotwrapper ul {}
+}
+@media screen and (max-width: 400px) {
+    /* .slotwrapper {height:100px; margin-top:-12%;} */
+    .slotwrapper ul {}
+}
+
+
+/* Example 10 override slotwrapper */
+/* 
+#example10 {
+    height: 150px;
+}
+#example10 ul {
+    width: 150px;
+    height:150px;
+    font-size: 150px;
+    line-height: 150px;
+}
+@media screen and (max-width: 1200px) {
+    #example10 ul {
+        width: 18%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #example10 {
+        height: 100px;
+    }
+    #example10 ul {
+        height:100px;
+        font-size: 100px;
+        line-height: 100px;
+    }
+} */

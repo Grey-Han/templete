@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url("../css/flip.css");
+
+/* 업무자동화 top4 */
+.win_list {max-height: 300px;}
+.win_list-item {display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 10px 0;}
+.win_list-item + .win_list-item {border-top: 1px dotted #999;}
+.win_list {display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+.win_list .win-rank {/*font-family: 'Jalnan'; */color: #b9b9b8; font-weight: 700; font-size: 1.45rem; background: url(../img/icon_crown.png) no-repeat 0 50%; background-size: 28px auto; padding-left: 32px; word-break: keep-all;}
+.win_list-item:nth-of-type(1) .win-rank {color: #f0df53; background-image: url(../img/icon_crown1.png);}
+.win_list-item:nth-of-type(2) .win-rank {color: #619cde; background-image: url(../img/icon_crown2.png);}
+.win_list-item:nth-of-type(3) .win-rank {color: #d88a62; background-image: url(../img/icon_crown3.png);}
+.win_list-item:nth-of-type(4) .win-rank {color: #65cdd1; background-image: url(../img/icon_crown4.png);}
+.win_list .win-tit {font-size: 1.375rem; color: #2f3030; font-weight: 500; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-left: 30px;}
+.win_list .win-tit span {font-size: 1rem; color: #6f7070; padding-left:3px;}
+.win_list .win-cont {font-weight: 700; font-size: 1.28rem; color: #dc3545; text-align: right; word-break: keep-all; margin-left: auto;}
+
+/* 업무자동화top4 select box */
+.select_wrap {position: relative;}
+.select_wrap .select_box {position: absolute; top: 0; top: 10%; right: 5%; height: 30px; margin-right: 0;}
+
+/* COMPARE */
+.compare_box {display: flex; height: 100%; color: #2f3030; font-size: 1.6rem; text-align: center; overflow: hidden; margin: 10px -40px 0; background: url(../img/icon_arrow.png) no-repeat 50% 50%;}
+.compare_box .compare_item {flex: 1; align-self: center; padding: 0 40px;}
+.compare_box .compare_item:last-of-type .compare-txt {color: #dc3545;}
+.compare_box .compare-tit {font-family: 'Jalnan'; font-size: 1.75rem; margin-bottom: 5px;}
+.compare_box .compare-img {width: 100%; max-width: 150px;}
+.compare_box .compare-txt {font-weight: 500; margin-top: 5px;}
+
+/* 이달의 신규업무 */
+.task_list {text-align: left; margin-top: 10px;}
+.task_label { font-weight: 500; color: #2f3030;}
+.task_label span {display: inline-block; font-weight: 400; vertical-align: middle; font-size: 0.938rem; color: #fff; margin: 0 4px 2px 0; padding: .5px 6px 1.5px; background-color: #0d3562; border-radius: 12px;}
+.task_label + .task_label {margin-top: .5rem;}
+.task_list-item + .task_list-item {border-top: 1px dotted #ddd;}
+.task_list-item {padding: 0.7rem 0;}
+.task_label.label_2 {font-size: 14.5px; font-weight: 300; color: #5b6a7b;}
+.task_label.label_2 span {background-color: #5b6a7b;}
+
+/* 신규 업무 없음 */
+.no_task {padding-top: 6%; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; text-align: center;}
+.no_task > img {width: 100%; max-width: 130px;}
+.no_task > span {display: inline-block; font-size: 1.3rem; color: #d2d6dc; margin-top: 10px;}
+
+/* RPA 우수사례 */
+.prom_slide {position: relative; height: 100%;}
+.prom_slide .slide-tit {font-weight: 500; margin: 4% 0; color: #5388c5;}
+.prom_slide .slide-txt_wrap {display: inline-block; padding: 0 5% 4px; border: 2px solid #8dcdef; border-radius: 23.5px;}
+.prom_slide .slide-txt {display: inline-block; font-weight: 600;}
+.prom_slide .slide-txt + .slide-txt {position: relative; padding-left: 30px; margin-left: 10px;}
+
+/* 텍스트 중간 화살표 */
+.prom_slide .slide-txt + .slide-txt:before {content: ''; position: absolute; top: 50%; left: 0; width: 10px; height: 10px; background-color: #8dcdef; transform: translateY(-2px);}
+.prom_slide .slide-txt + .slide-txt:after {content: ''; display: inline-block; position: absolute; top: 50%; left: 3px; border-width: 7px; border-style: solid; border-color: #8dcdef #8dcdef transparent transparent; transform: rotate(45deg); margin-top: -4px;}
+.prom_slide .slide-txt span {font-size: 1.375rem; color: #2f3030;}
+.prom_slide .slide-txt + .slide-txt span {font-size: 1.6rem; color: #dc3545;}
+.prom_slide .slide-btn {position: absolute; top: 30%; width: 40px; height: 40px; font-size: 0; transform: translateY(-50%);}
+.prom_slide .slide-btn:hover:after {border-color: #8dcdef;}
+.prom_slide .slide-btn:after {display: inline-block; content: ''; width: 20px; height: 20px; margin-top: 6px; border-width: 0 0 5px 5px; border-style: solid; border-color: #ddd;}
+.slide-btn.prev_btn {left: 10%;}
+.slide-btn.prev_btn:after {transform: rotate(45deg);}
+.slide-btn.next_btn {right: 10%;}
+.slide-btn.next_btn:after {transform: rotate(-135deg);}
+
+/* ROI 총비용절감이랑 차트 */
+.roi-tit_1 {font-weight: 500;}
+.roi-tit_1 span {display: block; font-size: 1.875rem; color: #000; font-weight: 700;}
+.roi-tit_2 {font-family: 'Jalnan'; font-size: 1.688rem; color: #8f9090;}
+.roi-tit_2 span {font-family: inherit; font-size: 2rem; color: #34c7cb;}
+
+.roi_box {height: 100%; overflow: hidden;}
+.roi_box .roi_text_wrap {float: left; position: relative; text-align: left; height: 100%; padding-top: 3.5%;}
+.roi_box .roi_text_wrap .roi_tit {font-family: 'Jalnan'; font-size: 1.5rem; color: #8f9090; line-height: 1; margin-bottom: 5px;}
+.roi_box .roi_text_wrap .select_box {margin-top: 20px;}
+.roi_box .roi_text_wrap .roi_tit > span {display: block; font-family: inherit; font-size: 2rem; color: #34c7cb;}
+.roi_box .roi_chart_wrap {float: right; width: calc(100% - 150px); height: 100%;}
+.roi_box .roi_chart_wrap .chart-wrap {position: relative; /*height: 350px;*/ height: 100%;}
+.roi_box .roi_text_wrap .bar_chart-label_wrap {position: absolute; bottom: 5%; left: 0;}
+
+.bar_chart-label {font-style: italic; font-weight: 500;}
+.bar_chart-label::before {content: ''; display: inline-block; width: 12px; height: 12px; margin-right: 4px; background-color: #ddd;}
+.bar_chart-label.label_1::before {background-color: #34c7cb;}
+.bar_chart-label.label_2::before {background-color: #d0d7d7;}
+
+/* 업무현황 Task Ranking */
+.task_box {display: flex; flex-direction: column; position: relative; height: 100%;}
+.task_box .task-tit {font-family: 'Jalnan'; font-size: 1.6rem; margin-bottom: 10px;}
+.task_box .task-tit span {font-family: inherit; font-size: 2.25rem;; color: #e97274;} 
+
+.board_box {display: flex; flex-direction: column; justify-content: space-between; height: 100%;}
+.board_box-item {flex: 1; font-size: 15px; padding: 10px 0;} 
+.board_box-item dl {display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 0 15px; border: 1px solid #ddd; border-radius: 15px; background-color: #f2f2f2;}
+.board_box-item dt::after {content: ''; display: block; width: 100%; height: 1px; margin-top: 10px; background-color: #ccc;}
+.board_box-item dd {overflow: hidden;}
+.board_box-txt_1 {float: left; color: #000; font-weight: 500;padding-top: 12px;}
+.board_box-txt_2 {float: right;}
+.board_box-txt_2 span {font-weight: 700;font-size: 2rem;}
+
+.chart_list {display: flex; flex-wrap: wrap; flex: 1;}
+.chart_list > li {display: flex; flex: 0 0 33.3333%;  max-width: 33.3333%; overflow: hidden;}
+.chart_list-graph {align-self: center; min-width: 45%;}
+.chart_list-text_wrap {display: flex; float: left; flex-wrap: wrap; align-content: center; width: 55%; height: 100%; font-weight: 500; text-align: left; padding-left: 5px;}
+.chart_list-txt {width: 100%; line-height: 1.1; font-weight: 400;}
+.chart_list-txt > span {display: block; color: #000; font-size: 1.28rem; font-weight: 700; margin-bottom: 4px;}
+.chart_list-txt .txt_pos {display: inline-block; word-break: keep-all;}
+.chart_list-num {display: block; width: 100%; color: #dc3545; font-size: 1.25rem;}
+.task_box .select_box {position: absolute; top: 10px; right: 0; width: 100px; height: 30px;}
+
+/* 사내 모니터 해상도 최적화 */
+@media (max-width: 1280px) {
+    .win_list .win-tit {margin-left: 10px;}
+    .select_wrap .select_box {top: 8%;}
+}
+
+@media (max-width: 1200px) {
+    .compare-txt span{font-size: 1rem;}
+    .board_box-item dl {padding: 6px 10px 4px;}
+    .board_box-txt_2 span {font-size: 1.35rem;}
+    .board_box-txt_1 {padding-top: 5px;}
+}
+
+@media (max-width: 980px) {
+    .board_box {padding:25px;}
+    .board_box-item {padding: 10px ;}
+    .task_box {padding: 22px;}
+    .task_box .select_box {right: 20px; }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .roi_box .roi_text_wrap,
+    .roi_box .roi_chart_wrap {float: none; width: 100%;}
+    .roi_box .roi_text_wrap .roi_txt {margin-bottom: 5px;}
+    .roi_box .roi_text_wrap .bar_chart-label_wrap {position: static;}
+    .roi_box .roi_text_wrap .select_box {position: absolute; top: 10px; right: 0; margin: 0;}
+}
