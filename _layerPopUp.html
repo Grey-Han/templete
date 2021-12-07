@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top" class="sidebar-toggled" style="overflow-y: hidden;">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item active">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item active" href="javascript:;">전체 ROI</a>
+                    <a class="collapse-item" href="javascript:;">가동율</a>
+                    <a class="collapse-item" href="javascript:;">성공율</a>
+                    <a class="collapse-item" href="javascript:;">과제</a>
+                    <!-- <a class="collapse-item" href="javascript:;">운영목록</a> -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <a class="collapse-item" href="javascript:;">나의요청</a>
+                    <a class="collapse-item" href="javascript:;">개발요청</a>
+                    <!-- <a class="collapse-item" href="javascript:;">정기실행</a> -->
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <!-- <a class="collapse-item" href="javascript:;">나의정보관리</a> -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">개발요청</a>
+                    <!-- <a class="collapse-item" href="javascript:;">정기실행</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자 안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿 관리</a> -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의할일</a>
+                    <a class="collapse-item" href="javascript:;">과제접수</a>
+                    <a class="collapse-item" href="javascript:;">과제개발</a>
+                    <!-- <a class="collapse-item" href="javascript:;">정기실행</a>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a> -->
+                    <a class="collapse-item" href="javascript:;">기준정보관리</a>
+                    <a class="collapse-item" href="javascript:;">활용시스템</a>
+                    <a class="collapse-item" href="javascript:;">RPA 적합도</a>
+                    <a class="collapse-item" href="javascript:;">일율 관리</a>
+                    <!-- <a class="collapse-item" href="javascript:;">자원관리</a>
+                    <a class="collapse-item" href="javascript:;">BOT 관리</a>
+                    <a class="collapse-item" href="javascript:;">라이선스 관리</a> -->
+                </div>
+            </div>
+        </li>
+        
+        <!-- Nav Item - 통계 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제</a>
+                    <a class="collapse-item" href="javascript:;">프로세스</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li> -->
+
+        <!-- Nav Item - 커뮤니티 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li> -->
+
+        <!-- Nav Item - 로그인 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="javascript:;">
+                <span>SSO 로그인</span>
+            </a>
+        </li> -->
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+            <!-- shinhan logo -->
+            <div class="sh_logo-wrap">
+                <h1 class="sh_logo">
+                    <a href="/">신한금융투자 RPA Platform</a>
+                </h1>
+            </div>
+
+            <!-- Topbar utill -->
+            <div class="sh_utill">
+                <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                <div class="sh_logout-wrap dropdown no-arrow">
+                    <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- contents wrapper -->
+                <div class="content_innr">
+
+                    <!-- Page Heading -->
+                    <div class="content-tit">
+                        <h1 class="sh_tit">나의 과제</h1>
+                    </div>
+
+                    <!-- page navigator -->
+                    <div class="navigator">
+                        <a class="navigator-home" href="javascript:;">
+                            <span>HOME</span>
+                        </a>
+                        <span>마이페이지</span>
+                        <!-- <span>템플릿 관리</span> -->
+                        <span class="navigator-cur">나의 과제</span>
+                    </div>
+
+                    <!-- form feild box -->
+                    <div class="form_box">
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-8 col-md-12">
+                                <div class="input-label">구분</div>
+                                <div class="ui_check_wrap">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check_1">
+                                        <label class="custom-control-label" for="check_1">실행중</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check_2">
+                                        <label class="custom-control-label" for="check_2">실행대기</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check_3">
+                                        <label class="custom-control-label" for="check_3">정기실행</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check_4">
+                                        <label class="custom-control-label" for="check_4">예약실행</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check_5">
+                                        <label class="custom-control-label" for="check_5">미실행</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-12">
+                                <div class="input-label">검색</div>
+                                <div class="input-wrap sorting_box">
+                                    <div class="select_box">
+                                        <select>
+                                            <option>프로세스코드</option>
+                                        </select>
+                                    </div>
+                                    <!-- <label></label> -->
+                                    <input type="text" placeholder="템플릿코드" value="">
+                                    <input type="text" placeholder="템플릿명" value="">
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="btn btn-y" data-title="찾기">찾기</a>
+                                        <a href="javascript:;" class="btn btn-n" data-title="RESET">RESET</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- table wrapper -->
+                    <div class="table_box table_box-btn_wrap">
+                        <div class="table_box-label">총 <span>100</span>건</div>
+                        <table class="sh_table table table_text">
+                            <caption>템플릿 관리 목록</caption>
+                            <colgroup>
+                                <co>
+                                <col style="width:8%;">
+                                <col style="width:5.5%;">
+                                <col style="width:8%;">
+                                <col style="width:7%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">내용</th>
+                                    <th scope="col">그룹명</th>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>[개발] 과제개발 검토까지 처리</td>
+                                    <td>그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>요청</td>
+                                </tr>
+                                <tr>
+                                    <td>[개발 RPA 포탈] 극장식 예약 화면에서 예약 내용이 누락 테스트</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>과제명과제명과제명과제명과제명과제명과제명과제명과제명</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                                <tr>
+                                    <td>[개발] 과제개발 검토까지 처리</td>
+                                    <td>그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>요청</td>
+                                </tr>
+                                <tr>
+                                    <td>[개발 RPA 포탈] 극장식 예약 화면에서 예약 내용이 누락 테스트</td>
+                                    <td>그룹명그룹명</td>
+                                    <td>김이름</td>
+                                    <td>2020-00-00</td>
+                                    <td>첨부파일</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-pagination">
+                            <ul>
+                                <li><a href="javascript:;" class="page_link">1</a></li>
+                                <li><a href="javascript:;" class="page_link">2</a></li>
+                                <li><a href="javascript:;" class="page_link">3</a></li>
+                            </ul>
+                        </div>
+                        <div class="table_box-btn">
+                            <!-- <button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">캘린더</span></button> -->
+                            <button class="btn btn-ty1" type="button">개발요청</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<div class="dimmed"></div><!-- DIMMED -->
+
+<!-- POPUP PAGE -->
+<div class="pop_box shadow" style="right: 0px;">
+    <div class="pop_box-innr">
+    <!-- Page Heading -->
+        <h3 class="pop-tit">과제요청</h3>
+        <!-- popup container -->
+        <div class="pop-body">
+            <!-- pop section -->
+            <div class="pop-part">
+                <h3 class="pop-part-tit">과제개요</h3>
+                <div class="table_ty1-wrap">
+                    <table class="table_ty1">
+                        <caption>프로세스 시작 및 수행시간</caption>
+                        <colgroup>
+                            <col style="width:13%;">
+                            <col style="width:40%;">
+                            <col style="width:13%;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">과제명<span class="table-point">*</span></th>
+                                <td colspan="3">
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">부서<span class="table-point">*</span></th>
+                                <td>ICT운영팀</td>
+                                <th scope="row">요청자<span class="table-point">*</span></th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">과제빈도<span class="table-point">*</span></th>
+                                <td>
+                                    <div class="input_box1">
+                                        <div class="select_box">
+                                            <select>
+                                                <option>매일</option>
+                                            </select>
+                                        </div>
+                                        <input type="text">
+                                        회
+                                    </div>
+                                </td>
+                                <th scope="row">건별 처리시간</th>
+                                <td>
+                                    <div class="input_box1">
+                                        <input type="text" value="50">
+                                        <div class="select_box">
+                                            <select>
+                                                <option>분</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">처리인원<span class="table-point">*</span></th>
+                                <td>
+                                    <div class="input_box1">
+                                        <input type="text"> 명
+                                    </div>
+                                </td>
+                                <th scope="row">총 과제 시간</th>
+                                <td>매일 2회 / 20분</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">과제설명</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">과제이슈</th>
+                                <td colspan="3">-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">기대효과</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">RPA 적합도</th>
+                                <td colspan="3">
+                                    <div class="pop-check_wrap">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_1" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_1">예외 발생 비율 낮음</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_2" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_2">오류/재작업 가능성 높음</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_3" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_3">담당자 변경 잦음</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_1" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_1">정형/디지털화 가능성 높음</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_2" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_2">부정 발생 가능성 높음</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_3" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_3">활용도가 낮은 레거시 시스템</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_1" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_1">처리 건수 많음</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_2" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_2">다수의 시스템 사용</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkBox_3" checked="checked">
+                                            <label class="custom-control-label" for="checkBox_3">시스템화 되지 못한 업무</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- // pop section -->
+            <!-- pop section -->
+            <div class="pop-part">
+                <h3 class="pop-part-tit">과제개요</h3>
+                <div class="table_ty1-wrap">
+                    <table class="table_ty1">
+                        <caption>프로세스 시작 및 수행시간</caption>
+                        <colgroup>
+                            <col style="width:5%;">
+                            <col style="width:10%;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th rowspan="4" style="text-align: center;">01</th>
+                                <th scope="row">과제명<span class="table-point">*</span></th>
+                                <td colspan="3">
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">업무시스템<span class="table-point">*</span></th>
+                                <td colspan="3">
+                                    <div class="input_box1">
+                                        <div class="select_box">
+                                            <select>
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">업무설명</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td colspan="3">
+                                <div class="table_ty2-wrap">
+                                        <div class="table_ty2-label">첨부파일 총용량 : 1KB</div>
+                                        <div class="btn-wrap">
+                                            <a href="javascript:;" class="btn btn-n" data-title="추가"><i class="icon-plus">+</i>추가</a>
+                                            <a href="javascript:;" class="btn btn-n" data-title="삭제"><i class="icon-minus">-</i>삭제</a>
+                                        </div>
+                                    <table class="table_ty2">
+                                            <caption>템플릿개요 첨부파일</caption>
+                                            <colgroup>
+                                                <col style="width: 30px;">
+                                                <col>
+                                                <col style="width:15%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" style="text-align: center;">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check">
+                                                            <label class="custom-control-label" for="check"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">용량</th>
+                                                </tr> 
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row" style="text-align: center;">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check1">
+                                                            <label class="custom-control-label" for="check1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>과제개발파일명텍스트과제개발파일명텍스트.txt</td>
+                                                    <td>text</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" style="text-align: center;">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check2">
+                                                            <label class="custom-control-label" for="check2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>과제개발파일명텍스트과제개발파일명텍스트.txt</td>
+                                                    <td>000 KB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" style="text-align: center;">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="check3">
+                                                            <label class="custom-control-label" for="check3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>과제개발파일명텍스트과제개발파일명텍스트.txt</td>
+                                                    <td>text</td>
+                                                </tr>
+                                            </tbody> 
+                                    </table>
+                                </div> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- // pop section -->
+            <div class="ta-r pop-btn_wrap">
+                <a href="javascript:;" class="btn btn-ty1">자가진단</a>
+                <a href="javascript:;" class="btn btn-ty1 disabled">임시저장</a>
+                <a href="javascript:;" class="btn btn-ty1 disabled">개발요청</a>
+            </div>
+        </div>
+    </div>
+    <!-- //popup container -->
+    <a href="javascript:;" class="btn-close">닫기</a>
+</div>
+<!-- // POPUP PAGE -->
+
+<div class="dimmed over"></div><!-- popup over dim -->
+
+<!-- small popup -->
+<div class="pop_box_small w850" style="min-height:auto; height:500px;">
+    <div class="pop_s-innr">
+        <div class="pop-header">
+            <span>과제개발 처리내역</span>
+        </div>
+        <div class="pop-container">
+            <div class="pop-content">
+                <div class="table_scrl_wrap">
+                    <div class="table_scrl">
+                        <table class="table_ty2">
+                            <colgroup>
+                                <col style="width:60px;">
+                                <col style="width:80px;">
+                                <col style="width:440px;">
+                                <col style="width:100px;">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th style="width:60px;" scope="row">구분</th>
+                                    <th style="width:80px;" scope="row">상태</th>
+                                    <th style="width:440px;" scope="row">내용</th>
+                                    <th style="width:100px;" scope="row">등록자</th>
+                                    <th scope="row">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p class="ta-c">오픈</p></td>
+                                    <td><p class="ta-c">운영</p></td>
+                                    <td><strong class="tc-black tw_bold">운영시작합니다.</strong></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="ta-c">검토</p></td>
+                                    <td><p class="ta-c">오픈대기</p></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="ta-c">오픈</p></td>
+                                    <td><p class="ta-c">요청자<br>확인완료</p></td>
+                                    <td><strong class="tc-black tw_bold">건별 처리시간이 장시간 소요되는 사항은 불가합니다.</strong></td>
+                                    <td><p class="ta-c">하이봇00</p></td>
+                                    <td>2020-03-19</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="ta-c">오픈</p></td>
+                                    <td><p class="ta-c">운영</p></td>
+                                    <td><strong class="tc-black tw_bold">건별 처리시간이 장시간 소요되는 사항은 불가합니다.</strong></td>
+                                    <td><p class="ta-c">하이봇00</p></td>
+                                    <td>2020-03-19</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="ta-c">오픈</p></td>
+                                    <td><p class="ta-c">운영</p></td>
+                                    <td><strong class="tc-black tw_bold">건별 처리시간이 장시간 소요되는 사항은 불가합니다.</strong></td>
+                                    <td><p class="ta-c">하이봇00</p></td>
+                                    <td>2020-03-19</td>
+                                </tr>
+                                <tr>
+                                    <td><p class="ta-c">오픈</p></td>
+                                    <td><p class="ta-c">운영</p></td>
+                                    <td><strong class="tc-black tw_bold">건별 처리시간이 장시간 소요되는 사항은 불가합니다.</strong></td>
+                                    <td><p class="ta-c">하이봇00</p></td>
+                                    <td>2020-03-19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="btn-pop-close">닫기</a>
+</div>
+<!-- //small popup -->
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/common.js"></script>
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>

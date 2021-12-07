@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>:::::페이지 리스트:::::신한금융투자</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <style>
+        a, a:visited {color: #35b5f8;}
+        a:hover {color: #04448b;}
+        /* table th {font-size: 15px;} */
+        table tr.act td {background-color: #f5f5f5;}
+        table tr td:nth-last-of-type(2) {text-align: center;}
+        .update {color: #f6c23e;}
+        i {font-size: 12px; color: red}
+        .first {color: #dedede;}
+    </style>
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 20210406 메뉴추가 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" aria-expanded="true" aria-controls="collapseReq">
+                <span>개발요청</span>
+            </a>
+        </li>
+        
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의요청</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">개발요청</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행요청</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 헬프데스크 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿관리</a>
+                    <a class="collapse-item" href="javascript:;">영업일조회</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의할일</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">과제접수</a></li>
+                        <li><a class="depth2_item" href="javascript:;">과제개발</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행관리</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">기준정보관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">활용시스템</a></li>
+                        <li><a class="depth2_item" href="javascript:;">RPA적합도</a></li>
+                        <li><a class="depth2_item" href="javascript:;">일율관리</a></li>
+                    </ul>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">자원관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">BOT관리</a></li>
+                        <li><a class="depth2_item" href="javascript:;">라이선스관리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item active">
+            <a class="nav-link" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse show" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                    <!-- <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a>
+                    <a class="collapse-item" href="javascript:;">TEST</a> -->
+                </div>
+            </div>
+        </li>
+        
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+            <!-- shinhan logo -->
+            <div class="sh_logo-wrap">
+                <h1 class="sh_logo">
+                    <a href="/">신한금융투자 RPA Platform</a>
+                </h1>
+            </div>
+
+            <!-- Topbar utill -->
+            <div class="sh_utill">
+                <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                <div class="sh_logout-wrap dropdown no-arrow">
+                    <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+                <h2 style="text-align: center; font-size: 18px; color: #222;">페이지 리스트</h2>
+                <div style="float: right; text-align: right; margin-bottom: 4px;">
+                    <div style="margin-bottom: 4px; color: #f6c23e;">LAST UPDATE: 4/16</div>
+                </div>
+                <table class="table table-bordered">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: 13%;">
+                        <col>
+                        <col style="width: 7%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <th colspan="4" scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">화면</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">유형</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">파일명</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;" >상태</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;" >비고</th>
+                        </tr>
+                        <tr>
+                            <td colspan="4">가이드</td>
+                            <td></td>
+                            <td><a href="./_guide/index.html" target="_blank">_guide/index.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">로그인</td>
+                            <td></td>
+                            <td><a href="./_login.html" target="_blank">_login.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">1depth</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">2depth</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">3depth</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;">페이지</th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;"><!-- 유형 --></th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;"><!-- 파일명 --></th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;" ><!-- 상태 --></th>
+                            <th scope="col" style="background-color: #fafafa; text-align: center; font-weight: 700; color: #222; padding: 5px;" ><!-- 비고 --></th>
+                        </tr>
+                        <!-- 홈(대시보드) -->
+                        <tr>
+                            <td rowspan="5" style="vertical-align: middle; text-align: center; color: #222;">홈(대시보드)</td>
+                            <td rowspan="2" colspan="2">절감시간</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./main.html" target="_blank">main.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>과제목록</td>
+                            <td></td>
+                            <td><a href="./main_pop.html" target="_blank">main_pop.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">ROI</td>
+                            <td></td>
+                            <td><a href="./roi.html" target="_blank">roi.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">업무현황</td>
+                            <td></td>
+                            <td><a href="./task.html" target="_blank">task.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">신규업무</td>
+                            <td></td>
+                            <td><a href="./new.html" target="_blank">new.html</a></td>
+                            <td class="first">완료</td>
+                            <td class="update"></td>
+                        </tr>
+                        <!-- // 홈(대시보드) -->
+                        <!-- 마이페이지 -->
+                        <tr>
+                            <td rowspan="14" style="vertical-align: middle; text-align: center; color: #222;">마이페이지</td>
+                            <td rowspan="4" colspan="2">나의과제</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./MY003.html" target="_blank">MY003.html</a></td>
+                            <td class="first">완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <!-- <td class="update">예약/정기 실행 버튼 수정</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>과제상세</td>
+                            <td></td>
+                            <td><a href="./MY004.html" target="_blank">MY004.html</a></td>
+                            <td class="first">완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <!-- <td class="update">예약/정기 실행 버튼 수정</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>예약실행</td>
+                            <td></td>
+                            <td>
+                                <a href="./MY004_01.html" target="_blank">MY004_01.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>정기실행</td>
+                            <td></td>
+                            <td><a href="./MY004_02.html" target="_blank">MY004_02.html</a></td>
+                            <td>완료</td>
+                            <!-- <td class="update">업데이트</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8">나의요청</td>
+                            <td rowspan="6">개발요청</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./MY008.html" target="_blank">MY008.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">상세</td>
+                            <td><strong>(개발요청화면)</strong></td>
+                            <td><a href="./MY009_01.html" target="_blank">MY009_01.html</a></td>
+                            <!-- <td class="update">업데이트</td> -->
+                            <td class="first">완료</td>
+                            <!-- <td class="update">수정요건 적용</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>(임시저장 상태)</strong></td>
+                            <td><a href="./MY009_02.html" target="_blank">MY009_02.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>(개발 요청중 화면)</strong></td>
+                            <td><a href="./MY009_03.html" target="_blank">MY009_03.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>(접수/취소 상태일시)</strong></td>
+                            <td><a href="./MY009_04.html" target="_blank">MY009_04.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>(페이지 변경)</strong></td>
+                            <td><a href="./MY009_05.html" target="_blank">MY009_05.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">정기실행요청</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./RPT_MYP_013.html" target="_blank">RPT_MYP_013.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <a href="./RPT_MYP_014.html" target="_blank">RPT_MYP_014.html</a>
+                                <!-- RPT_MYP_014.html -->
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">나의과제개발</td>
+                            <td></td>
+                            <td><a href="./MY016.html" target="_blank">MY016.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">나의정보관리</td>
+                            <td></td>
+                            <td><a href="./mypage_edit.html" target="_blank">mypage_edit.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <!-- // 마이페이지 -->
+                        <!-- 헬프데스크 -->
+                        <tr>
+                            <td rowspan="12" style="vertical-align: middle; text-align: center; color: #222;">헬프데스크</td>
+                            <td rowspan="3" colspan="2" style="vertical-align: middle;">공지사항</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./HE003.html" target="_blank">HE003.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td>
+                                <a href="./HE003_01.html" target="_blank">HE003_01.html</a>
+                                <!-- HE003_01.html -->
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <a href="./HE003_02.html" target="_blank">HE003_02.html</a>
+                                <!-- HE003_01.html -->
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="3" style="vertical-align: middle;">FAQ</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./HE007.html" target="_blank">HE007.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td><a href="./HE008.html" target="_blank">HE008.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./HE009.html" target="_blank">HE009.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="3" style="vertical-align: middle;">Q&amp;A</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./HE010.html" target="_blank">HE010.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td><a href="./HE011.html" target="_blank">HE011.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./HE012.html" target="_blank">HE012.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="vertical-align: middle;">담당자 안내</td>
+                            <td></td>
+                            <td><a href="./HE099.html" target="_blank">HE099.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="vertical-align: middle;">탬플릿 관리</td>
+                            <td></td>
+                            <td>
+                                <!-- <a href="./HE003.html" target="_blank">HE003.html</a> -->
+                                HE003.html
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="vertical-align: middle;">영업일 조회</td>
+                            <td></td>
+                            <td>
+                                <!-- <a href="./HE003.html" target="_blank">HE003.html</a> -->
+                                HE003.html
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!-- 헬프데스크 -->
+                        <!-- 관리자 -->
+                        <tr>
+                            <td rowspan="42" style="vertical-align: middle; text-align: center; color: #222;">관리자</td>
+                            <td rowspan="24" style="vertical-align: middle;">나의할일</td>
+                            <td rowspan="2">과제접수</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./AD001.html" target="_blank">AD001.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./AD001_01.html" target="_blank">AD001_01.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="19">과제개발</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./AD006.html" target="_blank">AD006.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td>이력<i>팝업</i></td>
+                            <td><a href="./taskprocess_pop_history.html" target="_blank">taskprocess_pop_history.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7"><strong>검토</strong></td>
+                            <td></td>
+                            <td><a href="./taskprocess_discussPop.html" target="_blank">taskprocess_discussPop.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[툴팁] 참고난이도</td>
+                            <td><a href="./taskprocess_discussPop_tip1.html" target="_blank">taskprocess_discussPop_tip1.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[툴팁] 개발공수</td>
+                            <td><a href="./taskprocess_discussPop_tip2.html" target="_blank">taskprocess_discussPop_tip2.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[툴팁] 프로세스 표준화 수준</td>
+                            <td><a href="./taskprocess_discussPop_tip3.html" target="_blank">taskprocess_discussPop_tip3.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[툴팁] 연계 Application 수</td>
+                            <td><a href="./taskprocess_discussPop_tip4.html" target="_blank">taskprocess_discussPop_tip4.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[툴팁] 연계 Application 활용 수준 </td>
+                            <td><a href="./taskprocess_discussPop_tip5.html" target="_blank">taskprocess_discussPop_tip5.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[툴팁] RPA 자동화 시 특수 기능 사용</td>
+                            <td><a href="./taskprocess_discussPop_tip6.html" target="_blank">taskprocess_discussPop_tip6.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4"><strong>설계</strong></td>
+                            <td></td>
+                            <td><a href="./taskprocess_planPop.html" target="_blank">taskprocess_planPop.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[탭] 프로세스 생성</td>
+                            <td><a href="./taskprocess_planPop_1.html" target="_blank">taskprocess_planPop_1.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[탭] 사용채널</td>
+                            <td><a href="./taskprocess_planPop_3.html" target="_blank">taskprocess_planPop_3.html</a></td>
+                            <td class="first">완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[탭] 탬플릿</td>
+                            <td><a href="./taskprocess_planPop_4.html" target="_blank">taskprocess_planPop_4.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>검증</strong></td>
+                            <td></td>
+                            <td><a href="./taskprocess_verificationPop.html" target="_blank">taskprocess_verificationPop.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>개발</strong></td>
+                            <td></td>
+                            <td><a href="./taskprocess_developPop.html" target="_blank">taskprocess_developPop.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4"><strong>개시</strong></td>
+                            <td></td>
+                            <td><a href="./taskprocess_managePop.html" target="_blank">taskprocess_managePop.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[팝업] 담당부서</td>
+                            <td><a href="./AD018_01.html" target="_blank">AD018_01.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[팝업] 담당자</td>
+                            <td><a href="./AD018_02.html" target="_blank">AD018_02.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>[팝업] 자동 스크립트 파일</td>
+                            <td><a href="./AD018_03.html" target="_blank">AD018_03.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">정기실행관리</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./RPT_TOD_031.html" target="_blank">RPT_TOD_031.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <a href="./RPT_TOD_032.html" target="_blank">RPT_TOD_032.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>(가용성검토)</td>
+                            <td>
+                                <a href="./RPT_TOD_033.html" target="_blank">RPT_TOD_033.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" colspan="2">과제관리</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./AD019.html" target="_blank">AD019.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./AD020.html" target="_blank">AD020.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>즉시실행</td>
+                            <td></td>
+                            <td>
+                                <!-- <a href="./AD020.html" target="_blank">AD020.html</a> -->
+                                AD020.html
+                            </td>
+                            <td>요건확인중</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2">사용자관리</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./AD021.html" target="_blank">AD021.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <a href="./AD021_01.html" target="_blank">AD021_01.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" colspan="2">권한관리</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./AD022.html" target="_blank">AD022.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td>
+                                <a href="./AD022_00.html" target="_blank">AD022_00.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>수정</td>
+                            <td></td>
+                            <td>
+                                <a href="./AD022_02.html" target="_blank">AD022_02.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" style="vertical-align: middle;">기준정보관리</td>
+                            <td>활용시스템</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./categorize_use.html" target="_blank">categorize_use.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>RPA 적합도</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./categorize_rpa.html" target="_blank">categorize_rpa.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>임율관리</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./categorize_rate.html" target="_blank">categorize_rate.html</a></td>
+                            <td class="first">완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>담당자관리</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./categorize_manage.html" target="_blank">categorize_manage.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">자원관리</td>
+                            <td rowspan="2">BOT관리</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./RPT_BOT_001.html" target="_blank">RPT_BOT_001.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./RPT_BOT_002.html" target="_blank">RPT_BOT_002.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">라이선스관리</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./AD027.html" target="_blank">AD027.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <a href="./AD027_01.html" target="_blank">AD027_01.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">공통코드관리</td>
+                            <td></td>
+                            <td>
+                                <a href="./AD030.html" target="_blank">AD030.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">메뉴관리</td>
+                            <td></td>
+                            <td>
+                                <a href="./AD033.html" target="_blank">AD033.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <!-- // 관리자 -->
+                        <!-- 통계 -->
+                        <tr>
+                            <td rowspan="9" style="vertical-align: middle; text-align: center; color: #222;">통계</td>
+                            <td colspan="2" rowspan="2" style="vertical-align: middle;">과제별</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./ST003.html" target="_blank">ST003.html</a></td>
+                            <td>완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./ST003_01.html" target="_blank">ST003_01.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="vertical-align: middle;">부서별</td>
+                            <td></td>
+                            <td><a href="./ST004.html" target="_blank">ST004.html</a></td>
+                            <td>완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="vertical-align: middle;">담당자별</td>
+                            <td></td>
+                            <td><a href="./ST005.html" target="_blank">ST005.html</a></td>
+                            <td>완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="vertical-align: middle;">BOT별</td>
+                            <td></td>
+                            <td><a href="./ST006.html" target="_blank">ST006.html</a></td>
+                            <td>완료</td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2" style="vertical-align: middle;">과제개발별</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./ST007.html" target="_blank">ST007.html</a></td>
+                            <!-- <td class="update">UPDATE</td> -->
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./ST003_01.html" target="_blank">ST003_01.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2" style="vertical-align: middle;">업무현황</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./ST008.html" target="_blank">ST008.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./ST003_01.html" target="_blank">ST003_01.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <!-- // 통계 -->
+                        <!-- 커뮤니티 -->
+                        <tr>
+                            <td rowspan="17" style="vertical-align: middle; text-align: center; color: #222;">커뮤니티</td>
+                            <td rowspan="4" colspan="2" style="vertical-align: middle;">지식관리</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="./RPT_STT_003.html" target="_blank">RPT_STT_003.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td>
+                                CM003_01.html
+                                <!-- <a href="./CM003_01.html" target="_blank">CM003_01.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <!-- CM003_02.html -->
+                                <a href="./CM003_02.html" target="_blank">CM003_02.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                CM003_03.html
+                                <!-- <a href="./CM003_03.html" target="_blank">CM003_03.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" colspan="2" style="vertical-align: middle;">학습콘텐츠</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                CM008.html
+                                <!-- <a href="./CM008.html" target="_blank">CM008.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td>
+                                CM008_01.html
+                                <!-- <a href="./CM008_01.html" target="_blank">CM008_01.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                <!-- CM008_02.html -->
+                                <a href="./CM008_02.html" target="_blank">CM008_02.html</a>
+                            </td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                CM008_01.html
+                                <!-- <a href="./CM008_01.html" target="_blank">CM008_01.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" colspan="2" style="vertical-align: middle;">개발가이드</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                CM011.html
+                                <!-- <a href="./CM011.html" target="_blank">CM011.html</a> -->
+                            </td>
+                            <td>요건확인중</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td>
+                                CM011_01.html
+                                <!-- <a href="./CM011_01.html" target="_blank">CM011_01.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td>
+                                CM011_02.html
+                                <!-- <a href="./CM011_02.html" target="_blank">CM011_02.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                CM011_03.html
+                                <!-- <a href="./CM011_03.html" target="_blank">CM011_03.html</a> -->
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" colspan="2" style="vertical-align: middle;">Best Practice</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./CM015.html" target="_blank">CM015.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>등록</td>
+                            <td></td>
+                            <td><a href="./CM016.html" target="_blank">CM016.html</a></td>
+                            <!-- <td></td> -->
+                            <!-- <td>개선단계 행추가</td> -->
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>상세</td>
+                            <td></td>
+                            <td><a href="./CM017.html" target="_blank">CM017.html</a></td>
+                            <!-- <td></td> -->
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="1" colspan="2" style="vertical-align: middle;">Best Store</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./CM019.html" target="_blank">CM019.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="1" colspan="2" style="vertical-align: middle;">BOT 현황</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./timeline.html" target="_blank">timeline.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <!-- // 커뮤니티 -->
+                        <!-- 2021-04 기타 요구사항 추가 -->
+                        <tr>
+                            <td rowspan="3" style="vertical-align: middle; text-align: center; color: #222;">기타 추가</td>
+                            <td colspan="3">사용채널</td>
+                            <td></td>
+                            <td><a href="./_list.html" target="_blank">_list.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">사용채널 상세</td>
+                            <td></td>
+                            <td><a href="./_sub.html" target="_blank">_sub.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">정기실행등록 팝업</td>
+                            <td></td>
+                            <td><a href="./_layerPopUp.html" target="_blank">_layerPopUp.html</a></td>
+                            <td>완료</td>
+                            <td></td>
+                        </tr>
+                        <!-- 2021-04 기타 요구사항 추가 -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/common.js"></script>
+<script src="./resources/js/ui.js"></script>
+<script>
+    $("table td").on("mouseover", function(){
+        $(this).parent('tr').addClass('act')
+        $(this).parent('tr').siblings().removeClass('act')
+    });
+
+    $("table td").on("mouseleave", function(){
+        $(this).parent('tr').removeClass('act')
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top" class="sidebar-toggled" style="overflow-y: hidden;">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item active">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item active" href="javascript:;">전체 ROI</a>
+                    <a class="collapse-item" href="javascript:;">가동율</a>
+                    <a class="collapse-item" href="javascript:;">성공율</a>
+                    <a class="collapse-item" href="javascript:;">과제</a>
+                    <!-- <a class="collapse-item" href="javascript:;">운영목록</a> -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <a class="collapse-item" href="javascript:;">나의요청</a>
+                    <a class="collapse-item" href="javascript:;">개발요청</a>
+                    <!-- <a class="collapse-item" href="javascript:;">정기실행</a> -->
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <!-- <a class="collapse-item" href="javascript:;">나의정보관리</a> -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">개발요청</a>
+                    <!-- <a class="collapse-item" href="javascript:;">정기실행</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자 안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿 관리</a> -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의할일</a>
+                    <a class="collapse-item" href="javascript:;">과제접수</a>
+                    <a class="collapse-item" href="javascript:;">과제개발</a>
+                    <!-- <a class="collapse-item" href="javascript:;">정기실행</a>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a> -->
+                    <a class="collapse-item" href="javascript:;">기준정보관리</a>
+                    <a class="collapse-item" href="javascript:;">활용시스템</a>
+                    <a class="collapse-item" href="javascript:;">RPA 적합도</a>
+                    <a class="collapse-item" href="javascript:;">일율 관리</a>
+                    <!-- <a class="collapse-item" href="javascript:;">자원관리</a>
+                    <a class="collapse-item" href="javascript:;">BOT 관리</a>
+                    <a class="collapse-item" href="javascript:;">라이선스 관리</a> -->
+                </div>
+            </div>
+        </li>
+        
+        <!-- Nav Item - 통계 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제</a>
+                    <a class="collapse-item" href="javascript:;">프로세스</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li> -->
+
+        <!-- Nav Item - 커뮤니티 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li> -->
+
+        <!-- Nav Item - 로그인 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="javascript:;">
+                <span>SSO 로그인</span>
+            </a>
+        </li> -->
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+            <!-- shinhan logo -->
+            <div class="sh_logo-wrap">
+                <h1 class="sh_logo">
+                    <a href="/">신한금융투자 RPA Platform</a>
+                </h1>
+            </div>
+
+            <!-- Topbar utill -->
+            <div class="sh_utill">
+                <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                <div class="sh_logout-wrap dropdown no-arrow">
+                    <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- contents wrapper -->
+                <div class="content_innr">
+
+                    <!-- Page Heading -->
+                    <div class="content-tit">
+                        <h1 class="sh_tit">나의 과제</h1>
+                    </div>
+
+                    <!-- page navigator -->
+                    <div class="navigator">
+                        <a class="navigator-home" href="javascript:;">
+                            <span>HOME</span>
+                        </a>
+                        <span>마이페이지</span>
+                        <!-- <span>템플릿 관리</span> -->
+                        <span class="navigator-cur">나의 과제</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<!-- POPUP PAGE -->
+<div class="pop_box shadow" style="right: 0px;">
+    <div class="pop_box-innr">
+        <!-- popup Heading -->
+        <h3 class="pop-tit">과제 상세</h3>
+        <!-- popup container -->
+        <div class="pop-body">
+            <div class="pop-innr">
+                <!-- pop section -->
+                <div class="pop-part">
+                    <div class="table_ty1-wrap">
+                        <table class="table_ty1">
+                            <caption>과제 관리 상세</caption>
+                            <colgroup>
+                              <col style="width: 12%;">
+                              <col style="width: 20%;">
+                              <col style="width: 12%;">
+                              <col style="width: 20%;">
+                              <col style="width: 12%;">
+                              <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">과제명<span class="table-point">*</span></th>
+                                    <td><input class="middle" type="text" value="Invoice Draft 업체 송부"></td>
+                                    <th scope="row">프로세스명<span class="table-point">*</span></th>
+                                    <td><input class="middle" type="text" value="업체자료 선택"></td>
+                                    <th scope="row">프로세스 ID</th>
+                                    <td>R0217</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">담당부서<span class="table-point">*</span></th>
+                                    <td>
+                                        <button type="button" class="btn btn-y">찾기</button>
+                                        <span class="text">정보화지원팀</span>
+                                        <a href="javascript:;" class="btn_del">삭제</a><!-- 20210121 삭제 아이콘 버튼 추가 -->
+                                    </td>
+                                    <th scope="row">담당자<span class="table-point">*</span></th>
+                                    <td>
+                                        <button type="button" class="btn btn-y">찾기</button>
+                                        <span class="text">김설계</span>
+                                        <a href="javascript:;" class="btn_del">삭제</a>
+                                    </td>
+                                    <th scope="row">요청자<span class="table-point">*</span></th>
+                                    <td>
+                                        <button type="button" class="btn btn-y">찾기</button>
+                                        <span class="text">김설계</span>
+                                        <a href="javascript:;" class="btn_del">삭제</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">과제 소유자<span class="table-point">*</span></th>
+                                    <td>
+                                        <!-- 라디오 박스 -->
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="radio" id="radio_1" checked="checked">
+                                            <label class="custom-control-label" for="radio_1">부서</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="radio" id="radio_2">
+                                            <label class="custom-control-label" for="radio_2">담당자</label>
+                                        </div>
+                                        <!-- //라디오 박스 -->
+                                    </td>
+                                    <th scope="row">예상수행시간<span class="table-point">*</span></th>
+                                    <td>
+                                        <input class="small" type="text" value="4000">
+                                        분
+                                    </td>
+                                    <th scope="row">자동 스크립트 파일<span class="table-point">*</span></th>
+                                    <td>
+                                        <button type="button" class="btn btn-y">찾기</button>
+                                        <span class="text">19P101</span>
+                                        <a href="javascript:;" class="btn_del">삭제</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">과제 빈도<span class="table-point">*</span></th>
+                                    <td>
+                                        <div class="select_box">
+                                            <select>
+                                                <option>선택</option>
+                                                <option>수시</option>
+                                                <option>매일</option>
+                                                <option>매주</option>
+                                                <option>매월</option>
+                                                <option>매년</option>
+                                            </select>
+                                        </div>
+                                        <input class="small" type="text" value="1">
+                                        회
+                                    </td>
+                                    <th scope="row">건별 처리시간<span class="table-point">*</span></th>
+                                    <td>
+                                        <input class="small" type="text" value="50">
+                                        <div class="select_box">
+                                            <select>
+                                                <option>선택</option>
+                                                <option>초</option>
+                                                <option>시간</option>
+                                                <option>일</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th scope="row">처리인원<span class="table-point">*</span></th>
+                                    <td>
+                                        <input class="small" type="text" value="2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">실행 횟수<br>(성공/전체)</th>
+                                    <td>1/1</td>
+                                    <th scope="row">최근 시작시간</th>
+                                    <td>0000-00-00 00:00</td>
+                                    <th scope="row">최근 종료시간</th>
+                                    <td>0000-00-00 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">평균 소요시간</th>
+                                    <td>50</td>
+                                    <th scope="row">최대 소요시간</th>
+                                    <td>50분</td>
+                                    <th scope="row">최소 소요시간</th>
+                                    <td>50분</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">예약가능 BOT</th>
+                                    <td colspan="5">
+                                        <div class="ui_check_wrap"><!-- 20210121 체크박스 정렬 추가 -->
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1">
+                                                <label class="custom-control-label" for="check_1">BOT1</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-1">
+                                                <label class="custom-control-label" for="check_1-1">BOT2</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-2">
+                                                <label class="custom-control-label" for="check_1-2">BOT3</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-3">
+                                                <label class="custom-control-label" for="check_1-3">BOT4</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-4">
+                                                <label class="custom-control-label" for="check_1-4">BOT5</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-5">
+                                                <label class="custom-control-label" for="check_1-5">BOT6</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-6">
+                                                <label class="custom-control-label" for="check_1-6">BOT7</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-7">
+                                                <label class="custom-control-label" for="check_1-7">BOT8</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-8">
+                                                <label class="custom-control-label" for="check_1-8">BOT9</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-9">
+                                                <label class="custom-control-label" for="check_1-9">BOT10</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-9">
+                                                <label class="custom-control-label" for="check_1-9">BOT10</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-9">
+                                                <label class="custom-control-label" for="check_1-9">BOT10</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-9">
+                                                <label class="custom-control-label" for="check_1-9">BOT10</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-9">
+                                                <label class="custom-control-label" for="check_1-9">BOT10</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check_1-9">
+                                                <label class="custom-control-label" for="check_1-9">BOT10</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">과제개발 이력</th>
+                                    <td colspan="5"><button class="btn btn-y" type="button">수정이력</button></td><!-- 20210121 수정이력 버튼 변경 -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- // pop section -->
+                <!-- pop section -->
+                <div class="pop-part">
+                    <div class="list_box_wrap">
+                        <ul class="list_box">
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                            <li>
+                                <span class="item title">에약실행</span>
+                                <span class="item">0000-00-00 00:00 ~ 0000-00-00 00:00</span>
+                                <span class="item name">하이봇32</span>
+                            </li>
+                        </ul>
+                        <ul class="list_box">
+                            <li>
+                                <span class="item title">정기실행</span>
+                                <span class="item">2021-01-20 09:00 ~ 2022-02-29 23:40</span>
+                                <span class="ml5">[주간] 2주마다 월,수</span>
+                                <span class="item name">하이봇10</span>
+                                <!-- <div class="btn_wrap">
+                                    <button class="btn btn-y" type="button">수정</button>
+                                    <button class="btn btn-xs" type="button">삭제요청</button>
+                                </div> -->
+                            </li>
+                            <!-- 2021-03-10 수정 -->
+                            <li>
+                                <span class="item title">정기실행</span>
+                                <span class="item">2021-01-20 09:00 ~ 2022-02-29 23:40</span>
+                                <span class="ml5">[매일]</span>
+                                <span class="item name">하이봇01</span>
+                                <div class="btn_wrap">
+                                    <!-- 2021-03-11 수정 -->
+                                    <button class="btn btn-s" type="button">수정</button>
+                                    <button class="btn btn-xs" type="button">삭제요청</button>
+                                    <!-- // 2021-03-11 수정 -->
+                                </div>
+                            </li>
+                            <!-- // 2021-03-10 수정 -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- // pop section -->
+            </div>
+            <div class="pop-btn_wrap">
+            <a href="javascript:;" class="btn btn-ty1">즉시실행</a>
+            <a href="javascript:;" class="btn btn-ty3">폐기</a>
+            <a href="javascript:;" class="btn btn-ty1">수정</a>
+            </div>
+        </div>
+    </div>
+    <!-- //popup container -->
+    <a href="javascript:;" class="btn-close">닫기</a>
+</div>
+<!-- // POPUP PAGE -->
+
+<div class="dimmed"></div><!-- DIMMED -->
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/common.js"></script>
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>

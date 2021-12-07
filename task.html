@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item active">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item active" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">나의요청</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">개발요청</a></li>
+                            <li><a href="javascript:;">정기실행요청</a></li>
+                        </ul>
+                    </div>
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">개발요청</a>
+                    <a class="collapse-item" href="javascript:;">정기실행</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자 안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿 관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">나의할일</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">과제접수</a></li>
+                            <li><a href="javascript:;">과제개발</a></li>
+                            <li><a href="javascript:;">정기실행관리</a></li>
+                        </ul>
+                    </div>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">기준정보관리</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">활용시스템</a></li>
+                            <li><a href="javascript:;">RPA적합도</a></li>
+                            <li><a href="javascript:;">일율관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">자원관리</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">BOT 관리</a></li>
+                            <li><a href="javascript:;">라이선스 관리</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 로그인 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="javascript:;">
+                <span>SSO 로그인</span>
+            </a>
+        </li> -->
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+                <!-- shinhan logo -->
+                <div class="sh_logo-wrap">
+                    <h1 class="sh_logo">
+                        <a href="/">신한금융투자 RPA Platform</a>
+                    </h1>
+                </div>
+
+            <!-- Topbar utill -->
+            <div class="sh_utill">
+                <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                <div class="sh_logout-wrap dropdown no-arrow">
+                    <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <h1 class="sh_tit">Dashboard</h1>
+                </div>
+
+                <!-- Dashboard container -->
+                <div class="sh_board-wrap">
+                    <!-- Content Row -->
+                    <div class="sh_board row">
+                        <!-- Content Column - Left -->
+                        <div class="sh_board-left col-lg-9">
+                            <!-- card board -->
+                            <div class="sh_card-row row">
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4">
+                                    <a class="sh_card" href="./main.html">
+                                        <div class="sh_card_innr">
+                                            <div class="sh_card-tit">절감시간</div>
+                                            <div class="sh_card-txt">
+                                                <strong>000,000</strong>
+                                                <span>시간</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4">
+                                    <a class="sh_card" href="./roi.html">
+                                        <div class="sh_card_innr">
+                                            <div class="sh_card-tit">ROI</div>
+                                            <div class="sh_card-txt">
+                                                <strong>0,000</strong>
+                                                <span>백만원</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4 active"><!-- active 추가 -->
+                                    <a class="sh_card" href="./task.html">
+                                        <div class="sh_card_innr">
+                                            <div class="sh_card-tit">업무현황</div>
+                                            <div class="sh_card-txt">
+                                                <strong>000</strong>
+                                                <span>개</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4">
+                                    <a class="sh_card" href="./new.html">
+                                        <div class="sh_card_innr">
+                                            <div class="sh_card-tit">신규업무</div>
+                                            <div class="sh_card-txt">
+                                                <strong>000</strong>
+                                                <span>개</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- tab container -->
+                            <div class="tab-cont">
+                                <ul class="tab-menu">
+                                    <li class="tab-menu-item">
+                                        <a href="./main.html">절감시간</a>
+                                        <!-- 20210215 설명글 추가 -->
+                                        <div class="ui_comp">
+                                            <span>업무단축시간을 시간단위로 계산한 수치입니다.</span>
+                                        </div>
+                                    </li>
+                                    <li class="tab-menu-item">
+                                        <a href="./roi.html">ROI</a>
+                                        <!-- 20210215 설명글 추가 -->
+                                        <div class="ui_comp">
+                                            <span>업무단축시간을 시간단위로 계산한 수치입니다.</span>
+                                        </div>
+                                    </li>
+                                    <li class="tab-menu-item active"><!-- 활성화 .active 추가 -->
+                                        <a href="./task.html">업무현황</a>
+                                        <!-- 20210215 설명글 추가 -->
+                                        <div class="ui_comp">
+                                            <span>업무단축시간을 시간단위로 계산한 수치입니다.</span>
+                                        </div>
+                                    </li>
+                                    <li class="tab-menu-item">
+                                        <a href="./new.html">신규업무</a>
+                                        <!-- 20210215 설명글 추가 -->
+                                        <div class="ui_comp">
+                                            <span>업무단축시간을 시간단위로 계산한 수치입니다. 업무단축시간을 시간단위로 계산한 수치입니다.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="tab-box-wrap">
+                                    <!-- Tab content - 업무현황 -->
+                                    <li class="tab-box active">
+                                        <div class="tab-box-part" style="max-width: 100%;">
+                                            <div class="tab-box-innr" style="padding: 2%;">
+                                                <div class="row" style="height: 100%;">
+                                                    <div class="col-lg-9">
+                                                        <div class="task_box">
+                                                            <div class="task-tit"><span>Task</span> Ranking</div>
+                                                            <ul class="chart_list">
+                                                                <li>
+                                                                    <div class="chart_list-graph">
+                                                                        <div class="chart-pie">
+                                                                            <canvas id="pieChart_1" width="100" height="100"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chart_list-text_wrap">
+                                                                        <div class="chart_list-txt"><span>해외주식영업부</span></div>
+                                                                        <div class="chart_list-num">14건</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="chart_list-graph">
+                                                                        <div class="chart-pie">
+                                                                            <canvas id="pieChart_2"width="100" height="100"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chart_list-text_wrap">
+                                                                        <div class="chart_list-txt">
+                                                                            <span>조석림</span>
+                                                                        </div>
+                                                                        <div class="chart_list-num">14건</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="chart_list-graph">
+                                                                        <div class="chart-pie">
+                                                                            <canvas id="pieChart_3"width="100" height="100"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chart_list-text_wrap">
+                                                                        <div class="chart_list-txt">
+                                                                            <span>박일우 <span class="txt_pos">조사역</span></span>
+                                                                            (소비자보호부)
+                                                                        </div>
+                                                                        <div class="chart_list-num">14건</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="chart_list-graph">
+                                                                        <div class="chart-pie">
+                                                                            <canvas id="pieChart_4"width="100" height="100"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chart_list-text_wrap">
+                                                                        <div class="chart_list-txt">
+                                                                            <span>윤봉빈 <span class="txt_pos">대리</span></span>
+                                                                            (법인금융영업부법인금융영업부)
+                                                                        </div>
+                                                                        <div class="chart_list-num">14건</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="chart_list-graph">
+                                                                        <div class="chart-pie">
+                                                                            <canvas id="pieChart_5"width="100" height="100"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chart_list-text_wrap">
+                                                                        <div class="chart_list-txt">
+                                                                            <span>조석림 <span class="txt_pos">선임 매니저</span></span>
+                                                                            (기업금융1센터)
+                                                                        </div>
+                                                                        <div class="chart_list-num">14건</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="chart_list-graph">
+                                                                        <div class="chart-pie">
+                                                                            <canvas id="pieChart_6"width="100" height="100"></canvas>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="chart_list-text_wrap">
+                                                                        <div class="chart_list-txt">
+                                                                            <span>김수화 <span class="txt_pos">파트장</span></span>
+                                                                            (법인금융영업부)
+                                                                        </div>
+                                                                        <div class="chart_list-num">14건</div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                             
+                                                            <div class="select_box">
+                                                                <select>
+                                                                    <option>개인</option>
+                                                                    <option>그룹</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="board_box">
+                                                            <div class="board_box-item">
+                                                                <dl>
+                                                                    <dt>금월신규</dt>
+                                                                    <dd>
+                                                                        <span class="board_box-txt_1">16개</span>
+                                                                        <span class="board_box-txt_2"><span style="color: #1cc88a;">12.0</span>%</span>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                            <div class="board_box-item">
+                                                                <dl>
+                                                                    <dt>누계(전월)</dt>
+                                                                    <dd>
+                                                                        <span class="board_box-txt_1">122개</span>
+                                                                        <span class="board_box-txt_2"><span>94.7</span>%</span>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                            <div class="board_box-item">
+                                                                <dl>
+                                                                    <dt>오픈대기</dt>
+                                                                    <dd>
+                                                                        <span class="board_box-txt_1">5개</span>
+                                                                        <span class="board_box-txt_2"><span style="color: #e74a3b;">5.3</span>%</span>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="tab-cont-btn" href="javascript:;">
+                                    <span>과제목록</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Content Column - Right -->
+                        <div class="sh_board-right col-lg-3">
+
+                            <!-- 공지사항 -->
+                            <div class="sh_part"> 
+                                <h3 class="sh_part-tit">공지사항</h3>
+                                <div class="sh_part-body">
+                                    <ul class="list_note">
+                                        <li class="list_note-item note-emr">
+                                            <div class="list_note-date">2020.10.30</div>
+                                            <div class="list_note-text">긴급점검 안내드립니다.</div>
+                                        </li>
+                                        <li class="list_note-item">
+                                            <div class="list_note-date">2020.10.20</div>
+                                            <div class="list_note-text">공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다</div>
+                                        </li>
+                                        <li class="list_note-item">
+                                            <div class="list_note-date">2020.10.20</div>
+                                            <div class="list_note-text">공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다</div>
+                                        </li>
+                                        <li class="list_note-item">
+                                            <div class="list_note-date">2020.10.20</div>
+                                            <div class="list_note-text">공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다</div>
+                                        </li>
+                                        <li class="list_note-item">
+                                            <div class="list_note-date">2020.10.20</div>
+                                            <div class="list_note-text">공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다</div>
+                                        </li>
+                                        <li class="list_note-item">
+                                            <div class="list_note-date">2020.10.20</div>
+                                            <div class="list_note-text">공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다공지사항테스트입니다</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="sh_part-btn" href="javascript:;">더보기</a>
+                            </div>
+
+                            <!-- 업무현황 -->
+                            <div class="sh_part">
+                                <h3 class="sh_part-tit">나의 업무현황</h3>
+                                <div class="sh_part-body">
+                                    <ul class="list_box">
+                                        <li class="list_box-item">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">과제운영</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_2">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">과제요청</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_3"> 
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">과제개발</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_4">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">취소</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 20210114 삭제 요청 -->
+                                <!-- <a class="sh_part-btn" href="javascript:;">더보기</a> -->
+                            </div>
+
+                            <!-- 20210114 추가 -->
+                            <div class="sh_part">
+                                <h3 class="sh_part-tit">나의 운영현황</h3>
+                                <div class="sh_part-body">
+                                    <ul class="list_box">
+                                        <li class="list_box-item box-item_5">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">성공</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_6">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">실패</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tc-grey mt10">※ 절감시간 : 업무단축시간을 시간단위로 계산한 수치입니다.</p><!-- 20210401 위치 변경 -->
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- main chart -->
+<script src="./resources/js/chart/Chart.js"></script>
+<script src="./resources/js/sb-admin-2/demo/chart-area-demo.js"></script>
+<script src="./resources/js/sb-admin-2/demo/chart-bar-demo.js"></script>
+<script src="./resources/js/sb-admin-2/demo/chart-pie-demo.js"></script>
+<!-- custom -->
+<script src="./resources/js/common.js"></script>
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">나의업무현황</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의요청</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">개발요청</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행요청</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 헬프데스크 -->
+        <li class="nav-item active">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item active" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿관리</a>
+                    <a class="collapse-item" href="javascript:;">영업일조회</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의할일</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">과제접수</a></li>
+                        <li><a class="depth2_item" href="javascript:;">과제개발</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행관리</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">기준정보관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">활용시스템</a></li>
+                        <li><a class="depth2_item" href="javascript:;">RPA적합도</a></li>
+                        <li><a class="depth2_item" href="javascript:;">일율관리</a></li>
+                    </ul>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">자원관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">BOT관리</a></li>
+                        <li><a class="depth2_item" href="javascript:;">라이선스관리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+                <!-- shinhan logo -->
+                <div class="sh_logo-wrap">
+                    <h1 class="sh_logo">
+                        <a href="/">신한금융투자 RPA Platform</a>
+                    </h1>
+                </div>
+
+                <!-- Topbar utill -->
+                <div class="sh_utill">
+                    <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                    <div class="sh_logout-wrap dropdown no-arrow">
+                        <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- contents wrapper -->
+                <div class="content_innr">
+
+                    <!-- Page Heading -->
+                    <div class="content-tit">
+                        <h2 class="sh_tit">FAQ</h2>
+                    </div>
+
+                    <!-- page navigator -->
+                    <div class="navigator">
+                        <a class="navigator-home" href="javascript:;">
+                            <span>HOME</span>
+                        </a>
+                        <span>헬프데스크</span>
+                        <!-- <span>나의 할일</span> -->
+                        <span class="navigator-cur">FAQ</span>
+                    </div>
+
+                    <!-- Form Box -->
+                    <div class="form_box">
+                        <!-- Form Box Partition -->
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-12">
+                                <div class="input-label">검색</div>                                
+                                <div class="search_box">                                   
+                                    <input type="text" placeholder="검색어입력" value="">
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="btn btn-y" data-title="찾기">찾기</a>
+                                        <a href="javascript:;" class="btn btn-n" data-title="RESET">RESET</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Form Box Partition -->
+                    </div>
+                    <!-- // Form Box -->
+
+                    <!-- FAQ wrapper --> 					
+					<div class="table_box table_box-btn_wrap">
+                        <div class="table_box-label">총 <span>07</span>건</div>
+						<div id="faqList" class="faq">
+							<div id="faq_1" class="on">
+								<div id="accordion_list" class="accordion_list">
+									<ul>
+										<li id="faq_1_1" class="on">
+											<a href="#" class="qbox"><div class="tit">로그인 후 정보수정이 되지 않는 경우<br>			
+												아래의 이미지를 참고하셔서 브라우저의 캐시를 지우고 다시 로그인을 해보시기 바랍니다.<br>			</div></a>	
+											<div class="abox">
+												<div class="txt">재로그인을 시도하셨지만, 그래도 전환이 안되신다면 브라우저의 쿠키로 인해 발생하는 문제로<br>			
+												아래의 이미지를 참고하셔서 브라우저의 캐시를 지우고 다시 로그인을 해보시기 바랍니다.<br>			
+												<br>			
+												그래도 계속 문제가 발행한다면, 02-0000-0000번(응답시간: 09:00~12:00, 13:00~18:00)으로 문의를 주시면, 저희 담당자와 통화하실 수 있습니다.
+												</div>
+											</div>
+										</li>
+										<li id="faq_1_2">
+											<a href="#" class="qbox"><div class="tit">사용자가 업로드한 이미지를 삭제할 경우의 주의사항</div></a>
+											<div class="abox">
+												<div class="txt">
+												사용자가 업로드한 이미지를 삭제하셨을 경우에는 해당 이미지를 사용한 템플릿에서도 사진이 사라지게 됩니다.<br>	
+												이러한 경우 복구가 불가능하오니 업로드한 이미지를 삭제하셨을 경우에는 새로 업로드하여 템플릿에 적용하여 주시기 바랍니다.<br>	
+												이와 관련한 문의사항은 02-0000-0000번 (응답시간: 09:00~12:00, 13:00~18:00)으로 문의주시기 바랍니다.
+												</div>
+											</div>
+										</li>
+										<li id="faq_1_3">
+											<a href="#" class="qbox"><div class="tit">1년 요금제 카드결제 방법은?</div></a>
+											<div class="abox">
+												<div class="txt">
+												1년 요금제의 경우 카드결제는 무인증 방식의 카드수기결제가 지원됩니다. 및 유효기간)만으로 관리자가 간편하게 결제할 수 있는 방식입니다.
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="table_box-btn">
+							<button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_up">등록</span></button>
+						</div>
+					</div>	
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<div class="dimmed"></div><!-- DIMMED -->
+
+<!-- POPUP PAGE -->
+<div class="pop_box shadow" style="right: 0px;">
+    <div class="pop_box-innr">
+        <!-- popup Heading -->
+        <h3 class="pop-tit">FAQ 등록</h3>
+        <!-- popup container -->
+        <div class="pop-body">
+            <!-- popup contents -->
+            <div class="pop-innr">
+                <!-- pop section -->
+                <div class="pop-part">
+                    <div class="table_ty1-wrap">
+                        <table class="table_ty1">
+                            <caption>FAQ</caption>
+                            <colgroup>
+                                <col style="width:13%;">
+                                <col style="width:40%;">
+                                <col style="width:13%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">날짜</th>
+                                    <td>0000.00.00</td>
+                                    <th scope="row">작성자</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">제목<span class="table-point">*</span></th>
+                                    <td colspan="3">
+                                        <input class="subject" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내용</th>
+                                    <td colspan="3">
+                                        <textarea rows="6"></textarea>
+                                    </td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- // pop section -->
+            </div>
+            <!-- // popup contents -->
+            <!-- popup button area -->
+            <div class="pop-btn_wrap">
+                <!-- <a href="javascript:;" class="btn btn-ty3">삭제</a> -->
+                <!-- <a href="javascript:;" class="btn btn-ty1">수정</a> -->
+                <a href="javascript:;" class="btn btn-ty1 disabled">등록</a>
+            </div>
+            <!-- // popup button area -->
+        </div>
+        <!-- // popup container -->
+    </div>
+    <!-- 팝업창 닫기 버튼 -->
+    <a href="javascript:;" class="btn-close">닫기</a>
+</div>
+<!-- // POPUP PAGE -->
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>

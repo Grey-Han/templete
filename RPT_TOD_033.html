@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top" class="sidebar-toggled" style="overflow-y: hidden;">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item active">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item active" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">나의업무현황</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <!-- 20210114 메뉴 댑스 수정!!! -->
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의요청</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">개발요청</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행요청</a></li>
+                    </ul>
+                    <!-- 20210114 메뉴 댑스 수정!!! -->
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 헬프데스크 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿관리</a>
+                    <a class="collapse-item" href="javascript:;">영업일조회</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <!-- 20210114 메뉴 댑스 수정!!! -->
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의할일</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">과제접수</a></li>
+                        <li><a class="depth2_item" href="javascript:;">과제개발</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행관리</a></li>
+                    </ul>
+                    <!-- 20210114 메뉴 댑스 수정!!! -->
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <!-- 20210114 메뉴 댑스 수정!!! -->
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">기준정보관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">활용시스템</a></li>
+                        <li><a class="depth2_item" href="javascript:;">RPA적합도</a></li>
+                        <li><a class="depth2_item" href="javascript:;">일율관리</a></li>
+                    </ul>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">자원관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">BOT관리</a></li>
+                        <li><a class="depth2_item" href="javascript:;">라이선스관리</a></li>
+                    </ul>
+                    <!-- 20210114 메뉴 댑스 수정!!! -->
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+                <!-- shinhan logo -->
+                <div class="sh_logo-wrap">
+                    <h1 class="sh_logo">
+                        <a href="/">신한금융투자 RPA Platform</a>
+                    </h1>
+                </div>
+
+                <!-- Topbar utill -->
+                <div class="sh_utill">
+                    <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                    <div class="sh_logout-wrap dropdown no-arrow">
+                        <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- contents wrapper -->
+                <div class="content_innr"></div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<div class="dimmed"></div><!-- DIMMED -->
+
+<!-- POPUP PAGE -->
+<div class="pop_box shadow" style="right: 0px;">
+    <div class="pop_box-innr">
+        <!-- Page Heading -->
+        <h3 class="pop-tit">예약실행</h3>
+        <!-- popup container -->
+        <div class="pop-body">
+            <div class="pop-innr">
+                <!-- pop section -->
+                <div class="pop-part">
+                    <div class="table_ty1-wrap">
+                        <table class="table_ty1">
+                            <caption>예약 실행 과제 정보</caption>
+                            <colgroup>
+                                <col style="width: 12%;">
+                                <col style="width: 20%;">
+                                <col style="width: 12%;">
+                                <col style="width: 20%;">
+                                <col style="width: 12%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">과제명</th>
+                                    <td>국내주식 종목등급 변경안내</td>
+                                    <th scope="row">프로세스명</th>
+                                    <td>국내주식 종목등급 변경안내</td>
+                                    <th scope="row">개발타입</th>
+                                    <td>RPA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">담당부서</th>
+                                    <td>감리부</td>
+                                    <th scope="row">담당자</th>
+                                    <td>임채홍(대리)</td>
+                                    <th scope="row">예상 수행시간</th>
+                                    <td>90분</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- // pop section -->
+                <!-- pop section -->
+                <div class="pop-part">
+                    <!-- <div class="list_box_wrap">
+                        <ul class="list_box">
+                            <li>
+                                <span class="item title">정기실행</span>
+                                <span class="item">2021-01-20 09:00 ~ 2022-02-29 23:40</span>
+                                <span class="ml5">[주간] 2주마다 월,수</span>
+                                <span class="item name">하이봇10</span>
+                                <div class="btn_wrap">
+                                    <button class="btn btn-y" type="button" >조회변경</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="ui_border_box mb10 ui_ft17 ui_black">
+                        <i class="icon icon_run">실행</i>
+                        <span>2020-02-28 ~ 2021.10.22</span>
+                        <span class="ml5 mr5">/</span>
+                        <span class="tw_bold">09:00</span>
+                        <span class="ml5 mr5">/</span>
+                        <span>하이봇01</span>
+                        <span class="ml5 mr5">/</span>
+                        <span><span class="ui_red tw_bold">2주</span>마다<span class="ui_red tw_bold"> 월,수</span></span>
+                        <button class="btn btn-y" type="button" style="margin-left: auto;">조회변경</button>
+                    </div>
+                </div>
+                <!-- // pop section -->
+                <div class="pop-part">
+                    <div class="ui_schedule_wrap">
+                        <!-- 2021-03-10 추가 -->
+                        <div class="sched_label">
+                            <span>time</span>
+                            <ul>
+                                <li>하이봇01</li>
+                                <li>하이봇02</li>
+                                <li>하이봇03</li>
+                                <li>하이봇04</li>
+                                <li>하이봇05</li>
+                                <li>하이봇06</li>
+                                <li>하이봇07</li>
+                                <li>하이봇08</li>
+                                <li>하이봇09</li>
+                                <li>하이봇10</li>
+                            </ul>
+                        </div>
+                        <!-- // 2021-03-10 추가 -->
+                        <div class="ui_schedule">
+                            <div class="sched sched_time">
+                                <span>time</span>
+                                <ul>
+                                    <li><span>00:00</span></li>
+                                    <li><span>00:30</span></li>
+                                    <li><span>01:00</span></li>
+                                    <li><span>01:30</span></li>
+                                    <li><span>02:00</span></li>
+                                    <li><span>02:30</span></li>
+                                    <li><span>03:00</span></li>
+                                    <li><span>03:30</span></li>
+                                    <li><span>04:00</span></li>
+                                    <li><span>05:30</span></li>
+                                    <li><span>06:00</span></li>
+                                    <li><span>06:30</span></li>
+                                    <li><span>07:00</span></li>
+                                    <li><span>07:30</span></li>
+                                    <li><span>08:00</span></li>
+                                    <li><span>08:30</span></li>
+                                    <li><span>09:00</span></li>
+                                    <li><span>09:30</span></li>
+                                    <li><span>10:00</span></li>
+                                    <li><span>10:30</span></li>
+                                    <li><span>11:00</span></li>
+                                    <li><span>11:30</span></li>
+                                    <li><span>12:00</span></li>
+                                    <li><span>12:30</span></li>
+                                    <li><span>13:00</span></li>
+                                    <li><span>13:30</span></li>
+                                    <li><span>14:00</span></li>
+                                    <li><span>15:30</span></li>
+                                    <li><span>16:00</span></li>
+                                    <li><span>16:30</span></li>
+                                    <li><span>17:00</span></li>
+                                    <li><span>17:30</span></li>
+                                    <li><span>18:00</span></li>
+                                    <li><span>18:30</span></li>
+                                    <li><span>19:00</span></li>
+                                    <li><span>19:30</span></li>
+                                    <li><span>20:00</span></li>
+                                    <li><span>20:30</span></li>
+                                    <li><span>21:00</span></li>
+                                    <li><span>21:30</span></li>
+                                    <li><span>22:00</span></li>
+                                    <li><span>22:30</span></li>
+                                    <li><span>23:00</span></li>
+                                    <li><span>23:30</span></li>
+                                </ul>
+                            </div>
+                            <div class="sched sched_table">
+                                <ul>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT01</span>
+                                            <ul>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc"><!-- 안보일 경우 추가 .top -->
+                                                        <span class="txt"><span>예탁원 익일배분내역 업로드 자동화 (법선 바클레이즈 고객 해당)</span> / 김이름(선임조사역)</span>
+                                                        <span class="txt"><span>국내주식 종목등급 변경안내</span> / 임채홍(대리)</span>
+                                                    </span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc"><!-- 안보일 경우 추가 .top -->
+                                                        <span class="txt"><span>예탁원 익일배분내역 업로드 자동화 (법선 바클레이즈 고객 해당)</span> / 김이름(선임조사역)</span>
+                                                        <span class="txt"><span>국내주식 종목등급 변경안내</span> / 임채홍(대리)</span>
+                                                    </span>
+                                                </li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT02</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li><!-- default: 실행 불가능 -->
+                                                <li class="on"><span class="cell">R0217</span></li><!-- 실행 가능 .on 추가 -->
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <!-- 실행 .active 추가 -->
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">
+                                                        <span class="txt"><span>예탁원 익일배분내역 업로드 자동화 (법선 바클레이즈 고객 해당)</span> / 김이름(선임조사역)</span>
+                                                        <span class="txt"><span>국내주식 종목등급 변경안내</span> / 임채홍(대리)</span>
+                                                    </span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">국내주식 종목등급 변경안내 / 임채홍(대리)</span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">국내주식 종목등급 변경안내 / 임채홍(대리)</span>
+                                                </li>
+                                                <!-- // 예약 완료 .active 추가 -->
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT03</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT04</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT05</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT06</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li class="on focus"><span class="cell">R0217</span></li><!-- 클릭시 .focus 추가 -->
+                                                <li class="on focus"><span class="cell">R0217</span></li>
+                                                <li class="on focus"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT07</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT08</span>
+                                            <ul>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc top"><!-- 안보일 경우 추가 .top -->
+                                                        <span class="txt"><span>예탁원 익일배분내역 업로드 자동화 (법선 바클레이즈 고객 해당)</span> / 김이름(선임조사역)</span>
+                                                        <span class="txt"><span>국내주식 종목등급 변경안내</span> / 임채홍(대리)</span>
+                                                    </span>
+                                                </li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT09</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li><!-- default: 실행 불가능 -->
+                                                <li class="on"><span class="cell">R0217</span></li><!-- 실행 가능 .on 추가 -->
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <!-- 실행 .active 추가 -->
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">
+                                                        <span class="txt"><span>예탁원 익일배분내역 업로드 자동화 (법선 바클레이즈 고객 해당)</span> / 김이름(선임조사역)</span>
+                                                        <span class="txt"><span>국내주식 종목등급 변경안내</span> / 임채홍(대리)</span>
+                                                    </span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">국내주식 종목등급 변경안내 / 임채홍(대리)</span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">국내주식 종목등급 변경안내 / 임채홍(대리)</span>
+                                                </li>
+                                                <!-- // 예약 완료 .active 추가 -->
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sched_col">
+                                            <span>BOT10</span>
+                                            <ul>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li>
+                                                <li><span class="cell">R0217</span></li><!-- default: 실행 불가능 -->
+                                                <li class="on"><span class="cell">R0217</span></li><!-- 실행 가능 .on 추가 -->
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <!-- 실행 .active 추가 -->
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">
+                                                        <span class="txt"><span>예탁원 익일배분내역 업로드 자동화 (법선 바클레이즈 고객 해당)</span> / 김이름(선임조사역)</span>
+                                                        <span class="txt"><span>국내주식 종목등급 변경안내</span> / 임채홍(대리)</span>
+                                                    </span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">국내주식 종목등급 변경안내 / 임채홍(대리)</span>
+                                                </li>
+                                                <li class="on active">
+                                                    <span class="cell">R0217</span>
+                                                    <span class="cell_desc">국내주식 종목등급 변경안내 / 임채홍(대리)</span>
+                                                </li>
+                                                <!-- // 예약 완료 .active 추가 -->
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                                <li class="on"><span class="cell">R0217</span></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 2021-03-10 추가 -->
+                        <div class="btn_wrap">
+                            <button class="btn btn_slid sli_prv" type="button" disabled>이전</button>
+                            <button class="btn btn_slid sli_nxt" type="button">다음</button>
+                        </div>
+                        <!-- // 2021-03-10 추가 -->
+                    </div>
+                </div>
+            </div>
+            <!-- popup button area -->
+            <div class="pop-btn_wrap">
+                <a href="javascript:;" class="btn btn-ty1">확인</a>
+            </div>
+            <!-- // popup button area -->
+        </div>
+        <!-- //popup container -->
+    </div>
+    <a href="javascript:;" class="btn-close">닫기</a>
+</div>
+<!-- // POPUP PAGE -->
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/ui.js"></script>
+<script>
+
+var $des = $('.cell_desc')
+
+// function descBubble() {
+//   if($des.is(':visible') == true){
+//       alert('안보임?')
+//     $(this).addClass('top')
+//   }
+// };
+
+$('.cell').on('mouseover',function(e){
+  $(this).next($des).show()
+})
+$('.cell').on('mouseout',function(e){
+  $(this).next($des).hide()
+})
+
+//스크롤 했을 때
+$('.ui_schedule').scroll(function(){
+  descBubble()
+});
+
+
+</script>
+
+</body>
+
+</html>

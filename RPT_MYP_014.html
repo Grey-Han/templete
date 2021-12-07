@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">나의업무현황</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의요청</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">개발요청</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행요청</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 헬프데스크 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿관리</a>
+                    <a class="collapse-item" href="javascript:;">영업일조회</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의할일</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">과제접수</a></li>
+                        <li><a class="depth2_item" href="javascript:;">과제개발</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행관리</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">기준정보관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">활용시스템</a></li>
+                        <li><a class="depth2_item" href="javascript:;">RPA적합도</a></li>
+                        <li><a class="depth2_item" href="javascript:;">일율관리</a></li>
+                    </ul>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">자원관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">BOT관리</a></li>
+                        <li><a class="depth2_item" href="javascript:;">라이선스관리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+                <!-- shinhan logo -->
+                <div class="sh_logo-wrap">
+                    <h1 class="sh_logo">
+                        <a href="/">신한금융투자 RPA Platform</a>
+                    </h1>
+                </div>
+
+                <!-- Topbar utill -->
+                <div class="sh_utill">
+                    <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                    <div class="sh_logout-wrap dropdown no-arrow">
+                        <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- contents wrapper -->
+                <div class="content_innr">
+
+                    <!-- Page Heading -->
+                    <div class="content-tit">
+                        <h2 class="sh_tit">정기실행요청</h2>
+                    </div>
+
+                    <!-- page navigator -->
+                    <div class="navigator">
+                        <a class="navigator-home" href="javascript:;">
+                            <span>HOME</span>
+                        </a>
+                        <span>마이페이지</span>
+                        <span>나의요청</span>
+                        <span class="navigator-cur">정기실행요청</span>
+                    </div>
+
+                    <!-- Form Box -->
+                    <div class="form_box">
+                        <!-- Form Box Partition -->
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-6">
+                                <!-- Label -->
+                                <div class="input-label">구분</div>
+                                <!-- // Label -->
+                                <!-- Form Box input -->
+                                <div class="ui_check_wrap">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk01_01">
+                                        <label class="custom-control-label" for="chk01_01">정기실행</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk01_02">
+                                        <label class="custom-control-label" for="chk01_02">대기예약</label>
+                                    </div>
+                                </div>
+                                <!-- // Form Box input -->
+                            </div>
+                            <div class="form_box-feild col-lg-6">
+                                <!-- Label -->
+                                <div class="input-label">처리상태</div>
+                                <!-- // Label -->
+                                <!-- Form Box input -->
+                                <div class="ui_check_wrap">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk01_03">
+                                        <label class="custom-control-label" for="chk01_03">요청</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk01_04">
+                                        <label class="custom-control-label" for="chk01_04">등록완료</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk01_04">
+                                        <label class="custom-control-label" for="chk01_04">삭제요청</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk01_04">
+                                        <label class="custom-control-label" for="chk01_04">삭제완료</label>
+                                    </div>
+                                </div>
+                                <!-- // Form Box input -->
+                            </div>
+                        </div>
+                        <!-- // Form Box Partition -->
+                        <!-- Form Box Partition -->
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-6">
+                                <!-- Label -->
+                                <div class="input-label">검색</div>
+                                <!-- // Label -->
+                                <!-- Form Box input -->
+                                <div class="search_box">
+                                    <div class="select_box">
+                                        <select>
+                                            <option>과제명</option>
+                                            <option>프로세스명</option>
+                                            <option>프로세스ID</option>
+                                            <option>자동화 스크립트</option>
+                                            <option>과제담당자</option>
+                                        </select>
+                                    </div><!-- 
+                                     --><input type="text" placeholder="검색어입력"><!-- 
+                                     --><div class="btn-wrap">
+                                        <a href="javascript:;" class="btn btn-y" data-title="찾기">찾기</a>
+                                        <a href="javascript:;" class="btn btn-n" data-title="RESET">RESET</a>
+                                    </div>
+                                </div>
+                                <!-- // Form Box input -->
+                            </div>
+                        </div>
+                        <!-- // Form Box Partition -->
+                    </div>
+                    <!-- // Form Box -->
+
+                    <!-- table wrapper -->
+                    <div class="table_box table_box-btn_wrap">
+                        <div class="table_box-label">총 <span>100</span>건</div>
+                        <div class="select_box">
+                            <select>
+                                <option>00건</option>
+                            </select>
+                        </div>
+                        <table class="sh_table">
+                            <caption>템플릿 관리 목록</caption>
+                            <colgroup>
+                                <col style="width:5%;">
+                                <col>
+                                <col style="width:8%;">
+                                <col style="width:8%;">
+                                <col style="width:15%;">
+                                <col style="width:10%;">
+                                <col style="width:12%;">
+                                <col style="width:10%;">
+                                <col style="width:8%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">순번</th>
+                                    <th scope="col">과제명</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">처리상태</th>
+                                    <th scope="col">기간</th>
+                                    <th scope="col">주기</th>
+                                    <th scope="col">부서</th>
+                                    <th scope="col">접수자</th>
+                                    <th scope="col">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-c">000</td>
+                                    <td><a class="ttxt_title" href="#">유상 투자설명서 자동 업로드</a></td>
+                                    <td class="ta-c">정기실행</td>
+                                    <td class="ta-c">등록완료</td>
+                                    <td class="ta-c">2020-00-00 ~ 2020-00-00</td>
+                                    <td class="ta-c">2주마다 월,금</td>
+                                    <td class="ta-c">마케팅부</td>
+                                    <td class="ta-c">김이름(주임)</td>
+                                    <td class="ta-c">2020-00-00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-pagination">
+                            <ul>
+                                <li><a href="javascript:;" class="page_btn first disabled">first</a></li>
+                                <li><a href="javascript:;" class="page_btn prev disabled">prev</a></li><!-- 비활성화 .disabled 추가 -->
+                                <li><a href="javascript:;" class="page_link current">1</a></li><!-- 현재 페이지 .current 추가 -->
+                                <li><a href="javascript:;" class="page_link">2</a></li>
+                                <li><a href="javascript:;" class="page_link">3</a></li>
+                                <li><a href="javascript:;" class="page_link">4</a></li>
+                                <li><a href="javascript:;" class="page_link">5</a></li>
+                                <li><a href="javascript:;" class="page_link">6</a></li>
+                                <li><a href="javascript:;" class="page_link">7</a></li>
+                                <li><a href="javascript:;" class="page_link">8</a></li>
+                                <li><a href="javascript:;" class="page_link">9</a></li>
+                                <li><a href="javascript:;" class="page_link">10</a></li>
+                                <li><a href="javascript:;" class="page_btn next">next</a></li>
+                                <li><a href="javascript:;" class="page_btn last">last</a></li>
+                            </ul>
+                        </div>
+                        <div class="table_box-btn">
+                            <button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_up">등록</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<div class="dimmed"></div><!-- DIMMED -->
+
+<!-- POPUP PAGE -->
+<div class="pop_box shadow" style="right: 0px;">
+    <div class="pop_box-innr">
+        <!-- popup Heading -->
+        <h3 class="pop-tit">정기실행요청</h3>
+        <!-- popup container -->
+        <div class="pop-body">
+            <!-- popup contents -->
+            <div class="pop-innr">
+                <div class="ui_border_box mb10">
+                    <i class="icon icon_tip">알림</i>
+                    <span class="ui_ft17 tc-blue01">희망하시는 정기실행 기간을 작성하여 요청해 주시면 일정 검토 후 담당자가 정기실행을 등록해 드립니다</span>
+                </div>
+                <div class="pop-part">
+                    <div class="table_ty1-wrap">
+                        <table class="table_ty1">
+                            <caption>예약 실행 과제 정보</caption>
+                            <colgroup>
+                                <col style="width: 12%;">
+                                <col style="width: 20%;">
+                                <col style="width: 12%;">
+                                <col style="width: 20%;">
+                                <col style="width: 12%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">과제명</th>
+                                    <td>국내주식 종목등급 변경안내</td>
+                                    <th scope="row">프로세스명</th>
+                                    <td>국내주식 종목등급 변경안내</td>
+                                    <th scope="row">개발타입</th>
+                                    <td>RPA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">담당부서</th>
+                                    <td>감리부</td>
+                                    <th scope="row">담당자</th>
+                                    <td>임채홍(대리)</td>
+                                    <th scope="row">예상 수행시간</th>
+                                    <td>90분</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ta-r mt15">
+                        <a href="javascript:;" class="btn btn-ty3">삭제</a>
+                        <a href="javascript:;" class="btn btn-ty1">승인</a>
+                    </div>
+                </div>
+                <!-- pop section -->
+                <div class="pop-part">
+                    <h3 class="pop-part-tit">실행로그</h3>
+                    <div class="list_log_wrap">
+                        <!-- type2 - data list -->
+                        <ul class="list_log">
+                            <li>[2019-03-28 09:00:00] 등록요청 2020-00-00 ~ 2020-00-00 00:00 [2주마다 월,수] 정기실행 요청 드립니다.</li>
+                            <li>[2019-03-29 09:00:00] 실행 종료</li>
+                            <li>[2019-03-29 09:00:00] 실행 종료</li>
+                            <li>[2019-03-29 09:00:00] 실행 종료</li>
+                            <li>[2019-03-29 09:00:00] 실행 종료</li>
+                            <li>[2019-03-29 09:00:00] 실행 종료</li>
+                            <li>[2019-03-29 09:00:00] 실행 종료</li>
+                            <li>[2019-03-28 17:25:52] 실행 성공</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // pop section -->
+                <!-- // pop section -->
+            </div>
+            <!-- // popup contents -->
+        </div>
+        <!-- // popup container -->
+    </div>
+    <!-- 팝업창 닫기 버튼 -->
+    <a href="javascript:;" class="btn-close">닫기</a>
+</div>
+<!-- // POPUP PAGE -->
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/common.js"></script>
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>

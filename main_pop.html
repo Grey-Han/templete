@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item active">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item active" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">나의요청</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">개발요청</a></li>
+                            <li><a href="javascript:;">정기실행요청</a></li>
+                        </ul>
+                    </div>
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">개발요청</a>
+                    <a class="collapse-item" href="javascript:;">정기실행</a>
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자 안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿 관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">나의할일</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">과제접수</a></li>
+                            <li><a href="javascript:;">과제개발</a></li>
+                            <li><a href="javascript:;">정기실행관리</a></li>
+                        </ul>
+                    </div>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">기준정보관리</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">활용시스템</a></li>
+                            <li><a href="javascript:;">RPA적합도</a></li>
+                            <li><a href="javascript:;">일율관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="collapse-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="true">자원관리</a>
+                        <ul class="dropdown-menu" role="menu" x-placement="bottom-start" x-out-of-boundaries="">
+                            <li><a href="javascript:;">BOT 관리</a></li>
+                            <li><a href="javascript:;">라이선스 관리</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 로그인 -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="javascript:;">
+                <span>SSO 로그인</span>
+            </a>
+        </li> -->
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+            <!-- shinhan logo -->
+            <div class="sh_logo-wrap">
+                <h1 class="sh_logo">
+                    <a href="/">신한금융투자 RPA Platform</a>
+                </h1>
+            </div>
+
+            <!-- Topbar utill -->
+            <div class="sh_utill">
+                <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                <div class="sh_logout-wrap dropdown no-arrow">
+                    <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <h1 class="sh_tit">Dashboard</h1>
+                </div>
+
+                <!-- Dashboard container -->
+                <div class="sh_board-wrap">
+                    <!-- Content Row -->
+                    <div class="sh_board row">
+                        <!-- Content Column - Left -->
+                        <div class="sh_board-left col-lg-9">
+                            <!-- card board -->
+                            <div class="sh_card-row row">
+                                <!-- Card -->
+                                <div class="sh_card-wrap active col-xl-3 col-md-6 mb-4"><!-- active 추가 -->
+                                    <a class="sh_card" href="./main.html">
+                                        <div class="sh_card-tit">절감시간</div>
+                                        <div class="sh_card-txt">
+                                            <strong>0,000</strong>
+                                            <span>시간</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4">
+                                    <a class="sh_card" href="./roi.html">
+                                        <div class="sh_card-tit">ROI</div>
+                                        <div class="sh_card-txt">
+                                            <strong>0,000</strong>
+                                            <span>백만원</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4">
+                                    <a class="sh_card" href="./task.html">
+                                        <div class="sh_card-tit">업무현황</div>
+                                        <div class="sh_card-txt">
+                                            <strong>000</strong>
+                                            <span>개</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <!-- Card -->
+                                <div class="sh_card-wrap col-xl-3 col-md-6 mb-4">
+                                    <a class="sh_card" href="./new.html">
+                                        <div class="sh_card-tit">신규업무</div>
+                                        <div class="sh_card-txt">
+                                            <strong>000</strong>
+                                            <span>개</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            
+                            <!-- tab container -->
+                            <div class="tab-cont">
+                                <ul class="tab-menu">
+                                    <li class="tab-menu-item active"><!-- 활성화 .active 추가 -->
+                                        <a href="./main.html">절감시간</a>
+                                    </li>
+                                    <li class="tab-menu-item">
+                                        <a href="./roi.html">ROI</a>
+                                    </li>
+                                    <li class="tab-menu-item">
+                                        <a href="./task.html">업무현황</a>
+                                    </li>
+                                    <li class="tab-menu-item">
+                                        <a href="./new.html">신규업무</a>
+                                    </li>
+                                </ul>
+                                <ul class="tab-box-wrap">
+                                    <!-- Tab content - 절감시간 -->
+                                    <li class="tab-box active">
+                                        <div class="tab-box-part">
+                                            <div class="tab-box-innr">
+                                                <div class="compare_box">
+                                                    <div class="compare-left">
+                                                        <div class="compare-tit">HUMAN</div>
+                                                        <div class="compare-txt">0,000시간</div>
+                                                    </div>
+                                                    <div class="compare-right">
+                                                        <div class="compare-tit">BOT</div>
+                                                        <div class="compare-txt">000시간<span>(▲ 0,000시간)</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ribbon-wrapper">
+                                                    <div class="ribbon">compare</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-box-part">
+                                            <div class="tab-box-innr select_wrap">
+                                                <div class="tab-box-tit">업무자동화 <span>Top4</span></div>
+                                                <ul class="win_list">
+                                                    <li class="win_list-item">
+                                                        <div class="win-rank">1위</div> 
+                                                        <div class="win-tit">홍길동<span>(투자상품전략부)</span></div>
+                                                        <div class="win-cont">00,000시간</div>
+                                                    </li>
+                                                    <li class="win_list-item">
+                                                        <div class="win-rank">2위</div> 
+                                                        <div class="win-tit">홍길동<span>(투자상품전략부)</span></div>
+                                                        <div class="win-cont">00,000시간</div>
+                                                    </li>
+                                                    <li class="win_list-item">
+                                                        <div class="win-rank">3위</div> 
+                                                        <div class="win-tit">홍길동<span>(해외주식영업부)</span></div>
+                                                        <div class="win-cont">000시간</div>
+                                                    </li>
+                                                    <li class="win_list-item">
+                                                        <div class="win-rank">4위</div> 
+                                                        <div class="win-tit">홍길동<span>(전략기획부)</span></div>
+                                                        <div class="win-cont">0,000시간</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="select_box">
+                                                    <select>
+                                                        <option>개인</option>
+                                                        <option>그룹</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="tab-cont-btn" href="javascript:;">
+                                    <span>과제목록</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Content Column - Right -->
+                        <div class="sh_board-right col-lg-3">
+
+                            <!-- 공지사항 -->
+                            <div class="sh_part"> 
+                                <h3 class="sh_part-tit">공지사항</h3>
+                                <div class="sh_part-body">
+                                    <ul class="list_note">
+                                        <li class="list_note-item">공지사항이 없습니다</li>
+                                    </ul>
+                                </div>
+                                <a class="sh_part-btn" href="javascript:;">더보기</a>
+                            </div>
+
+                            <!-- 공지사항 -->
+                            <div class="sh_part">
+                                <h3 class="sh_part-tit">나의 업무현황</h3>
+                                <div class="sh_part-body">
+                                    <ul class="list_box">
+                                        <li class="list_box-item">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">과제운영</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_2">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">과제요청</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_3"> 
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">과제개발</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_4">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">취소</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_5">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">성공</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="list_box-item box-item_6">
+                                            <dl class="list_box-innr">
+                                                <dt class="list_box-tit">실패</dt>
+                                                <dd class="list_box-txt"><strong>00</strong>건</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="sh_part-btn" href="javascript:;">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<div class="dimmed"></div><!-- DIMMED -->
+
+<!-- POPUP PAGE -->
+<div class="pop_box shadow" style="right: 0px;">
+    <div class="pop_box-innr">
+        <!-- popup Heading -->
+        <h3 class="pop-tit">과제 목록</h3>
+        <!-- popup container -->
+        <div class="pop-body">
+            <!-- popup contents -->
+            <div class="pop-innr">
+                <!-- pop section -->
+                <div class="pop-part">
+                    <!-- form feild box -->
+                    <div class="form_box">
+                        <!-- Form Box Partition -->
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-5">
+                                <!-- Label -->
+                                <div class="input-label">기간</div>
+                                <!-- //Label -->
+                                <div class="date_picker">
+                                    <input type="text" id="start_day" value="2020-03-15">
+                                    <a href="javascript:;" class="btn_calendar"><label for="start_day">시작일 선택</label></a>
+                                    <span class="date_line">-</span>
+                                    <input type="text" id="end_day" value="2021-03-15">
+                                    <a href="javascript:;" class="btn_calendar"><label for="end_day">종료일 선택</label></a>
+                                </div>
+                            </div>
+                            <div class="form_box-feild col-lg-6">
+                                <div class="input-label">검색</div>
+                                <div class="search_box">
+                                    <div class="select_box">
+                                        <select>
+                                            <option>과제명</option>
+                                            <option>과제담당자</option>
+                                            <option>담당부서</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" placeholder="검색어입력">
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="btn btn-y" data-title="찾기">찾기</a>
+                                        <a href="javascript:;" class="btn btn-n" data-title="RESET">RESET</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Form Box Partition -->
+                    </div>
+                    <!-- table wrapper -->
+                    <div class="table_box table_box-btn_wrap">
+                        <div class="table_box-label">총 <span>100</span>건</div>
+                        <div class="select_box">
+                            <select>
+                                <option>00건</option>
+                            </select>
+                        </div>
+                        <div class="manage_list-wrap">
+                            <ul class="manage_list">
+                                <li class="middle">
+                                    <div class="subject">
+                                        <div class="fL subject_depth1">
+                                            <span class="level">난이도 : 중</span>
+                                            <dl>
+                                                <dt><span class="list_count">1</span>위기관리 지표 모니터링</dt>
+                                                <dd>
+                                                    <span>담당부서 : ICT기획팀</span>
+                                                    <span>담당자 : 강경수</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box" style="padding:15px">
+                                            <dl>
+                                                <dt>
+                                                    <span class="d_text2">
+                                                        <span>총과제시간: <font class="tc-red">315시간</font></span>
+                                                        <span>처리인원: <font class="tc-blue01">2명</font></span>	
+                                                         <span>과제빈도: <font class="tc-blue01">매년 7,251회</font></span>
+                                                        <span>건별처리시간: <font class="tc-blue01">6분</font></span>
+                                                    </span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_date">최근시작시간 : 2021.01.18 13:10:01</span>
+                                                    <span class="info_date2">최근종료시간 : 2021.01.18 13:10:01</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle">
+                                    <div class="subject">
+                                        <div class="fL subject_depth1">
+                                            <span class="level">난이도 : 중</span>
+                                            <dl>
+                                                <dt><span class="list_count">1</span>외부위탁교육지원업무 수료보고 미발송처리</dt>
+                                                <dd>
+                                                    <span>담당부서 : ICT기획팀</span>
+                                                    <span>담당자 : 강경수</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box" style="padding:15px">
+                                            <dl>
+                                                <dt>
+                                                    <span class="d_text2">
+                                                        <span>총과제시간: <font class="tc-red">315시간</font></span>
+                                                        <span>처리인원: <font class="tc-blue01">2명</font></span>	
+                                                         <span>과제빈도: <font class="tc-blue01">매월 15회</font></span>
+                                                        <span>건별처리시간: <font class="tc-blue01">18분</font></span>
+                                                    </span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_date">최근시작시간 : 2021.01.18 13:10:01</span>
+                                                    <span class="info_date2">최근종료시간 : 2021.01.18 13:10:01</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle">
+                                    <div class="subject">
+                                        <div class="fL subject_depth1">
+                                            <span class="level">난이도 : 중</span>
+                                            <dl>
+                                                <dt><span class="list_count">10</span>사모펀드 유동성 증감 모니터링</dt>
+                                                <dd>
+                                                    <span>담당부서 : ICT기획팀</span>
+                                                    <span>담당자 : 강경수</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box" style="padding:15px">
+                                            <dl>
+                                                <dt>
+                                                    <span class="d_text2">
+                                                        <span>총과제시간: <font class="tc-red">315시간</font></span>
+                                                        <span>처리인원: <font class="tc-blue01">2명</font></span>	
+                                                         <span>과제빈도: <font class="tc-blue01">매월 15회</font></span>
+                                                        <span>건별처리시간: <font class="tc-blue01">151초</font></span>
+                                                    </span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_date">최근시작시간 : 2021.01.18 13:10:01</span>
+                                                    <span class="info_date2">최근종료시간 : 2021.01.18 13:10:01</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle">
+                                    <div class="subject">
+                                        <div class="fL subject_depth1">
+                                            <span class="level">난이도 : 중</span>
+                                            <dl>
+                                                <dt><span class="list_count">99</span>개인전문투자자 심사 업무</dt>
+                                                <dd>
+                                                    <span>담당부서 : ICT기획팀</span>
+                                                    <span>담당자 : 강경수</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box" style="padding:15px">
+                                            <dl>
+                                                <dt>
+                                                    <span class="d_text2">
+                                                        <span>총과제시간: <font class="tc-red">315시간</font></span>
+                                                        <span>처리인원: <font class="tc-blue01">2명</font></span>	
+                                                         <span>과제빈도: <font class="tc-blue01">매일 2회</font></span>
+                                                        <span>건별처리시간: <font class="tc-blue01">3,455초</font></span>
+                                                    </span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_date">최근시작시간 : 2021.01.18 13:10:01</span>
+                                                    <span class="info_date2">최근종료시간 : 2021.01.18 13:10:01</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle">
+                                    <div class="subject">
+                                        <div class="fL subject_depth1">
+                                            <span class="level">난이도 : 중</span>
+                                            <dl>
+                                                <dt><span class="list_count">100</span>시재(계정) 마감 시 예탁원 자료 당사 골드넷 자동 업로드 요청</dt>
+                                                <dd>
+                                                    <span>담당부서 : ICT기획팀</span>
+                                                    <span>담당자 : 강경수</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box" style="padding:15px">
+                                            <dl>
+                                                <dt>
+                                                    <span class="d_text2">
+                                                        <span>총과제시간: <font class="tc-red">315시간</font></span>
+                                                        <span>처리인원: <font class="tc-blue01">2명</font></span>	
+                                                         <span>과제빈도: <font class="tc-blue01">매월 15회</font></span>
+                                                        <span>건별처리시간: <font class="tc-blue01">151초</font></span>
+                                                    </span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_date">최근시작시간 : 2021.01.18 13:10:01</span>
+                                                    <span class="info_date2">최근종료시간 : 2021.01.18 13:10:01</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="table-pagination">
+                            <ul>
+                                <li><a href="javascript:;" class="page_btn first disabled">first</a></li>
+                                <li><a href="javascript:;" class="page_btn prev disabled">prev</a></li><!-- 비활성화 .disabled 추가 -->
+                                <li><a href="javascript:;" class="page_link current">1</a></li><!-- 현재 페이지 .current 추가 -->
+                                <li><a href="javascript:;" class="page_link">2</a></li>
+                                <li><a href="javascript:;" class="page_link">3</a></li>
+                                <li><a href="javascript:;" class="page_link">4</a></li>
+                                <li><a href="javascript:;" class="page_link">5</a></li>
+                                <li><a href="javascript:;" class="page_link">6</a></li>
+                                <li><a href="javascript:;" class="page_link">7</a></li>
+                                <li><a href="javascript:;" class="page_link">8</a></li>
+                                <li><a href="javascript:;" class="page_link">9</a></li>
+                                <li><a href="javascript:;" class="page_link">10</a></li>
+                                <li><a href="javascript:;" class="page_btn next">next</a></li>
+                                <li><a href="javascript:;" class="page_btn last">last</a></li>
+                            </ul>
+                        </div>
+                        <div class="table_box-btn">
+                            <button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">엑셀</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- // pop section -->
+            </div>
+            <!-- // popup contents -->
+        </div>
+        <!-- // popup container -->
+    </div>
+    <!-- 팝업창 닫기 버튼 -->
+    <a href="javascript:;" class="btn-close">닫기</a>
+</div>
+<!-- // POPUP PAGE -->
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/common.js"></script>
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>신한금융투자 RPA Platform</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
+
+    <!-- plugin -->
+    <link href="./resources/css/sb-admin-2/sb-admin-2.min.css" rel="stylesheet" type="text/css">
+    <!-- custom -->
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/font.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/global.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="./resources/css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sh_gnb navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <div class="sh_brand">
+            <div class="sh_brand-text">
+                <strong>RPA</strong>Robotic Process<br>Automation
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - 대시보드 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span>대시보드</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">절감시간</a>
+                    <a class="collapse-item" href="javascript:;">ROI</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                    <a class="collapse-item" href="javascript:;">신규업무</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 마이페이지 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseMy" aria-expanded="true" aria-controls="collapseMy">
+                <span>마이페이지</span>
+            </a>
+            <div id="collapseMy" class="collapse" aria-labelledby="headingMy" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">나의과제</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의요청</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">개발요청</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행요청</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">나의과제개발</a>
+                    <a class="collapse-item" href="javascript:;">나의정보관리</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 헬프데스크 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtill" aria-expanded="true" aria-controls="collapseUtill">
+                <span>헬프데스크</span>
+            </a>
+            <div id="collapseUtill" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">공지사항</a>
+                    <a class="collapse-item" href="javascript:;">FAQ</a>
+                    <a class="collapse-item" href="javascript:;">Q&A</a>
+                    <a class="collapse-item" href="javascript:;">담당자안내</a>
+                    <a class="collapse-item" href="javascript:;">탬플릿관리</a>
+                    <a class="collapse-item" href="javascript:;">영업일조회</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 관리자 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <span>관리자</span>
+            </a>
+            <div id="collapseAdmin" class="collapse" aria-labelledby="headingAdmin" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">나의할일</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">과제접수</a></li>
+                        <li><a class="depth2_item" href="javascript:;">과제개발</a></li>
+                        <li><a class="depth2_item" href="javascript:;">정기실행관리</a></li>
+                    </ul>
+                    <a class="collapse-item" href="javascript:;">과제관리</a>
+                    <a class="collapse-item" href="javascript:;">사용자관리</a>
+                    <a class="collapse-item" href="javascript:;">권한관리</a>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">기준정보관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">활용시스템</a></li>
+                        <li><a class="depth2_item" href="javascript:;">RPA적합도</a></li>
+                        <li><a class="depth2_item" href="javascript:;">일율관리</a></li>
+                    </ul>
+                    <a class="collapse-item sh_nav-toggle" href="javascript:;" role="button">자원관리</a>
+                    <ul class="sh_nav-depth2">
+                        <li><a class="depth2_item" href="javascript:;">BOT관리</a></li>
+                        <li><a class="depth2_item" href="javascript:;">라이선스관리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 통계 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="javascript:;" data-toggle="collapse" data-target="#collapseStatist" aria-expanded="true" aria-controls="collapseStatist">
+                <span>통계</span>
+            </a>
+            <div id="collapseStatist" class="collapse" aria-labelledby="headingStatist" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">과제별</a>
+                    <a class="collapse-item" href="javascript:;">프로세스별</a>
+                    <a class="collapse-item" href="javascript:;">BOT별</a>
+                    <a class="collapse-item" href="javascript:;">유형별</a>
+                    <a class="collapse-item" href="javascript:;">부서별</a>
+                    <a class="collapse-item" href="javascript:;">업무현황</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - 커뮤니티 -->
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:;" data-toggle="collapse" data-target="#collapseCom" aria-expanded="true" aria-controls="collapseCom">
+                <span>커뮤니티</span>
+            </a>
+            <div id="collapseCom" class="collapse" aria-labelledby="headingCom" data-parent="#accordionSidebar">
+                <div class="sh_nav-depth py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="javascript:;">지식관리</a>
+                    <a class="collapse-item" href="javascript:;">학습콘텐츠</a>
+                    <a class="collapse-item" href="javascript:;">개발가이드</a>
+                    <a class="collapse-item" href="javascript:;">Best Practice</a>
+                    <a class="collapse-item" href="javascript:;">Best Store</a>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="sh_toggle text-center">
+            <button class="sh_toggle-btn rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="sh_cont-wrap d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="sh_topbar navbar navbar-expand navbar-light topbar static-top">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="sh_toggle_mo btn btn-link"></button>
+
+                <!-- shinhan logo -->
+                <div class="sh_logo-wrap">
+                    <h1 class="sh_logo">
+                        <a href="/">신한금융투자 RPA Platform</a>
+                    </h1>
+                </div>
+
+                <!-- Topbar utill -->
+                <div class="sh_utill">
+                    <div class="sh_user"><span>홍길동님 반갑습니다</span></div>
+                    <div class="sh_logout-wrap dropdown no-arrow">
+                        <a class="sh_logout dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">로그아웃</a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item test-change-user" id="ssologout">로그아웃</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="sh_cont container-fluid">
+
+                <!-- contents wrapper -->
+                <div class="content_innr">
+
+                    <!-- Page Heading -->
+                    <div class="content-tit">
+                        <h2 class="sh_tit">나의과제</h2>
+                    </div>
+
+                    <!-- page navigator -->
+                    <div class="navigator">
+                        <a class="navigator-home" href="javascript:;">
+                            <span>HOME</span>
+                        </a>
+                        <span>마이페이지</span>
+                        <!-- <span>템플릿 관리</span> -->
+                        <span class="navigator-cur">나의과제</span>
+                    </div>
+
+                    <!-- Form Box -->
+                    <div class="form_box">
+                        <!-- Form Box Partition -->
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-6">
+                                <!-- Label -->
+                                <div class="input-label">상태</div>
+                                <!-- // Label -->
+                                <!-- Form Box input -->
+                                <div class="ui_check_wrap">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk_run2">
+                                        <label class="custom-control-label" for="chk_run2">실행중</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk_hold2">
+                                        <label class="custom-control-label" for="chk_hold2">실행대기</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk_comp">
+                                        <label class="custom-control-label" for="chk_comp">완료</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="chk_false">
+                                        <label class="custom-control-label" for="chk_false">실패</label>
+                                    </div>
+                                </div>
+                                <!-- // Form Box input -->
+                            </div>
+                            <div class="form_box-feild col-lg-6">
+                                <!-- Label -->
+                                <div class="input-label">구분</div>
+                                <!-- // Label -->
+                                <!-- Form Box input -->
+                                <div class="ui_check_wrap">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check06_05">
+                                        <label class="custom-control-label" for="check06_05">정기실행</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check06_06">
+                                        <label class="custom-control-label" for="check06_06">예약실행</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="check06_07">
+                                        <label class="custom-control-label" for="check06_07">미실행</label>
+                                    </div>
+                                </div>
+                                <!-- Form Box input -->
+                            </div>
+                        </div>
+                        <!-- // Form Box Partition -->
+                        <!-- Form Box Partition -->
+                        <div class="form_box-row row">
+                            <div class="form_box-feild col-lg-12">
+                                <!-- Label -->
+                                <div class="input-label">검색</div>
+                                <!-- // Label -->
+                                <!-- Form Box input -->
+                                <div class="search_box">
+                                    <div class="select_box">
+                                        <select>
+                                            <option>전체</option>
+                                            <option>RPA</option>
+                                            <option>전산개발</option>
+                                        </select>
+                                    </div>
+                                    <div class="select_box">
+                                        <select>
+                                            <option>과제명</option>
+                                            <option>프로세스명</option>
+                                            <option>프로세스ID</option>
+                                            <option>자동화 스크립트</option>
+                                            <option>과제담당자</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" placeholder="검색어입력">
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="btn btn-y">찾기</a>
+                                        <a href="javascript:;" class="btn btn-n">RESET</a>
+                                    </div>
+                                </div>
+                                <!-- // Form Box input -->
+                            </div>
+                        </div>
+                        <!-- // Form Box Partition -->
+                    </div>
+
+                    <!-- // Form Box -->
+                    <!-- table wrapper -->
+                    <div class="table_box table_box-btn_wrap">
+                        <div class="table_box-label">총 <span>100</span>건</div>
+                        <div class="select_box">
+                            <select>
+                                <option>5건</option>
+                                <option>10건</option>
+                                <option>50건</option>
+                            </select>
+                        </div>
+                        <div class="manage_list-wrap">
+                            <ul class="manage_list flex_list">
+                                <li class="low">
+                                    <div class="subject">
+                                        <div class="subject_depth1">
+                                            <span class="level">난이도 : 하</span>
+                                            <!-- <span class="ui_tag">RPA</span> 2021-03-29 과제 타입 삭제 -->
+                                            <dl>
+                                                <dt>
+                                                    <span class="list_count">1</span>
+                                                    <a href="#">타이틀타이틀타이틀타이틀타이틀타이틀</a>
+                                                </dt>
+                                                <dd>
+                                                    <span>담당부서 : 부서명</span>
+                                                    <span>담당자 : 김이름(대리)</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box">
+                                            <dl>
+                                                <dt>
+                                                    <span class="ui_state comp">
+                                                        <span class="icn">완료</span>
+                                                    </span>
+                                                    <a href="#" class="d_title">타이틀타이틀타이틀타이틀타이틀타이틀</a>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_bot">BOT : 하이봇00</span>
+                                                </dd>
+                                                <dd>
+                                                    <span class="info_date">운영시작일 : 2021.03.09</span>
+                                                    <span class="info_date2" style="margin-left:0;">다음실행일 : -</span>
+                                                </dd>
+                                            </dl>
+                                            <div class="btn_stat">
+                                                <a href="javascript:;" class="info active"><span>상세</span></a>
+                                                <a href="javascript:;" class="run active"><span>실행</span></a>
+                                                <a href="javascript:;" class="reserv active"><span>예약</span></a>
+                                                <a href="javascript:;" class="reg active"><span>정기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="low">
+                                    <div class="subject">
+                                        <div class="subject_depth1">
+                                            <span class="level">난이도 : 하</span>
+                                            <!-- <span class="ui_tag">RPA</span> 2021-03-29 과제 타입 삭제 -->
+                                            <dl>
+                                                <dt><span class="list_count">2</span>외주직원관리자동화</dt>
+                                                <dd>
+                                                    <span>담당부서 : 미들오피스팀</span>
+                                                    <span>담당자 : 이미나(대리)</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box">
+                                            <dl>
+                                                <dt>
+                                                    <span class="ui_state standby">
+                                                        <span class="icn">실행대기</span>
+                                                    </span>
+                                                    <span class="d_title">외주직원관리자동화</span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_bot">BOT : 하이봇00</span>
+                                                </dd>
+                                                <dd>
+                                                    <span class="info_date">운영시작일 : -</span>
+                                                    <span class="info_date2" style="margin-left:0;">다음실행일 : -</span>
+                                                </dd>
+                                            </dl>
+                                            <div class="btn_stat">
+                                                <a href="javascript:;" class="info active"><span>상세</span></a>
+                                                <a href="javascript:;" class="run active"><span>실행</span></a>
+                                                <a href="javascript:;" class="reserv active"><span>예약</span></a>
+                                                <a href="javascript:;" class="reg active"><span>정기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="middle">
+                                    <div class="subject">
+                                        <div class="subject_depth1">
+                                            <span class="level">난이도 : 중</span>
+                                            <!-- <span class="ui_tag">RPA</span> 2021-03-29 과제 타입 삭제 -->
+                                            <dl>
+                                                <dt><span class="list_count">3</span>해외주식 온라인(DMA) 주문결제</dt>
+                                                <dd>
+                                                    <span>담당부서 : 미들오피스팀</span>
+                                                    <span>담당자 : 이미나(대리)</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box">
+                                            <dl>
+                                                <dt>
+                                                    <span class="ui_state not">
+                                                        <span class="icn">실패</span>
+                                                    </span>
+                                                    <span class="d_title">해외주식 온라인(DMA) 주문결제</span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_bot">BOT : 하이봇00</span>
+                                                </dd>
+                                                <dd>
+                                                    <span class="info_date">운영시작일 : 2021.03.08</span>
+                                                    <span class="info_date2" style="margin-left:0;">다음실행일 : -</span>
+                                                </dd>
+                                            </dl>
+                                            <div class="btn_stat">
+                                                <a href="javascript:;" class="info active"><span>상세</span></a>
+                                                <a href="javascript:;" class="run active"><span>실행</span></a>
+                                                <a href="javascript:;" class="reserv active"><span>예약</span></a>
+                                                <a href="javascript:;" class="reg active"><span>정기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="high">
+                                    <div class="subject">
+                                        <div class="subject_depth1">
+                                            <span class="level">난이도 : 상</span>
+                                            <!-- <span class="ui_tag">RPA</span> 2021-03-29 과제 타입 삭제 -->
+                                            <dl>
+                                                <dt><span class="list_count">4</span>펀드 유동성 증감 모니터링</dt>
+                                                <dd>
+                                                    <span>담당부서 : 상품심사감리부</span>
+                                                    <span>담당자 : 백종학(대리)</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box">
+                                            <dl>
+                                                <dt>
+                                                    <span class="ui_state run">
+                                                        <span class="icn">실행중</span>
+                                                    </span>
+                                                    <span class="d_title">펀드 유동성 증감 모니터링</span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_bot">BOT : 하이봇28</span>
+                                                </dd>
+                                                <dd>
+                                                    <span class="info_date">운영시작일 : 2021.03.10</span>
+                                                    <span class="info_date2" style="margin-left:0;">다음실행일 : 2021.03.10</span>
+                                                </dd>
+                                            </dl>
+                                            <div class="btn_stat">
+                                                <a href="javascript:;" class="info active"><span>상세</span></a>
+                                                <a href="javascript:;" class="run active"><span>실행</span></a>
+                                                <a href="javascript:;" class="reserv active"><span>예약</span></a>
+                                                <a href="javascript:;" class="reg active"><span>정기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="low">
+                                    <div class="subject">
+                                        <div class="subject_depth1">
+                                            <span class="level">난이도 : 하</span>
+                                            <!-- <span class="ui_tag">RPA</span> 2021-03-29 과제 타입 삭제 -->
+                                            <dl>
+                                                <dt><span class="list_count">5</span>협회 OTCBB 주문 호가 게시</dt>
+                                                <dd>
+                                                    <span>담당부서 : 디지털영업부</span>
+                                                    <span>담당자 : 김대선(과장),이성환(과장)</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail_box">
+                                            <dl>
+                                                <dt>
+                                                    <span class="ui_state standby">
+                                                        <span class="icn">실행대기</span>
+                                                    </span>
+                                                    <span class="d_title">협회 OTCBB 주문 호가 게시</span>
+                                                </dt>
+                                                <dd>
+                                                    <span class="info_bot">BOT : -</span>
+                                                </dd>
+                                                <dd>
+                                                    <span class="info_date">운영시작일 : 0000.00.00</span>
+                                                    <span class="info_date2" style="margin-left:0;">다음실행일 : 0000.00.00</span>
+                                                </dd>
+                                            </dl>
+                                            <div class="btn_stat">
+                                                <a href="javascript:;" class="info active"><span>상세</span></a>
+                                                <a href="javascript:;" class="run active"><span>실행</span></a>
+                                                <a href="javascript:;" class="reserv active"><span>예약</span></a>
+                                                <a href="javascript:;" class="reg active"><span>정기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="table-pagination">
+                            <ul>
+                                <li><a href="javascript:;" class="page_btn first disabled">first</a></li>
+                                <li><a href="javascript:;" class="page_btn prev disabled">prev</a></li><!-- 비활성화 .disabled 추가 -->
+                                <li><a href="javascript:;" class="page_link current">1</a></li><!-- 현재 페이지 .current 추가 -->
+                                <li><a href="javascript:;" class="page_link">2</a></li>
+                                <li><a href="javascript:;" class="page_link">3</a></li>
+                                <li><a href="javascript:;" class="page_link">4</a></li>
+                                <li><a href="javascript:;" class="page_link">5</a></li>
+                                <li><a href="javascript:;" class="page_link">6</a></li>
+                                <li><a href="javascript:;" class="page_link">7</a></li>
+                                <li><a href="javascript:;" class="page_link">8</a></li>
+                                <li><a href="javascript:;" class="page_link">9</a></li>
+                                <li><a href="javascript:;" class="page_link">10</a></li>
+                                <li><a href="javascript:;" class="page_btn next">next</a></li>
+                                <li><a href="javascript:;" class="page_btn last">last</a></li>
+                            </ul>
+                        </div>
+                        <div class="table_box-btn">
+                            <button class="btn btn-ty1" type="button"><span class="btn-icon btn-icon_dl">엑셀</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sh_footer">
+            <div class="copyright">
+                <span>Copyright &copy; RPA PORTAL SYSTEM</span>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top"></a>
+
+<!-- plugin -->
+<script src="./resources/js/jquery/jquery.min.js"></script>
+<script src="./resources/js/jquery/jquery-ui-1.12.1.js"></script>
+<script src="./resources/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/jquery/jquery.easing.min.js"></script>
+<script src="./resources/js/sb-admin-2/sb-admin-2.min.js"></script>
+<!-- custom -->
+<script src="./resources/js/ui.js"></script>
+
+
+</body>
+
+</html>
